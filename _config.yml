@@ -26,3 +26,5 @@ markdown: redcarpet
 pygments: true
 
 source: app
+
+permalink: /blog/:year/:month/:day/:title.html
