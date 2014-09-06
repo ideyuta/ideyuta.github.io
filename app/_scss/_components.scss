@@ -1,0 +1,32 @@
+
+//-------------------------------
+// Global Header
+//-------------------------------
+
+.Container._GlobalHeader {
+  .titleContainer {
+    float: left;
+    .title {
+      @include typo_display1;
+      line-height: 120px;
+      font-family: Garamond;
+      letter-spacing: .5em;
+      a { color: $theme-color; }
+    }
+  }
+}
+
+//-------------------------------
+// Global Navgation
+//-------------------------------
+
+.GlobalNav {
+  .nav {
+    padding: 0 10px;
+    display: inline-block;
+  }
+}
+
+
+
+

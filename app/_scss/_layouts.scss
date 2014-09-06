@@ -1,0 +1,46 @@
+
+//-------------------------------
+// Wrapper
+//-------------------------------
+
+.Wrapper {
+  @include size(100%);
+  background: $white;
+}
+
+//-------------------------------
+// Container
+//-------------------------------
+
+.Container {
+  @include clearfix;
+  @include size(100%, auto);
+  overflow: hidden;
+
+  > .inner {
+    @include clearfix;
+    @include space(0 56px, 0 auto); 
+    position: relative;
+  }
+
+  &._GlobalHeader {
+    height: 120px;
+    a { text-decoration: none; }
+  }
+
+  &._GlobalFooter {
+    height: 120px;
+    a { text-decoration: none; }
+  }
+}
+
+//-------------------------------
+// GlobalNav
+//-------------------------------
+
+.GlobalNav {
+  @include size(auto, 32px);
+  padding: 44px 0;
+  float: right;
+}
+
