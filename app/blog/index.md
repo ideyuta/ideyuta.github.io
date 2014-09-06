@@ -1,10 +1,10 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: postlist
+title: blog index
 ---
 
-#Blog
-
 {% for post in site.posts %}
-  * {{ post.date | date_to_string }} [{{ post.title }}]({{ post.url }})
+* <span>{{ post.date | date_to_string }}</span>
+  [{{ post.title }}]({{ post.url }})
+  {% for category in post.categories %} <span>{{ category }}</span> {% endfor %}
 {% endfor %}

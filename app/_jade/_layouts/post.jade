@@ -1,0 +1,11 @@
+extends default.jade
+
+block content
+  .Container._PostList
+    .inner
+      .postContainer
+        h2 {{ page.title }}
+        p.meta {{ page.date | date_to_string }}
+        
+        .post
+          {{ content }}
