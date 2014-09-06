@@ -338,18 +338,17 @@ module.exports = function (grunt) {
         }]
       }
     },
-    /*
     buildcontrol: {
       dist: {
         options: {
           dir: 'dist',
           remote: '../',
-          branch: 'gh-pages',
+          branch: 'master',
           commit: true,
           push: true
         }
       }
-    },*/
+    },
     coffeelint: {
       options: {
         'max_line_length': {
