@@ -35,8 +35,8 @@ module.exports = function (grunt) {
         tasks: ['jade:dist']
       },
       coffee: {
-        files: ['<%= yeoman.app %>/_src/**/*.coffee'],
-        tasks: ['coffee:dist']
+        files: ['<%= yeoman.app %>/_coffee/**/*.coffee'],
+        tasks: ['coffee:server', 'concat:server']
       },
       coffeeTest: {
         files: ['test/spec/**/*.coffee'],
@@ -123,7 +123,7 @@ module.exports = function (grunt) {
         expand: true,
         cwd: '<%= yeoman.app %>/_jade',
         src: '**/!(_)*.jade',
-        dest: '<%= yeoman.dist %>',
+        dest: '<%= yeoman.app %>',
         ext: '.html'
       },
       server: {
@@ -140,7 +140,6 @@ module.exports = function (grunt) {
         // require: ['singularity', 'jacket'],
         bundleExec: true,
         sassDir: '<%= yeoman.app %>/_scss',
-        cssDir: '.tmp/css',
         imagesDir: '<%= yeoman.app %>/img',
         javascriptsDir: '<%= yeoman.app %>/js',
         relativeAssets: false,
@@ -158,6 +157,7 @@ module.exports = function (grunt) {
       server: {
         options: {
           debugInfo: true,
+          cssDir: '.tmp/css',
           generatedImagesDir: '.tmp/img/generated'
         }
       }
@@ -185,13 +185,18 @@ module.exports = function (grunt) {
     },
     coffee: {
       dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_coffee',
-          src: '**/*.coffee',
-          dest: '<%= yeoman.dist %>/js',
-          ext: '.js'
-        }]
+        expand: true,
+        cwd: '<%= yeoman.app %>/_coffee/',
+        src: '**/*.coffee',
+        dest: '<%= yeoman.dist %>/js',
+        ext: '.js'
+      },
+      server: {
+        expand: true,
+        cwd: '<%= yeoman.app %>/_coffee/',
+        src: '**/*.coffee',
+        dest: '.tmp/js',
+        ext: '.js'
       },
       test: {
         files: [{
@@ -206,11 +211,11 @@ module.exports = function (grunt) {
     jekyll: {
       options: {
         bundleExec: true,
-        config: '_config.yml, _config.build.yml',
         src: '<%= yeoman.app %>'
       },
       dist: {
         options: {
+          config: '_config.yml, _config.build.yml',
           dest: '<%= yeoman.dist %>'
         }
       },
@@ -256,7 +261,22 @@ module.exports = function (grunt) {
       }
     },
     // Usemin adds files to concat
-    concat: {},
+    concat: {
+      dist: {
+        src: [
+          '<%= yeoman.app %>/_components/jquery/jquery-1.9.1.min.js',
+          '<%= yeoman.app %>/js/base.js'
+        ],
+        dest: '<%= yeoman.dist %>/js/build_base.js'
+      },
+      server: {
+        src: [
+          '<%= yeoman.app %>/_components/jquery/jquery-1.9.1.min.js',
+          '.tmp/js/base.js'
+        ],
+        dest: '.tmp/js/build_base.js'
+      }
+    },
     // Usemin adds files to uglify
     uglify: {},
     // Usemin adds files to cssmin
@@ -382,7 +402,8 @@ module.exports = function (grunt) {
       server: [
         'jade:server',
         'compass:server',
-        'coffee:dist',
+        'coffee:server',
+        'concat:server',
         'copy:stageCss',
         'jekyll:server'
       ],
@@ -390,6 +411,7 @@ module.exports = function (grunt) {
         'jade:dist',
         'compass:dist',
         'coffee:dist',
+        'concat:dist',
         'copy:dist'
       ]
     }
@@ -404,6 +426,8 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'jade:server',
+      'coffee:server',
+      'concat:server',
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
@@ -436,13 +460,14 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean',
+    'jade:dist',
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'compass:dist',
     'concurrent:dist',
     'useminPrepare',
-    // 'concat',
-    'jade:dist',
+    'coffee:dist',
+    'concat:dist',
     'autoprefixer:dist',
     // 'cssmin',
     // 'uglify',
