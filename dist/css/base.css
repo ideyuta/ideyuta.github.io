@@ -1203,15 +1203,24 @@ a:active {
   text-decoration: none;
 }
 /* line 31, ../../app/_scss/_layouts.scss */
-.Container._GlobalFooter {
-  height: 120px;
+.Container._Content {
+  height: auto;
 }
 /* line 33, ../../app/_scss/_layouts.scss */
+.Container._Content a {
+  text-decoration: none;
+}
+/* line 36, ../../app/_scss/_layouts.scss */
+.Container._GlobalFooter {
+  height: 120px;
+  padding: 40px 0;
+}
+/* line 39, ../../app/_scss/_layouts.scss */
 .Container._GlobalFooter a {
   text-decoration: none;
 }
 
-/* line 41, ../../app/_scss/_layouts.scss */
+/* line 47, ../../app/_scss/_layouts.scss */
 .GlobalNav {
   width: auto;
   height: 32px;

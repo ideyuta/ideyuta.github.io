@@ -8,6 +8,7 @@ description:
 author:
   name: ideyuta
   email: ide.yuta@gmail.com
+url: https://ideyuta.github.io
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',

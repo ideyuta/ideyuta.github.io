@@ -7,7 +7,9 @@ html
       meta(content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no", name="viewport")
       block title
       link(rel="stylesheet", href="/css/base.css")
-      block meta
+      script
+        var ide = {}; // namespace
+      script(href="/js/build_base.js")
 body
   .Wrapper
     .Container._GlobalHeader
@@ -17,9 +19,10 @@ body
         .GlobalNav
           ul
             li.nav: a.btn.f.sm(href="/blog/") Blog
-            li.nav: a.btn.f.sm(href="/work/") Work
-            li.nav: a.btn.f.sm(href="/profile/") Profile
+            // li.nav: a.btn.f.sm(href="/work/") Work
+            // li.nav: a.btn.f.sm(href="/profile/") Profile
     block content
+
     .Container._GlobalFooter
       .inner
         .copyright
