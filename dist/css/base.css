@@ -371,7 +371,7 @@ Styleguide 2.2.1
   box-sizing: content-box;
   text-decoration: none !important;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   color: #999999;
   font-weight: 300;
   line-height: 40px;
@@ -498,7 +498,7 @@ Styleguide 2.2.2
   box-sizing: content-box;
   text-decoration: none !important;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   color: #666666;
   font-weight: 300;
   line-height: 40px;
@@ -558,7 +558,7 @@ Styleguide 2.2.3
   height: 56px;
   line-height: 56px;
   padding: 0 28px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /* line 72, ../../app/_components/zenigame/src/styles/_buttons.scss */
@@ -566,7 +566,7 @@ Styleguide 2.2.3
   height: 48px;
   line-height: 48px;
   padding: 0 24px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* line 73, ../../app/_components/zenigame/src/styles/_buttons.scss */
@@ -574,7 +574,7 @@ Styleguide 2.2.3
   height: 32px;
   line-height: 32px;
   padding: 0 16px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 /* line 74, ../../app/_components/zenigame/src/styles/_buttons.scss */
@@ -582,7 +582,7 @@ Styleguide 2.2.3
   height: 24px;
   line-height: 24px;
   padding: 0 12px;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 /*
@@ -718,7 +718,7 @@ Styleguide 2.1.1
 
 /* line 24, ../../app/_components/zenigame/src/styles/_typography.scss */
 .subtitle {
-  font-size: 18px;
+  font-size: 17px;
   color: #666666;
   font-weight: 300;
   line-height: 1.75;
@@ -727,7 +727,7 @@ Styleguide 2.1.1
 
 /* line 25, ../../app/_components/zenigame/src/styles/_typography.scss */
 .body2 {
-  font-size: 16px;
+  font-size: 15px;
   color: #666666;
   font-weight: 300;
   line-height: 1.75;
@@ -736,7 +736,7 @@ Styleguide 2.1.1
 
 /* line 26, ../../app/_components/zenigame/src/styles/_typography.scss */
 .body1 {
-  font-size: 14px;
+  font-size: 13px;
   color: #666666;
   font-weight: 300;
   line-height: 1.75;
@@ -902,7 +902,7 @@ body {
   box-sizing: content-box;
   text-decoration: none !important;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   color: #999999;
   font-weight: 300;
   line-height: 48px;
@@ -948,7 +948,7 @@ body {
 .selectbox .selectnav li {
   width: 92%;
   height: 48px;
-  font-size: 14px;
+  font-size: 13px;
   color: #999999;
   font-weight: 300;
   line-height: 48px;
@@ -1112,62 +1112,82 @@ body {
   right: 2px;
 }
 
-/* line 21, ../../app/_scss/base.scss */
+/* line 22, ../../app/_scss/base.scss */
 * {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 23, ../../app/_scss/base.scss */
+/* line 24, ../../app/_scss/base.scss */
 * {
   -webkit-touch-callout: none;
 }
 
-/* line 26, ../../app/_scss/base.scss */
+/* line 27, ../../app/_scss/base.scss */
 html, body {
   width: 100%;
   height: auto;
   min-width: 100%;
   min-height: 100%;
-  font-size: 14px;
+  font-size: 13px;
   color: #333333;
   font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0;
-  overflow: auto;
   text-transform: none;
   -webkit-text-size-adjust: 100%;
+  font-family: "Noto Sans", "YuGothic", "Yu Gothic", Helvetica Neue, Helvetica, MS Sans Serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Yu Gothic", "ＭＳＰ ゴシック", Arial, sans-serif;
 }
 
-/* line 35, ../../app/_scss/base.scss */
+/* line 36, ../../app/_scss/base.scss */
 a:link {
   color: #075bd8;
 }
-/* line 36, ../../app/_scss/base.scss */
+/* line 37, ../../app/_scss/base.scss */
 a:visited {
   color: #075bd8;
 }
-/* line 37, ../../app/_scss/base.scss */
+/* line 38, ../../app/_scss/base.scss */
 a:hover {
   color: #033886;
 }
-/* line 38, ../../app/_scss/base.scss */
+/* line 39, ../../app/_scss/base.scss */
 a:active {
   color: #033886;
+}
+
+/* line 42, ../../app/_scss/base.scss */
+.highlight {
+  padding: 16px;
+  border: 1px solid #f2f2f2;
+  font-family: 'Inconsolata';
+  letter-spacing: -0.07em;
 }
 
 /* line 6, ../../app/_scss/_layouts.scss */
 .Wrapper {
   width: 100%;
-  height: 100%;
-  background: white;
+  height: auto;
+  position: absolute;
+  z-index: 1;
 }
 
-/* line 15, ../../app/_scss/_layouts.scss */
+/* line 16, ../../app/_scss/_layouts.scss */
+.BG {
+  width: 100%;
+  height: 100%;
+  min-width: 1024px;
+  height: 600px;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* line 29, ../../app/_scss/_layouts.scss */
 .Container {
   *zoom: 1;
-  width: 100%;
+  width: 1024px;
   height: auto;
-  overflow: hidden;
+  margin: 0 auto;
 }
 /* line 19, ../../app/_components/zenigame/src/mixins/_clearfix.scss */
 .Container:before, .Container:after {
@@ -1178,10 +1198,11 @@ a:active {
 .Container:after {
   clear: both;
 }
-/* line 20, ../../app/_scss/_layouts.scss */
+/* line 34, ../../app/_scss/_layouts.scss */
 .Container > .inner {
   *zoom: 1;
-  padding: 0 56px;
+  width: 768px;
+  height: auto;
   margin: 0 auto;
   position: relative;
 }
@@ -1194,63 +1215,425 @@ a:active {
 .Container > .inner:after {
   clear: both;
 }
-/* line 26, ../../app/_scss/_layouts.scss */
-.Container._GlobalHeader {
-  height: 120px;
-}
-/* line 28, ../../app/_scss/_layouts.scss */
-.Container._GlobalHeader a {
-  text-decoration: none;
-}
-/* line 31, ../../app/_scss/_layouts.scss */
+/* line 41, ../../app/_scss/_layouts.scss */
 .Container._Content {
-  height: auto;
+  padding: 100px 0;
 }
-/* line 33, ../../app/_scss/_layouts.scss */
+/* line 43, ../../app/_scss/_layouts.scss */
 .Container._Content a {
   text-decoration: none;
 }
-/* line 36, ../../app/_scss/_layouts.scss */
+/* line 46, ../../app/_scss/_layouts.scss */
 .Container._GlobalFooter {
-  height: 120px;
+  height: 40px;
   padding: 40px 0;
 }
-/* line 39, ../../app/_scss/_layouts.scss */
+/* line 49, ../../app/_scss/_layouts.scss */
 .Container._GlobalFooter a {
   text-decoration: none;
 }
 
-/* line 47, ../../app/_scss/_layouts.scss */
+/* line 57, ../../app/_scss/_layouts.scss */
+.GlobalHeader {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+/* line 66, ../../app/_scss/_layouts.scss */
 .GlobalNav {
   width: auto;
-  height: 32px;
-  padding: 44px 0;
-  float: right;
+  height: auto;
+  position: fixed;
+  top: 200px;
+  left: -100px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 76, ../../app/_scss/_layouts.scss */
+.Profile {
+  padding: 0 36px;
+  margin: 600px 0 0 0;
 }
 
 /* line 7, ../../app/_scss/_components.scss */
-.Container._GlobalHeader .titleContainer {
-  float: left;
+.BG .ProfileImg {
+  position: relative;
+  z-index: 0;
+  min-height: 600px;
+  background-image: url("/img/ideyuta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-/* line 9, ../../app/_scss/_components.scss */
-.Container._GlobalHeader .titleContainer .title {
-  font-size: 34px;
-  color: #333333;
-  font-weight: 300;
-  line-height: 1.65;
-  letter-spacing: 0;
-  letter-spacing: -1px;
-  line-height: 120px;
-  font-family: Garamond;
-  letter-spacing: .5em;
+/* line 15, ../../app/_scss/_components.scss */
+.BG .data1, .BG .data2, .BG .data3 {
+  border-style: solid;
+  border-color: white;
+  border-width: 0 0 1px 0;
+  z-index: 1;
+  width: 16%;
+  margin: 0 auto;
 }
-/* line 14, ../../app/_scss/_components.scss */
-.Container._GlobalHeader .titleContainer .title a {
-  color: #336699;
+/* line 20, ../../app/_scss/_components.scss */
+.BG .data1 p, .BG .data2 p, .BG .data3 p {
+  font-size: 10px;
+  color: white;
+}
+/* line 25, ../../app/_scss/_components.scss */
+.BG .data1 {
+  position: absolute;
+  top: 180px;
+  left: 34%;
+}
+/* line 29, ../../app/_scss/_components.scss */
+.BG .data2 {
+  position: absolute;
+  top: 360px;
+  left: 55%;
+}
+/* line 32, ../../app/_scss/_components.scss */
+.BG .data2 p {
+  text-align: right;
+}
+/* line 34, ../../app/_scss/_components.scss */
+.BG .data3 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: auto;
 }
 
-/* line 24, ../../app/_scss/_components.scss */
+/* line 47, ../../app/_scss/_components.scss */
+.GlobalHeader .title .ideyuta {
+  fill: #369;
+}
+
+/* line 53, ../../app/_scss/_components.scss */
+.BG + .GlobalHeader .title .ideyuta {
+  fill: #fff;
+}
+
+/* line 62, ../../app/_scss/_components.scss */
 .GlobalNav .nav {
   padding: 0 10px;
   display: inline-block;
+}
+
+/* line 70, ../../app/_scss/_components.scss */
+.BG + .GlobalHeader + .GlobalNav .nav .btn {
+  color: white;
+}
+/* line 72, ../../app/_scss/_components.scss */
+.BG + .GlobalHeader + .GlobalNav .nav .btn:hover {
+  color: #336699;
+}
+
+/* line 82, ../../app/_scss/_components.scss */
+.PostList li {
+  padding: 8px 0;
+}
+/* line 83, ../../app/_scss/_components.scss */
+.PostList .title {
+  font-family: "YuMincho", "Yu Mincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro";
+  color: #333333;
+  text-decoration: none;
+  font-weight: 300;
+  line-height: 1.4;
+}
+/* line 89, ../../app/_scss/_components.scss */
+.PostList .title:hover {
+  text-decoration: underline;
+}
+/* line 91, ../../app/_scss/_components.scss */
+.PostList span {
+  padding: 0 0 0 16px;
+  text-transform: capitalize;
+  color: #999999;
+}
+
+/* line 103, ../../app/_scss/_components.scss */
+.Post .title {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0;
+  padding: 0 0 20px 0;
+  font-family: "YuMincho", "Yu Mincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro";
+  font-weight: 300;
+  line-height: 1.4;
+}
+/* line 110, ../../app/_scss/_components.scss */
+.Post .meta {
+  *zoom: 1;
+  border-style: solid;
+  border-color: #333333;
+  border-width: 0 0 1px 0;
+}
+/* line 19, ../../app/_components/zenigame/src/mixins/_clearfix.scss */
+.Post .meta:before, .Post .meta:after {
+  content: '';
+  display: table;
+}
+/* line 24, ../../app/_components/zenigame/src/mixins/_clearfix.scss */
+.Post .meta:after {
+  clear: both;
+}
+/* line 113, ../../app/_scss/_components.scss */
+.Post .meta li {
+  padding: 0 16px 0 0;
+  float: left;
+  text-transform: capitalize;
+}
+/* line 119, ../../app/_scss/_components.scss */
+.Post .content {
+  font-size: 15px;
+  color: #666666;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0;
+  color: #333333;
+  padding: 32px 0;
+}
+/* line 124, ../../app/_scss/_components.scss */
+.Post .content h2 {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0;
+  padding: 16px 0;
+  font-weight: bold;
+}
+/* line 129, ../../app/_scss/_components.scss */
+.Post .content h3 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0;
+  padding: 16px 0;
+  font-weight: bold;
+}
+/* line 134, ../../app/_scss/_components.scss */
+.Post .content h4 {
+  font-size: 15px;
+  color: #666666;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0;
+  padding: 16px 0;
+}
+/* line 139, ../../app/_scss/_components.scss */
+.Post .content p {
+  clear: both;
+}
+/* line 141, ../../app/_scss/_components.scss */
+.Post .content ul {
+  padding: 8px 0 8px 24px;
+}
+/* line 143, ../../app/_scss/_components.scss */
+.Post .content ul li {
+  list-style: disc;
+}
+/* line 145, ../../app/_scss/_components.scss */
+.Post .content ul li > ul {
+  padding: 8px 0 8px 24px;
+}
+/* line 147, ../../app/_scss/_components.scss */
+.Post .content ul li > ul li {
+  list-style: circle;
+}
+/* line 152, ../../app/_scss/_components.scss */
+.Post .content img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 159, ../../app/_scss/_components.scss */
+.Post._Work {
+  padding: 0 34px;
+}
+/* line 161, ../../app/_scss/_components.scss */
+.Post._Work blockquote {
+  font-size: 13px;
+  color: #999999;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0;
+  margin: 32px 0;
+}
+
+/* line 172, ../../app/_scss/_components.scss */
+.Response {
+  padding: 20px 0;
+}
+/* line 174, ../../app/_scss/_components.scss */
+.Response li {
+  padding: 8px 16px 0 0;
+  float: left;
+}
+
+/* line 180, ../../app/_scss/_components.scss */
+iframe.twitter-count-horizontal {
+  width: 80px !important;
+}
+
+/* line 189, ../../app/_scss/_components.scss */
+.Profile .bio {
+  width: 340px;
+  height: auto;
+  float: left;
+}
+/* line 192, ../../app/_scss/_components.scss */
+.Profile .bio h2 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0;
+  font-family: "YuMincho", "Yu Mincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro";
+  letter-spacing: 0.3em;
+}
+/* line 197, ../../app/_scss/_components.scss */
+.Profile .bio ul {
+  padding: 16px 0;
+}
+/* line 200, ../../app/_scss/_components.scss */
+.Profile .social {
+  width: 150px;
+  height: auto;
+  float: right;
+}
+/* line 203, ../../app/_scss/_components.scss */
+.Profile .social a {
+  margin: 0 8px;
+}
+/* line 204, ../../app/_scss/_components.scss */
+.Profile .social .icon {
+  width: 26px;
+}
+
+@media only screen and (max-device-width: 480px), only screen and (max-device-width: 480px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 9, ../../app/_scss/_cosmetics.scss */
+  .BG {
+    min-width: 100%;
+    height: 300px;
+  }
+  /* line 12, ../../app/_scss/_cosmetics.scss */
+  .BG .ProfileImg {
+    min-height: 300px;
+  }
+  /* line 13, ../../app/_scss/_cosmetics.scss */
+  .BG .data1, .BG .data2, .BG .data3 {
+    display: none;
+  }
+
+  /* line 20, ../../app/_scss/_cosmetics.scss */
+  .Container {
+    width: 100%;
+    height: auto;
+  }
+  /* line 22, ../../app/_scss/_cosmetics.scss */
+  .Container > .inner {
+    width: 92%;
+    height: auto;
+  }
+  /* line 24, ../../app/_scss/_cosmetics.scss */
+  .Container._Content {
+    padding: 20px 0;
+  }
+
+  /* line 31, ../../app/_scss/_cosmetics.scss */
+  .GlobalHeader {
+    width: 100%;
+    height: 48px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #336699;
+  }
+  /* line 35, ../../app/_scss/_cosmetics.scss */
+  .GlobalHeader .title {
+    text-align: center;
+  }
+  /* line 37, ../../app/_scss/_cosmetics.scss */
+  .GlobalHeader .title svg {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+  }
+  /* line 41, ../../app/_scss/_cosmetics.scss */
+  .GlobalHeader .title .ideyuta {
+    fill: #fff;
+  }
+
+  /* line 49, ../../app/_scss/_cosmetics.scss */
+  .GlobalNav {
+    width: 100%;
+    height: 40px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 0 0 1px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  /* line 54, ../../app/_scss/_cosmetics.scss */
+  .GlobalNav .nav {
+    width: 32%;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+  }
+  /* line 58, ../../app/_scss/_cosmetics.scss */
+  .GlobalNav .nav .btn {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  /* line 70, ../../app/_scss/_cosmetics.scss */
+  .PostList a {
+    display: block;
+    padding: 0 0 8px 0;
+  }
+  /* line 73, ../../app/_scss/_cosmetics.scss */
+  .PostList a + span {
+    padding: 0;
+  }
+  /* line 74, ../../app/_scss/_cosmetics.scss */
+  .PostList a img {
+    width: 100%;
+  }
+
+  /* line 83, ../../app/_scss/_cosmetics.scss */
+  .Post._Work {
+    padding: 0;
+  }
+  /* line 85, ../../app/_scss/_cosmetics.scss */
+  .Post._Work img {
+    width: 100%;
+  }
+
+  /* line 93, ../../app/_scss/_cosmetics.scss */
+  .Profile {
+    padding: 0 4%;
+    margin: 210px 0 0 0;
+  }
+  /* line 95, ../../app/_scss/_cosmetics.scss */
+  .Profile .bio {
+    width: 100%;
+    float: none;
+  }
+  /* line 99, ../../app/_scss/_cosmetics.scss */
+  .Profile .social {
+    width: 100%;
+    padding: 20px 0 0 0;
+    float: none;
+  }
 }

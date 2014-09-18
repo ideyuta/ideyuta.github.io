@@ -6,34 +6,60 @@
     <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport"/>
     <link rel="stylesheet" href="/css/base.css"/>
-    <script>
-      <var>ide = {}; // namespace</var>
-    </script>
+    <link rel="stylesheet" href="/css/syntax.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700"/>
+    <script>var ide = {}; // namespace</script>
     <script href="/js/build_base.js"></script>
   </head>
 </html>
 <body>
   <div class="Wrapper">
-    <div class="Container _GlobalHeader">
-      <div class="inner">
-        <div class="titleContainer">
-          <h1 class="title"><a href="/">ideyuta.github.io</a></h1>
-        </div>
-        <div class="GlobalNav">
-          <ul>
-            <li class="nav"><a href="/blog/" class="btn f sm">Blog</a></li>
-            <!-- li.nav: a.btn.f.sm(href="/work/") Work-->
-            <!-- li.nav: a.btn.f.sm(href="/profile/") Profile-->
-          </ul>
-        </div>
-      </div>
+    <div class="GlobalHeader">
+      <h1 class="title"><a href="/">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 259.536 257.545" style="enable-background:new 0 0 259.536 257.545;" xml:space="preserve">
+            <path d="M235.767,100.787c10.89,0,19.806-8.281,19.806-18.397c0-10.116-8.916-18.402-19.806-18.402h-23.384 c-10.879,0-19.805-8.911-19.805-19.811V21.806C192.579,10.91,184.297,2,174.176,2c-10.11,0-18.393,8.91-18.393,19.806v22.372 c0,10.9-8.914,19.812-19.814,19.812h-15.563c-10.9,0-19.816-8.911-19.816-19.812V21.806C100.589,10.91,92.319,2,82.192,2 C72.07,2,63.79,10.91,63.79,21.806v22.372c0,10.9-8.91,19.812-19.811,19.812H22.806C11.915,63.988,3,72.274,3,82.39 c0,10.116,8.915,18.397,19.806,18.397H43.98c10.9,0,19.811,8.916,19.811,19.816v15.564c0,10.9-8.91,19.816-19.811,19.816H22.806 C11.915,155.983,3,164.253,3,174.38c0,10.116,8.915,18.396,19.806,18.396H43.98c10.9,0,19.811,8.916,19.811,19.815v22.175 c0,10.895,8.28,19.805,18.402,19.805c10.127,0,18.396-8.91,18.396-19.805v-22.175c0-10.899,8.916-19.815,19.816-19.815h15.562 c10.9,0,19.816,8.916,19.816,19.815v22.175c0,10.895,8.28,19.805,18.393,19.805c10.121,0,18.4-8.91,18.4-19.805v-22.175 c0-10.899,8.928-19.815,19.807-19.815h23.383c10.891,0,19.806-8.28,19.806-18.396c0-10.127-8.915-18.396-19.806-18.396h-23.383 c-10.879,0-19.807-8.916-19.807-19.815v-15.564c0-10.9,8.928-19.816,19.807-19.816L235.767,100.787L235.767,100.787z M155.784,136.167c0,10.9-8.914,19.816-19.814,19.816h-15.563c-10.9,0-19.816-8.916-19.816-19.816v-15.564 c0-10.9,8.916-19.816,19.816-19.816h15.563c10.9,0,19.814,8.916,19.814,19.816V136.167z" class="ideyuta"></path>
+          </svg></a></h1>
+    </div>
+    <div class="GlobalNav">
+      <ul>
+        <li class="nav"><a href="/blog/" class="btn f sm">BLOG</a></li>
+        <li class="nav"><a href="/work/" class="btn f sm">WORK</a></li>
+        <li class="nav"><a href="/profile/" class="btn f sm">PROFILE</a></li>
+      </ul>
     </div>
     <div class="Container _GlobalFooter">
       <div class="inner">
-        <div class="copyright">
-          <p>© 2014 ideyuta.github.io</p>
-        </div>
       </div>
     </div>
   </div>
 </body>
+<script>
+  !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+    if(!d.getElementById(id)){
+      js=d.createElement(s);
+      js.id=id;
+      js.src=p+'://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  }(document, 'script', 'twitter-wjs');
+  
+</script>
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  
+  
+</script>
+<script src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<script src="https://apis.google.com/js/platform.js" async="async" defer="defer">
+  {lang: 'ja'}
+  
+</script>

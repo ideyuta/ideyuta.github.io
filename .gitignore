@@ -34,5 +34,7 @@ Thumbs.db
 
 # Ignore for Yeoman-Jekyll projects #
 app/_bower_components
+app/_layouts
 node_modules
 .tmp
+dist

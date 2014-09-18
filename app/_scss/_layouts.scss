@@ -4,8 +4,22 @@
 //-------------------------------
 
 .Wrapper {
+  @include size(100%, auto);
+  position: absolute;
+  z-index: 1;
+}
+
+//-------------------------------
+// Back Ground
+//-------------------------------
+
+.BG {
   @include size(100%);
-  background: $white;
+  min-width: 1024px;
+  height: 600px;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
 }
 
 //-------------------------------
@@ -14,30 +28,35 @@
 
 .Container {
   @include clearfix;
-  @include size(100%, auto);
-  overflow: hidden;
+  @include size($default-view-width, auto);
+  margin: 0 auto;
 
   > .inner {
     @include clearfix;
-    @include space(0 56px, 0 auto); 
+    @include size(768px, auto);
+    margin: 0 auto;
     position: relative;
   }
 
-  &._GlobalHeader {
-    height: 120px;
-    a { text-decoration: none; }
-  }
-
   &._Content {
-    height: auto;
+    padding: 100px 0;
     a { text-decoration: none; }
   }
 
   &._GlobalFooter {
-    height: 120px;
+    height: 40px;
     padding: 40px 0;
     a { text-decoration: none; }
   }
+}
+
+//-------------------------------
+// GlobalHeader
+//-------------------------------
+
+.GlobalHeader {
+  @include size(40px);
+  @include pos(fixed, 20px, 20px);
 }
 
 //-------------------------------
@@ -45,8 +64,15 @@
 //-------------------------------
 
 .GlobalNav {
-  @include size(auto, 32px);
-  padding: 44px 0;
-  float: right;
+  @include size(auto);
+  @include pos(fixed, 200px, -100px);
+  transform: rotate(90deg);
 }
 
+//-------------------------------
+// Profile
+//-------------------------------
+
+.Profile {
+  @include space(0 36px, 600px 0 0 0);
+}

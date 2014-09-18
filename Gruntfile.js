@@ -323,7 +323,7 @@ module.exports = function (grunt) {
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
+            // '!**/_*{,/**}'
             // Explicitly add any files your site needs for distribution here.
             //'_bower_components/jquery/jquery.js',
             //'favicon.ico',
@@ -341,8 +341,19 @@ module.exports = function (grunt) {
           src: '**/*.css',
           dest: '.tmp/css'
         }]
+      },
+      server: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>',
+          src: [
+            'img/**/*',
+          ],
+          dest: '.tmp'
+        }]
       }
-    },
+     },
     filerev: {
       options: {
         length: 4
@@ -405,6 +416,7 @@ module.exports = function (grunt) {
         'coffee:server',
         'concat:server',
         'copy:stageCss',
+        'copy:server',
         'jekyll:server'
       ],
       dist: [
@@ -430,6 +442,7 @@ module.exports = function (grunt) {
       'concat:server',
       'concurrent:server',
       'autoprefixer:server',
+      'copy:server',
       'connect:livereload',
       'watch'
     ]);
@@ -471,8 +484,9 @@ module.exports = function (grunt) {
     'autoprefixer:dist',
     // 'cssmin',
     // 'uglify',
-    // 'imagemin',
-    // 'svgmin',
+    'imagemin:dist',
+    'svgmin:dist',
+    'copy:dist',
     // 'filerev',
     // 'usemin',
     // 'htmlmin'
