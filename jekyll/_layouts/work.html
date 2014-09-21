@@ -30,12 +30,22 @@
     </div>
     <div class="Container _Content">
       <div class="inner">
-        <div class="PostList"><ul>
-<li><a class="title" href="/blog/2014/09/21/started.html">サイトを作りなおしました。</a>
-<span>2014. 09. 21</span>
-<span>dev</span> </li>
-</ul>
-</div>
+        <div class="Post _Work">
+          <h2 class="title">{{ page.title }}</h2>
+          <div class="content">{{ content }}</div>
+        </div>
+        <div class="Response">
+          <ul>
+            <li><a href="{{ page.url }}" data-text="{{ page.title }}" data-via="_ideyuta" class="twitter-share-button"></a></li>
+            <li>
+              <div data-href="{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" class="fb-like"></div>
+            </li>
+            <li><a href="http://b.hatena.ne.jp/entry/" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加" class="hatena-bookmark-button"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20"/></a></li>
+            <li>
+              <div data-size="medium" class="g-plusone"></div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="Container _GlobalFooter">
