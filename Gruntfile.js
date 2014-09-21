@@ -266,6 +266,7 @@ module.exports = function (grunt) {
           cwd: '<%= dir.src %>',
           src: [
             'img/**/*',
+            'CNAME'
           ],
           dest: '<%= dir.dist %>'
         }]
