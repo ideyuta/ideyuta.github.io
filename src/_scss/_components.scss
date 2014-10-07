@@ -133,14 +133,12 @@
       font-weight: 700;
     }
     h4 {
-      @include typo_body2;
-      padding: 8px 0;
+      @include typo_subtitle;
+      padding: 16px 0 8px 0;
       color: $light-black;
       font-weight: 700;
     }
-
     p { clear: both; }
-  
     ul {
       padding: 8px 0 8px 24px;
       li {
@@ -151,10 +149,13 @@
         }
       }
     }
-
     img {
+      @include space(16px 0, 0 auto);
       display: block;
-      margin: 0 auto;
+    }
+    blockquote {
+      @include typo($default-font-size, $gray, 300);
+      padding: 32px;
     }
   }
 
@@ -177,6 +178,10 @@
   li {
     padding: 8px 16px 0 0;
     float: left;
+    &.g-plus {
+      width: 60px;
+      overflow: hidden;
+    }
   }
 }
 

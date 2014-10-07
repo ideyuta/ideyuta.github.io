@@ -2,6 +2,7 @@
 layout: post
 title: "Djangoのinclude機能を利用したときに謎の空テキストが表示される現象の原因と対策"
 categories: Dev
+discription: "Djangoのinclude機能を使ったときに謎の空テキストが表示される現象が起こったのでその原因と対処方法をまとめておきます。"
 ---
 
 Djangoのinclude機能を使ったときに謎の空テキストが表示される現象が起こったのでその原因と対処方法をまとめておきます。

@@ -1425,45 +1425,55 @@ a:active {
 }
 /* line 135, ../../src/_scss/_components.scss */
 .Post .content h4 {
-  font-size: 15px;
+  font-size: 17px;
   color: #666666;
   font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0;
-  padding: 8px 0;
+  padding: 16px 0 8px 0;
   color: #333333;
   font-weight: 700;
 }
-/* line 142, ../../src/_scss/_components.scss */
+/* line 141, ../../src/_scss/_components.scss */
 .Post .content p {
   clear: both;
 }
-/* line 144, ../../src/_scss/_components.scss */
+/* line 142, ../../src/_scss/_components.scss */
 .Post .content ul {
   padding: 8px 0 8px 24px;
 }
-/* line 146, ../../src/_scss/_components.scss */
+/* line 144, ../../src/_scss/_components.scss */
 .Post .content ul li {
   list-style: disc;
 }
-/* line 148, ../../src/_scss/_components.scss */
+/* line 146, ../../src/_scss/_components.scss */
 .Post .content ul li > ul {
   padding: 8px 0 8px 24px;
 }
-/* line 150, ../../src/_scss/_components.scss */
+/* line 148, ../../src/_scss/_components.scss */
 .Post .content ul li > ul li {
   list-style: circle;
 }
-/* line 155, ../../src/_scss/_components.scss */
+/* line 152, ../../src/_scss/_components.scss */
 .Post .content img {
-  display: block;
+  padding: 16px 0;
   margin: 0 auto;
+  display: block;
 }
-/* line 162, ../../src/_scss/_components.scss */
+/* line 156, ../../src/_scss/_components.scss */
+.Post .content blockquote {
+  font-size: 13px;
+  color: #999999;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0;
+  padding: 32px;
+}
+/* line 163, ../../src/_scss/_components.scss */
 .Post._Work {
   padding: 0 34px;
 }
-/* line 164, ../../src/_scss/_components.scss */
+/* line 165, ../../src/_scss/_components.scss */
 .Post._Work blockquote {
   font-size: 13px;
   color: #999999;
@@ -1473,28 +1483,33 @@ a:active {
   margin: 32px 0;
 }
 
-/* line 175, ../../src/_scss/_components.scss */
+/* line 176, ../../src/_scss/_components.scss */
 .Response {
   padding: 20px 0;
 }
-/* line 177, ../../src/_scss/_components.scss */
+/* line 178, ../../src/_scss/_components.scss */
 .Response li {
   padding: 8px 16px 0 0;
   float: left;
 }
+/* line 181, ../../src/_scss/_components.scss */
+.Response li.g-plus {
+  width: 60px;
+  overflow: hidden;
+}
 
-/* line 183, ../../src/_scss/_components.scss */
+/* line 188, ../../src/_scss/_components.scss */
 iframe.twitter-count-horizontal {
   width: 80px !important;
 }
 
-/* line 192, ../../src/_scss/_components.scss */
+/* line 197, ../../src/_scss/_components.scss */
 .Profile .bio {
   width: 340px;
   height: auto;
   float: left;
 }
-/* line 195, ../../src/_scss/_components.scss */
+/* line 200, ../../src/_scss/_components.scss */
 .Profile .bio h2 {
   font-size: 20px;
   color: #333333;
@@ -1504,21 +1519,21 @@ iframe.twitter-count-horizontal {
   font-family: "YuMincho", "Yu Mincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro";
   letter-spacing: 0.3em;
 }
-/* line 200, ../../src/_scss/_components.scss */
+/* line 205, ../../src/_scss/_components.scss */
 .Profile .bio ul {
   padding: 16px 0;
 }
-/* line 203, ../../src/_scss/_components.scss */
+/* line 208, ../../src/_scss/_components.scss */
 .Profile .social {
   width: 150px;
   height: auto;
   float: right;
 }
-/* line 206, ../../src/_scss/_components.scss */
+/* line 211, ../../src/_scss/_components.scss */
 .Profile .social a {
   margin: 0 8px;
 }
-/* line 207, ../../src/_scss/_components.scss */
+/* line 212, ../../src/_scss/_components.scss */
 .Profile .social .icon {
   width: 26px;
 }
@@ -1621,22 +1636,30 @@ iframe.twitter-count-horizontal {
   .Post img {
     width: 100%;
   }
-  /* line 84, ../../src/_scss/_cosmetics.scss */
+  /* line 85, ../../src/_scss/_cosmetics.scss */
+  .Post .content blockquote {
+    padding: 16px 8px;
+  }
+  /* line 87, ../../src/_scss/_cosmetics.scss */
   .Post._Work {
     padding: 0;
   }
+  /* line 88, ../../src/_scss/_cosmetics.scss */
+  .Post .mobileHidden {
+    display: none;
+  }
 
-  /* line 91, ../../src/_scss/_cosmetics.scss */
+  /* line 95, ../../src/_scss/_cosmetics.scss */
   .Profile {
     padding: 0 4%;
     margin: 210px 0 0 0;
   }
-  /* line 93, ../../src/_scss/_cosmetics.scss */
+  /* line 97, ../../src/_scss/_cosmetics.scss */
   .Profile .bio {
     width: 100%;
     float: none;
   }
-  /* line 97, ../../src/_scss/_cosmetics.scss */
+  /* line 101, ../../src/_scss/_cosmetics.scss */
   .Profile .social {
     width: 100%;
     padding: 20px 0 0 0;

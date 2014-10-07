@@ -81,7 +81,11 @@
 
   .Post {
     img { width: 100%; }
+    .content {
+      blockquote { padding: 16px 8px; } 
+    }
     &._Work { padding: 0; }
+    .mobileHidden { display: none; }
   }
   
   //-------------------------------
