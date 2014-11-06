@@ -156,102 +156,102 @@ Styleguide 2.0.1
 
 /* line 26, ../../src/_components/zenigame/src/styles/_colors.scss */
 .extra-light-blue {
-  background: #c7d3e6;
+  background: #ebf5fa;
 }
 
 /* line 27, ../../src/_components/zenigame/src/styles/_colors.scss */
 .light-blue {
-  background: #437cd2;
+  background: #74badc;
 }
 
 /* line 28, ../../src/_components/zenigame/src/styles/_colors.scss */
 .blue {
-  background: #075bd8;
+  background: #3399cc;
 }
 
 /* line 29, ../../src/_components/zenigame/src/styles/_colors.scss */
 .dark-blue {
-  background: #033886;
+  background: #23688b;
 }
 
 /* line 30, ../../src/_components/zenigame/src/styles/_colors.scss */
 .extra-dark-blue {
-  background: #011c45;
+  background: #050f14;
 }
 
 /* line 32, ../../src/_components/zenigame/src/styles/_colors.scss */
 .extra-light-red {
-  background: #ffe1d9;
+  background: white;
 }
 
 /* line 33, ../../src/_components/zenigame/src/styles/_colors.scss */
 .light-red {
-  background: #ff6440;
+  background: #ff8585;
 }
 
 /* line 34, ../../src/_components/zenigame/src/styles/_colors.scss */
 .red {
-  background: #ff3d10;
+  background: #ff3333;
 }
 
 /* line 35, ../../src/_components/zenigame/src/styles/_colors.scss */
 .dark-red {
-  background: #cb2700;
+  background: #e00000;
 }
 
 /* line 36, ../../src/_components/zenigame/src/styles/_colors.scss */
 .extra-dark-red {
-  background: #691400;
+  background: #4d0000;
 }
 
 /* line 38, ../../src/_components/zenigame/src/styles/_colors.scss */
 .extra-light-green {
-  background: #c8ead6;
+  background: #ebfaf0;
 }
 
 /* line 39, ../../src/_components/zenigame/src/styles/_colors.scss */
 .light-green {
-  background: #36da79;
+  background: #74dc97;
 }
 
 /* line 40, ../../src/_components/zenigame/src/styles/_colors.scss */
 .green {
-  background: #0dd15c;
+  background: #33cc66;
 }
 
 /* line 41, ../../src/_components/zenigame/src/styles/_colors.scss */
 .dark-green {
-  background: #00923b;
+  background: #238b45;
 }
 
 /* line 42, ../../src/_components/zenigame/src/styles/_colors.scss */
 .extra-dark-green {
-  background: #004b1f;
+  background: #05140a;
 }
 
 /* line 44, ../../src/_components/zenigame/src/styles/_colors.scss */
 .extra-light-yellow {
-  background: #fff1d9;
+  background: #fffae5;
 }
 
 /* line 45, ../../src/_components/zenigame/src/styles/_colors.scss */
 .light-yellow {
-  background: #ffb840;
+  background: #ffdc52;
 }
 
 /* line 46, ../../src/_components/zenigame/src/styles/_colors.scss */
 .yellow {
-  background: #ffa100;
+  background: #ffcc00;
 }
 
 /* line 47, ../../src/_components/zenigame/src/styles/_colors.scss */
 .dark-yellow {
-  background: #cb8000;
+  background: #ad8b00;
 }
 
 /* line 48, ../../src/_components/zenigame/src/styles/_colors.scss */
 .extra-dark-yellow {
-  background: #694200;
+  background: #1a1400;
 }
 
 /*
@@ -398,74 +398,74 @@ Styleguide 2.2.1
 
 /* line 22, ../../src/_components/zenigame/src/styles/_buttons.scss */
 .btn.r.extra {
-  background: #075bd8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#075bd8), to(#0757ce));
-  border-color: #064ab0;
+  background: #3399cc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3399cc), to(#3193c4));
+  border-color: #2b81ab;
   color: white;
 }
 @media only screen and (min-device-width: 1024px) {
   /* line 47, ../../src/_components/zenigame/src/mixins/_button.scss */
   .btn.r.extra:hover {
-    background: #0653c4;
+    background: #2f8dbc;
   }
 }
 /* line 38, ../../src/_components/zenigame/src/mixins/_button.scss */
 .btn.r.extra:active {
-  background: #064fba;
+  background: #2d87b4;
 }
 
 /* line 23, ../../src/_components/zenigame/src/styles/_buttons.scss */
 .btn.r.entry {
-  background: #0dd15c;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0dd15c), to(#0cc758));
-  border-color: #0bab4b;
+  background: #33cc66;
+  background: -webkit-gradient(linear, left top, left bottom, from(#33cc66), to(#31c462));
+  border-color: #2bab56;
   color: white;
 }
 @media only screen and (min-device-width: 1024px) {
   /* line 47, ../../src/_components/zenigame/src/mixins/_button.scss */
   .btn.r.entry:hover {
-    background: #0cbe54;
+    background: #2fbc5e;
   }
 }
 /* line 38, ../../src/_components/zenigame/src/mixins/_button.scss */
 .btn.r.entry:active {
-  background: #0bb44f;
+  background: #2db45a;
 }
 
 /* line 24, ../../src/_components/zenigame/src/styles/_buttons.scss */
 .btn.r.caution {
-  background: #ffa100;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffa100), to(#f59b00));
-  border-color: #d68700;
+  background: #ffcc00;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffcc00), to(#f5c400));
+  border-color: #d6ab00;
   color: white;
 }
 @media only screen and (min-device-width: 1024px) {
   /* line 47, ../../src/_components/zenigame/src/mixins/_button.scss */
   .btn.r.caution:hover {
-    background: #eb9400;
+    background: #ebbc00;
   }
 }
 /* line 38, ../../src/_components/zenigame/src/mixins/_button.scss */
 .btn.r.caution:active {
-  background: #e08e00;
+  background: #e0b400;
 }
 
 /* line 25, ../../src/_components/zenigame/src/styles/_buttons.scss */
 .btn.r.danger {
-  background: #ff3d10;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff3d10), to(#ff3506));
-  border-color: #e62b00;
+  background: #ff3333;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff3333), to(#ff2929));
+  border-color: #ff0a0a;
   color: white;
 }
 @media only screen and (min-device-width: 1024px) {
   /* line 47, ../../src/_components/zenigame/src/mixins/_button.scss */
   .btn.r.danger:hover {
-    background: #fb2f00;
+    background: #ff1f1f;
   }
 }
 /* line 38, ../../src/_components/zenigame/src/mixins/_button.scss */
 .btn.r.danger:active {
-  background: #f02d00;
+  background: #ff1414;
 }
 
 /*
@@ -521,22 +521,22 @@ Styleguide 2.2.2
 
 /* line 51, ../../src/_components/zenigame/src/styles/_buttons.scss */
 .btn.f.extra {
-  color: #075bd8;
+  color: #3399cc;
 }
 
 /* line 52, ../../src/_components/zenigame/src/styles/_buttons.scss */
 .btn.f.entry {
-  color: #0dd15c;
+  color: #33cc66;
 }
 
 /* line 53, ../../src/_components/zenigame/src/styles/_buttons.scss */
 .btn.f.caution {
-  color: #ffa100;
+  color: #ffcc00;
 }
 
 /* line 54, ../../src/_components/zenigame/src/styles/_buttons.scss */
 .btn.f.danger {
-  color: #ff3d10;
+  color: #ff3333;
 }
 
 /*
@@ -817,7 +817,7 @@ Styleguide 2.0
 
 /* line 18, ../../src/_components/zenigame/src/styles/_utility.scss */
 body {
-  font-family: "YuGothic", "Yu Gothic", Helvetica Neue, Helvetica, MS Sans Serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Yu Gothic", "ＭＳＰ ゴシック", Arial, sans-serif;
+  font-family: "YuGothic", "Yu Gothic", Helvetica Neue, Helvetica, MS Sans Serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳＰ ゴシック", Arial, sans-serif;
 }
 
 /* line 23, ../../src/_components/zenigame/src/styles/_utility.scss */
@@ -1009,7 +1009,7 @@ body {
 }
 /* line 101, ../../src/_components/zenigame/src/styles/_common.scss */
 .dropdown-menu a:hover {
-  color: #075bd8;
+  color: #3399cc;
 }
 
 /* line 110, ../../src/_components/zenigame/src/styles/_common.scss */
@@ -1077,7 +1077,7 @@ body {
 .toggleswitch .inner:before {
   content: "ON";
   padding-left: 10px;
-  background-color: #0dd15c;
+  background-color: #33cc66;
   color: white;
 }
 /* line 161, ../../src/_components/zenigame/src/styles/_common.scss */
@@ -1135,24 +1135,24 @@ html, body {
   letter-spacing: 0;
   text-transform: none;
   -webkit-text-size-adjust: 100%;
-  font-family: "Noto Sans", "YuGothic", "Yu Gothic", Helvetica Neue, Helvetica, MS Sans Serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Yu Gothic", "ＭＳＰ ゴシック", Arial, sans-serif;
+  font-family: "Noto Sans", "YuGothic", "Yu Gothic", Helvetica Neue, Helvetica, MS Sans Serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳＰ ゴシック", Arial, sans-serif;
 }
 
 /* line 36, ../../src/_scss/base.scss */
 a:link {
-  color: #075bd8;
+  color: #3399cc;
 }
 /* line 37, ../../src/_scss/base.scss */
 a:visited {
-  color: #075bd8;
+  color: #3399cc;
 }
 /* line 38, ../../src/_scss/base.scss */
 a:hover {
-  color: #033886;
+  color: #23688b;
 }
 /* line 39, ../../src/_scss/base.scss */
 a:active {
-  color: #033886;
+  color: #23688b;
 }
 
 /* line 42, ../../src/_scss/base.scss */
