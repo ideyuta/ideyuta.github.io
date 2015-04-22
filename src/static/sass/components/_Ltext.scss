@@ -1,0 +1,56 @@
+.Ltext {
+  &.L1 {
+    .title {
+      @include typo(48px, $light-black, 300, 1.6);
+      display: block;
+      letter-spacing: .04em;
+      max-width: 960px;
+      padding: 40px 16px;
+    }
+    .description {
+      @include typo(16px, $gray, 100, 1.7);
+      max-width: 720px;
+      letter-spacing: .04em;
+      padding: 0 16px;
+    }
+    .data {
+      @include pos(absolute, null, 0, 0);
+      padding: 8px 16px;
+      background: $white;
+      span {
+        @include typo($default-font-size - 1px, $gray, 100, 1.4);
+        padding: 0 8px 0 0;
+        text-transform: capitalize;
+      }
+    }
+  }
+  
+  &.L2,
+  &.L3,
+  &.L4,
+  &.L5,
+  &.L6 {
+    .title {
+      @include typo(24px, $light-black, 300, 1.6);
+      display: block;
+      letter-spacing: .04em;
+      padding: 24px 16px;
+    }
+    .description {
+      @include typo(14px, $gray, 100, 1.7);
+      letter-spacing: .04em;
+      padding: 0 16px;
+    }
+    .data {
+      @include pos(absolute, null, 0, 0);
+      padding: 8px 16px;
+      background: $white;
+      span {
+        @include typo($default-font-size - 1px, $gray, 100, 1.4);
+        padding: 0 8px 0 0;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+}

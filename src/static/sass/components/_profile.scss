@@ -1,0 +1,17 @@
+.Profile {
+  width: 600px;
+  .bio {
+    @include size(340px, auto);
+    padding: 24px 0;
+    .name {
+      @include typo(24px, $black, 500, 1);
+      letter-spacing: 0.3em;
+    }
+    ul { padding: 16px 0; }
+  }
+
+  .social {
+    @include size(150px, auto);
+    .icon { width: 26px; }
+  }
+}

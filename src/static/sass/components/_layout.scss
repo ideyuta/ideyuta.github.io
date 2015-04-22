@@ -1,0 +1,47 @@
+.L1 {
+  @include clearfix;
+  @include size(100%, 481px);
+  @include border(1px 0, solid, $extra-light-gray);
+  clear: both;
+  padding: 24px 0;
+  overflow: hidden;
+  > .inner {
+    position: relative;
+  }
+}
+
+.L2,
+.L3 {
+  @include border(0 1px 0 0, solid, $extra-light-gray);
+}
+
+.L2,
+.L3,
+.L4 {
+  @include size(30%, 360px);
+  float: left;
+  margin: 24px 0;
+  padding: 0 1.5%;
+  overflow: hidden;
+  > .inner {
+    position: relative;
+  }
+}
+
+.L5 {
+  @include border(0 1px 0 0, solid, $extra-light-gray);
+  padding: 0 1.5% 0 0;
+}
+.L6 {
+  padding: 0 0 0 1.5%;
+}
+.L5,
+.L6 {
+  @include size(48%, 300px);
+  float: left;
+  margin: 24px 0;
+  overflow: hidden;
+  > .inner {
+    position: relative;
+  }
+}

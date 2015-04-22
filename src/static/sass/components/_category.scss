@@ -1,0 +1,17 @@
+.Categories {
+  &._Side {
+    @include clearfix;
+    @include border(1px, solid, darken($extra-light-gray, 4%), $default-radius);
+    padding: 8px 16px;
+    background: $white; 
+  }
+  .title {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 0 8px 0;
+  }
+  .category {
+    padding: 0 8px 0 0;
+    float: left;
+  }
+}

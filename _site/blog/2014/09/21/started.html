@@ -1,0 +1,368 @@
+
+<html>
+  <head>
+    <meta charset="utf=8"/>
+    <meta content="ideyuta" name="author"/>
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <meta content="website" property="og:type"/>
+    <meta content="ideyuta.com#BLOG | Jekyll+Gruntでサイト作りなおした" property="og:title"/>
+    <meta content="http://ideyuta.com/blog/2014/09/21/started.html" property="og:url"/>
+    <meta content="" property="og:image"/>
+    <meta content="" property="og:description"/>
+    <title>Jekyll+Gruntでサイト作りなおした</title>
+    <link rel="stylesheet" href="/css/base.css"/>
+    <link rel="stylesheet" href="/css/syntax.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata"/>
+    <link href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" type="text/css"/>
+    <script>var ide = {}; // namespace</script>
+    <script src="/js/base.js"></script>
+  </head>
+  <body>
+    <div class="Wrapper">
+      <div class="GlobalHeader">
+        <h1 class="Title"><a href="/">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 259.536 257.545" style="enable-background:new 0 0 259.536 257.545;" xml:space="preserve">
+              <path d="M235.767,100.787c10.89,0,19.806-8.281,19.806-18.397c0-10.116-8.916-18.402-19.806-18.402h-23.384 c-10.879,0-19.805-8.911-19.805-19.811V21.806C192.579,10.91,184.297,2,174.176,2c-10.11,0-18.393,8.91-18.393,19.806v22.372 c0,10.9-8.914,19.812-19.814,19.812h-15.563c-10.9,0-19.816-8.911-19.816-19.812V21.806C100.589,10.91,92.319,2,82.192,2 C72.07,2,63.79,10.91,63.79,21.806v22.372c0,10.9-8.91,19.812-19.811,19.812H22.806C11.915,63.988,3,72.274,3,82.39 c0,10.116,8.915,18.397,19.806,18.397H43.98c10.9,0,19.811,8.916,19.811,19.816v15.564c0,10.9-8.91,19.816-19.811,19.816H22.806 C11.915,155.983,3,164.253,3,174.38c0,10.116,8.915,18.396,19.806,18.396H43.98c10.9,0,19.811,8.916,19.811,19.815v22.175 c0,10.895,8.28,19.805,18.402,19.805c10.127,0,18.396-8.91,18.396-19.805v-22.175c0-10.899,8.916-19.815,19.816-19.815h15.562 c10.9,0,19.816,8.916,19.816,19.815v22.175c0,10.895,8.28,19.805,18.393,19.805c10.121,0,18.4-8.91,18.4-19.805v-22.175 c0-10.899,8.928-19.815,19.807-19.815h23.383c10.891,0,19.806-8.28,19.806-18.396c0-10.127-8.915-18.396-19.806-18.396h-23.383 c-10.879,0-19.807-8.916-19.807-19.815v-15.564c0-10.9,8.928-19.816,19.807-19.816L235.767,100.787L235.767,100.787z M155.784,136.167c0,10.9-8.914,19.816-19.814,19.816h-15.563c-10.9,0-19.816-8.916-19.816-19.816v-15.564 c0-10.9,8.916-19.816,19.816-19.816h15.563c10.9,0,19.814,8.916,19.814,19.816V136.167z" class="ideyuta"></path>
+            </svg></a></h1>
+      </div>
+      <div class="Container _Content">
+        <div class="inner">
+          <div class="Main">
+            <div class="Pagination ">
+              
+              <div class="paginate _next">
+                <div class="title"><a href="/blog/2014/10/01/bomproblem.html" title="Djangoのinclude機能を利用したときに謎の空テキストが表示される現象の原因と対策">Djangoのinclude機能を利用したときに謎の空テキストが表示される現象の原因と対策</a></div>
+                <div class="arrow"><span>&raquo;</span></div>
+              </div>
+            </div>
+            <div class="Post">
+              <div class="Meta">
+                <h2 class="title">Jekyll+Gruntでサイト作りなおした</h2>
+                <div class="data">
+                  <ul>
+                    <li>2014. 09. 21</li>
+                    <li><a href="/blog/dev/">dev</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content"><p>更新が面倒すぎるこれまでのサイトをどうにかしたいという気持ちと、ちょっとこの1年ほどインハウスにこもっていたのでそろそろ外に向かって何かしないといけないなという気持ちが高まったところで、ここ半年ほどで学んだいろいろを活用してサイトを作り直しました。</p>
+
+<p>まずは技術編ということで、このサイトの開発構成あたりをざっと並べておきます。</p>
+
+<h2>やりたいこと</h2>
+
+<p>やりたいことを簡単にまとめると、拡張しやすいサイトかつ更新が楽であること。もう少し開発要件に落とすと次のようになりました。</p>
+
+<ul>
+<li>GitHubで管理</li>
+<li>Markdownでブログ</li>
+<li>Jade+CoffeeScript+Sassで開発</li>
+<li>Vimだけで完結</li>
+</ul>
+
+<h3>GitHubで管理</h3>
+
+<p>なぜGitHubで管理したいかというと、まあバージョン管理できるしCLIで全部終えられるしサーバー無料だしといろいろあります。今回はGitHub.ioにサイトを作り直すことにしました。</p>
+
+<h3>Markdownでブログ</h3>
+
+<p>MarkdownやreSTのような構造的な文書をローカルで書いて、そいつをそのままブログに転用したい。そこで登場するのが<a href="http://jekyllrb.com/">Jekyll</a>先生ですね。github.ioはJakyllに対応していて簡単に使えるんですが、今回の場合は静的ページ+Jekyllでブログという形だったので、Gruntで静的ページを生成すると同時に<a href="https://www.npmjs.org/package/grunt-jekyll">grunt-jekyll</a>でコンパイルするようにしました。</p>
+
+<h4>参考</h4>
+
+<ul>
+<li><a href="https://help.github.com/articles/using-jekyll-with-pages">Using Jekyll with Pages</a></li>
+</ul>
+
+<h3>Jade+CoffeeScript+Sassで開発</h3>
+
+<p>これらはそれぞれHTML、JS、CSSのメタ言語で、一度手を出してしまうと戻れなくなる劇薬です。開発を楽にしようとするのであればこの辺りはマストですね。簡単にそれぞれを説明しておきます。</p>
+
+<h4>Jade</h4>
+
+<p>Jadeは、HTMLを簡単に書けるJavaScriptのテンプレートエンジンです。テンプレートエンジンなので、ブロックや変数など簡単な処理も書けますし、HTMLのコンポーネント化もできてしまいます。
+なぜHamlじゃなくてJadeなのかと言われる方もおられるかと思います。まあ直裁にいうと、HamlよりもJadeのほうがぱっと見たときに直感的にわかりやすい感じがしたからです。（まずあの%が...）</p>
+
+<h4>参考</h4>
+
+<ul>
+<li><a href="http://jade-lang.com/">Jade - Template Engine</a></li>
+<li><a href="https://gist.github.com/japboy/5402844">Jade について。 - Gists - GitHub</a></li>
+</ul>
+
+<h4>CoffeeScript</h4>
+
+<p>CoffeeScriptは、JavaScriptにコンパイルできるプログラミング言語です。JSよりも簡潔に書けるので慣れると戻れません。最近<a href="https://kanmu.co.jp">弊社</a>ではTypeScriptに変えようかという話もでてきていますがとりあえず慣れているCoffeeScriptにしました。現状サイト内で使ってるとこはありませんがそのうちトップページとかでごにょごにょやりたい...</p>
+
+<h4>参考</h4>
+
+<ul>
+<li><a href="http://coffeescript.org/">CoffeeScript</a></li>
+<li><a href="http://qiita.com/questbeat/items/031a0106749b8ba15aca">CoffeeScript入門メモ</a></li>
+<li><a href="http://dev.classmethod.jp/client-side/javascript/review-coffeesctipt-and-typescript/">CoffeeScript と TypeScript をそれぞれ実務案件で使ってみた感想</a></li>
+</ul>
+
+<h4>Sass</h4>
+
+<p>SassはCSSのメタ言語です。だいたい皆さんすでにSassかLess、Stylusあたりに移行し終えていると思いますが、正直この辺りはプロジェクトに合わせて選べば良いかなと。個人的な採用理由としては、自社内でSassを使ったフレームワークを内製していて、それを使うのが最も開発効率が良いというのが理由です。はい。そのうちこのあたりは公開できればと。</p>
+
+<h4>参考</h4>
+
+<ul>
+<li><a href="http://sass-lang.com/">Sass</a></li>
+</ul>
+
+<h3>Grunt</h3>
+
+<p>いきなりでてきましたGruntですが軽く挟んでおきます。Gruntはいろいろな面倒な作業を自動化してくれるビルドツールなんですが、今回使っているJade、CoffeeScript、Sass、JekyllはすべてこのGruntさんが自動的にビルドして、必要なファイル群を生成してくれるようになっています。弊社のハイパーフルスタックおじさんである<a href="https://twitter.com/moqada">@moqada</a>さんが「Gulpいいんやで〜」と言っていたのでそのうち変わるかもしれません。</p>
+
+<h4>参考</h4>
+
+<ul>
+<li><a href="http://gruntjs.com/">Grunt</a></li>
+<li><a href="http://gulpjs.com/">Gulp</a></li>
+</ul>
+
+<h3>Vimだけで完結</h3>
+
+<p>これ開発効率に与える影響大きいと思っていて、複数のツールを使わなくて済むというだけで気分的にもスピード感あがるなと。まあ実際のところMarkdownで文書書く部分はKobitoを使っていたりするんですが、それでもFTPツールとかFinderとかエディタを行き来する必要がないだけでも圧倒的に楽です。
+昨年(2013）末あたりにVimを使い始めて、完全に移行するまでに2週間ぐらい掛かりましたが、<a href="https://gist.github.com/voluntas/6831251">時雨道場さん</a>のスパルタキーマップを弊社エンジニアに埋め込まれつつ頑張った結果得られてものは大きいです。</p>
+
+<h2>準備</h2>
+
+<p>以上を詰め合わせてサイトを作る方法を書いていきます。</p>
+
+<h3>GitHubで新しいリポジトリを作成しローカルにクローンする</h3>
+
+<p>まずは<a href="https://github.com/new">GitHub</a>で新しいリポジトリを作成します。
+今回はGitHub.ioを利用するので、username.github.ioというリポジトリを作りました。
+<img src="/img/blog/2014-09-21-started/create-repository.jpg" alt=""></p>
+
+<p>作成したら、そいつをローカルにCloneしてきます。</p>
+<div class="highlight"><pre><code class="vim language-vim" data-lang="vim">$ git clone git@github.<span class="k">com</span>:ideyuta/ideyuta.github.io.git
+</code></pre></div>
+<h3>JekyllとGruntをインストール</h3>
+
+<p>今回のサイトを作成するにはJekyllとGruntが必要です。そこで、基本的なGrunt設定等を簡単にインストールできるYeomanを使って、それらをインストールしていきます。ここでは、shoitoさんの<a href="http://qiita.com/shoito/items/5dad6e715d4e4d49e752">静的ページをJekyllとGrunt/Yeomanで作る</a>を参考に進めます。</p>
+
+<h4>必要なファイルをインストール</h4>
+
+<p>これから行う開発にはRuby1.9+が必要になります。<a href="http://qiita.com/checkpoint/items/f8e65380d9cb0182218d">このあたり</a>を参考にRubyをインストールしてください。Rubyをインストールし終えたら、以下のファイルをインストールします。</p>
+
+<ul>
+<li>Bundler : Gemのパッケージ管理ツール</li>
+<li>Grunt-cli : Gruntを実行するためのCLI</li>
+<li>Yo : Yeomanのプロジェクトひな形生成ツールYo</li>
+<li>generator-jekyllrb : Yoで作成するひな形をJekyll対応にしてくるジェネレータ</li>
+</ul>
+<div class="highlight"><pre><code class="vim language-vim" data-lang="vim">$ gem install bundler
+$ npm install <span class="p">-</span><span class="k">g</span> grunt<span class="p">-</span>cli
+$ npm install <span class="p">-</span><span class="k">g</span> yo
+$ npm install <span class="p">-</span><span class="k">g</span> generator<span class="p">-</span>jekyllrb
+</code></pre></div>
+<h4>Yoでひな形を作成</h4>
+
+<p>先ほどインストールしたYoを使ってサイトのひな形を生成します。</p>
+<div class="highlight"><pre><code class="vim language-vim" data-lang="vim">$ yo jekyllrb
+</code></pre></div>
+<p>以下のようなファイル群が作成されるはずです。</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.
+|-- Gemfile
+|-- Gemfile.lock
+|-- Gruntfile.js
+|-- _config.build.yml
+|-- _config.yml
+|-- app
+|   |-- _bower_components
+|   |-- _includes
+|   |-- _layouts
+|   |-- _plugins
+|   |-- _posts
+|   |-- _scss
+|   |-- _src
+|   |-- css
+|   |-- fonts
+|   |-- img
+|   |-- index.html
+|   `-- js
+|-- bower.json
+|-- node_modules
+`— package.json
+</code></pre></div>
+<p>これでGruntでSass、Coffee、Jekyllがコンパイルされるようになりました。</p>
+
+<h3>Jadeを使えるようにする</h3>
+
+<p>これではまだJadeが使えないので、Jadeをインストールします。
+GruntでJadeを扱うには<a href="https://github.com/gruntjs/grunt-contrib-jade">Grunt-contrib-jade</a>を使います。</p>
+<div class="highlight"><pre><code class="vim language-vim" data-lang="vim">$ npm install grunt<span class="p">-</span>contrib<span class="p">-</span>jade
+</code></pre></div>
+<p>あとはGruntfileにタスクを書いてあげればOKです。タスク内容は<a href="https://github.com/ideyuta/ideyuta.github.io/tree/develop">ソース</a>を見てください。</p>
+
+<h3>確認</h3>
+
+<p>以上の設定で、grunt serveを実行すればローカルサーバで確認できるようになっているはずです。</p>
+<div class="highlight"><pre><code class="vim language-vim" data-lang="vim">$ grunt serve
+</code></pre></div>
+<p>ポート9000でひな形のサイトが見れることを確認して次に進んでください。</p>
+
+<h2>静的ページの作成とJekyllのコンパイルディレクトリを分ける</h2>
+
+<p>Jadeを入れたことで、Jekyllがコンパイルするhtmlファイルを生成するjadeファイルという、若干ややこしい構成になりました。そこで、開発中に触るソースファイルとJekyllでコンパイルするファイルを切り分けられるように、ディレクトリとGruntタスクを変更しました。</p>
+
+<h3>ファイル構成</h3>
+
+<p>ファイル構成をざっくりみると以下のような感じになります。</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.
+|--_config.yml
+|--_config.build.yml
+|--jekyll
+| |--_layouts
+| |--_blog
+| |--_profile
+| |--_posts
+| |--_work
+| `--...
+|--src
+| |--_coffee
+| |--_components
+| |--_jade
+|   |--_layouts
+|   |--_blog
+|   `--_profile
+| |--_posts
+| |--_sass
+| `--_work
+|--dist
+|--Gemfile
+|--Gemfile.lock
+|--Gruntfile.js
+|--node_modules
+`--package.json
+</code></pre></div>
+<p>開発は、srcディレクトリ以下で行うことになります。srcディレクトリ下のファイルを変更すると、Gruntタスクが走ってjekyllディレクトリに必要なファイルを生成していきます。その後、Grunt-jekyllがmdファイルなどをもとに、公開するファイル群をdistディレクトリ下に生成します。このときcss、img、jsなどはGrunt-jekyllで生成されないため、Grunt-jekyll終了後にGrunt-copyを利用して、jekyllディレクトリから公開に必要なファイルをdistディレクトリにコピーしていきます。これでようやくsrcファイルを変更すると公開ファイルがdist以下に生成される環境ができました。</p>
+
+<p>Gruntタスクについては<a href="https://github.com/ideyuta/ideyuta.github.io/tree/develop">ソース</a>を...</p>
+
+<h3>静的ページについて</h3>
+
+<p>ブログ（mdファイル）以外の静的ページは、_jadeディレクトリ以下で作成します。そのファイルをgrunt-jadeでjekyllディレクトリ以下にコンパイルするようにしています。そこで生成されたファイルとmdファイルを使って公開ファイルがつくられます。</p>
+
+<h2>ブランチ構成</h2>
+
+<p>ブランチは、developで開発、masterに公開ファイルを配置します。</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.
+|--master
+`--develop
+</code></pre></div>
+<p>developブランチに先ほどの開発ファイル群が存在し、masterブランチは<a href="https://github.com/robwierzbowski/grunt-build-control">Grunt-build-control</a>を利用して、developブランチのdist以下をdeployするような形になっています。</p>
+
+<p>こんなGruntタスクを</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">buildcontrol</span><span class="o">:</span> <span class="p">{</span>
+  <span class="nx">dist</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">dir</span><span class="o">:</span> <span class="s1">&#39;dist&#39;</span><span class="p">,</span>
+      <span class="nx">remote</span><span class="o">:</span> <span class="s1">&#39;../&#39;</span><span class="p">,</span>
+      <span class="nx">branch</span><span class="o">:</span> <span class="s1">&#39;master&#39;</span><span class="p">,</span>
+      <span class="nx">commit</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nx">push</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>以下のコマンドで実行すると</p>
+<div class="highlight"><pre><code class="vim language-vim" data-lang="vim">$ grunt buildcontrol:dist
+</code></pre></div>
+<p>ローカルのmasterブランチにpush&amp;commitされます。後はmasterブランチでリモートにpushするだけ。</p>
+
+<p>なぜこんな構成になっているかというと、github.ioではmasterブランチ直下のindex.htmlをルートとして参照するらしく？特定のディレクトリ（今回はdist）をルートとして設定できなかったためです。これができないと、dist以下にある公開ファイルが開発ファイルとごちゃまぜになってしまい、わけがわからなくなってしまうのです...そこで、masterには公開ファイルだけを配置するような形に一旦落ち着きました。この辺りもっと良いやり方があれば教えてください...</p>
+
+<h2>まとめ</h2>
+
+<p>これでdevelopブランチのsrcをいじればサイト＋ブログが更新できるようになりました。まだまだ構成がびみょうな部分がありますが、一旦こんな感じで締めくくりたいと思います。次回は「サイト作りなおしたデザイン編」を公開したいと思いますのでよろしくおねがいします。</p>
+</div>
+              <div class="Response">
+                <ul>
+                  <li><a href="/blog/2014/09/21/started.html" data-text="Jekyll+Gruntでサイト作りなおした" data-via="_ideyuta" class="twitter-share-button"></a></li>
+                  <li>
+                    <div data-href="/blog/2014/09/21/started.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" class="fb-like"></div>
+                  </li>
+                  <li><a href="http://b.hatena.ne.jp/entry/" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加" class="hatena-bookmark-button"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20"/></a></li>
+                  <li class="g-plus">
+                    <div data-size="medium" class="g-plusone"></div>
+                  </li>
+                  <li><a data-pocket-label="pocket" data-pocket-count="horizontal" data-lang="en" class="pocket-btn"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="Pagination ">
+              
+              <div class="paginate _next">
+                <div class="title"><a href="/blog/2014/10/01/bomproblem.html" title="Djangoのinclude機能を利用したときに謎の空テキストが表示される現象の原因と対策">Djangoのinclude機能を利用したときに謎の空テキストが表示される現象の原因と対策</a></div>
+                <div class="arrow"><span>&raquo;</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="Sidebar">
+            <div class="RecentPosts">
+              <p class="title">Recent Posts</p>
+              <ul>  
+                <li class="recentPost"><span class="date">2015. 04. 18</span><a href="/blog/2015/04/18/yusedesign.html" class="title">YUSE DESIGN</a></li>  
+                <li class="recentPost"><span class="date">2015. 04. 18</span><a href="/blog/2015/04/18/timemachine.html" class="title">TIME MACHINE</a></li>  
+                <li class="recentPost"><span class="date">2015. 04. 17</span><a href="/blog/2015/04/17/yui.html" class="title">結</a></li>  
+                <li class="recentPost"><span class="date">2015. 04. 17</span><a href="/blog/2015/04/17/slowland.html" class="title">SLOW LAND</a></li>  
+                <li class="recentPost"><span class="date">2015. 04. 16</span><a href="/blog/2015/04/16/628.html" class="title">628.</a></li>  
+                <li class="recentPost"><span class="date">2015. 04. 15</span><a href="/blog/2015/04/15/ashiotorythem.html" class="title">あしおとリズム</a></li>  
+                <li class="recentPost"><span class="date">2015. 04. 13</span><a href="/blog/2015/04/13/kasasasu.html" class="title">かささす</a></li>  
+                <li class="recentPost"><span class="date">2015. 04. 08</span><a href="/blog/2015/04/08/tohoku.html" class="title">東北</a></li>
+              </ul>
+              <div class="BtnGroup"><a href="/blog/" class="btn r xs _more">More</a></div>
+            </div>
+            <div class="Categories _Side">
+              <p class="title">Categories</p>
+              <ul class="category">
+                <li><a href="/blog/dev/" name="dev">dev<span> (3)</span></a></li>
+                <li><a href="/blog/consideration/" name="consideration">consideration<span> (1)</span></a></li>
+                <li><a href="/blog/photo/" name="photo">photo<span> (1)</span></a></li>
+                <li><a href="/blog/works/" name="works">works<span> (7)</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="GlobalFooter">
+        <div class="inner">
+          <div class="copyright">
+            <p>© 2015 ideyuta.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script>(function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r; i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-36151317-1', 'auto'); ga('send', 'pageview');</script>
+  <script src="https://apis.google.com/js/platform.js" async="async" defer="defer">{lang: 'ja'}</script>
+  <script src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+  <script>!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+  <script>
+    !function(d,s,id){
+      var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+      if(!d.getElementById(id)){
+        js=d.createElement(s);
+        js.id=id;
+        js.src=p+'://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js,fjs);
+      }
+    }(document, 'script', 'twitter-wjs');
+  </script>
+</html>

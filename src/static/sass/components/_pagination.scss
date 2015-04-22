@@ -1,0 +1,43 @@
+.Pagination {
+  height: 32px;
+  &._between {
+    .paginate { width: 50%; }
+  }
+
+  .paginate {
+    @include size(100%, 32px);
+
+    &._previous {
+      float: left;
+      .title { float: right; }
+      .arrow { float: left; }
+    }
+    &._next {
+      float: right;
+      text-align: right;
+      .title { float: left; }
+      .arrow { float: right; }
+    }
+    .title {
+      width: 95%;
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: $gray; 
+      a {
+        color: $gray;
+        line-height: 32px;
+        &:hover {
+          text-decoration: underline;
+          color: $dark-gray;
+        }
+      }
+    }
+    .arrow {
+      width: 5%;
+      color: $gray;
+      line-height: 30px;
+    }
+  }
+}

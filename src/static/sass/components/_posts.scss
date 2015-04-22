@@ -1,0 +1,13 @@
+.Posts {
+  max-width: 1165px;
+  margin: 0 auto;
+  padding: 24px 0;
+  a {
+    @include size(100%);
+    display: block;
+    text-decoration: none;
+    &:hover {
+      background: $dark-white;
+    }
+  }
+}

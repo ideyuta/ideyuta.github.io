@@ -26,6 +26,10 @@ markdown: redcarpet
 
 pygments: true
 
-source: app
+source: src/jekyll
 
 permalink: /blog/:year/:month/:day/:title.html
+
+# Pagination
+#paginate: 6
+#paginate_path: "src/jekyll/page:num/"

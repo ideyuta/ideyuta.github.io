@@ -1,0 +1,19 @@
+.Response {
+  @include clearfix;
+  @include border(1px 0, solid, $extra-light-gray);
+  padding: 32px;
+  background: $dark-white;
+
+  li {
+    padding: 0 16px 0 0;
+    float: left;
+    &.g-plus {
+      width: 60px;
+      overflow: hidden;
+    }
+  }
+}
+
+iframe.twitter-count-horizontal {
+  width: 80px!important;
+}

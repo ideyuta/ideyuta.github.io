@@ -1,0 +1,99 @@
+.Lphoto {
+  a {
+    &:hover {
+      .thumb {
+        img {
+          @include opacity(.96);
+        }
+      }
+    }
+  }
+  .data {
+    @include pos(absolute, null, 0, 0);
+    @include size(100%, 72px);
+    background: rgba($black, .12);
+    .title {
+      letter-spacing: .04em;
+      padding: 0 0 8px 0;
+    }
+    span {
+      @include typo($default-font-size - 1px, $white, 300, 1.4);
+      padding: 0 8px 0 0;
+      text-transform: capitalize;
+    }
+  }
+
+  &.L1 {
+    .thumb {
+      @include size(100%, 481px);
+      overflow: hidden;
+      img {
+        @include pos(relative, 50%);
+        @include size(auto);
+        max-width: 100%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+    .data {
+      > .inner {
+        padding: 0 16px;
+      }
+      .title {
+        @include typo(24px, $white, 100, 1.6);
+      }
+    }
+  }
+  
+  &.L2,
+  &.L3,
+  &.L4 {
+    .thumb {
+      @include size(100%, 360px);
+      overflow: hidden;
+      img {
+        @include pos(relative, null, 50%);
+        @include size(auto);
+        max-height: 100%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    }
+    .data {
+      > .inner {
+        padding: 0 8px;
+      }
+      .title {
+        @include typo(20px, $white, 100, 1.6);
+      }
+    }
+  }
+  
+  &.L5,
+  &.L6 {
+    .thumb {
+      @include size(100%, 300px);
+      overflow: hidden;
+      img {
+        @include pos(relative, 50%);
+        @include size(auto);
+        max-width: 100%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+    .data {
+      > .inner {
+        padding: 0 16px;
+      }
+      .title {
+        @include typo(24px, $white, 100, 1.6);
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,24 @@
+extends ../_base
+
+block content
+  .Container._Categories
+    .inner
+      .Categories
+        p.title Categories: {{ page.category }}
+        ul
+          {% for category in site.categories %}
+          li.category
+            a(href="/blog/{{ category | first }}/", name="{{ category | first }}")
+              {{ category | first }}
+              span  ({{ category | last | size }})
+          {% endfor %}
+          li.category
+            a(href="/blog/")
+              すべて
+              span ({{ site.posts | size }})
+
+  .Container._Posts
+    .inner
+      .Posts
+        ul
+          {{ content | reverse }}

@@ -1,0 +1,33 @@
+---
+layout: post
+title: "TIME MACHINE"
+categories: Works
+thumb: "http://ideyuta.com.s3.amazonaws.com/images/150418timemachine/overview01.jpg"
+description: "人間は、同一時間軸上にひとつの視点しか持つことができない。もし、自分を外側から見る視点や、見過ごしている様々な視点を持つことができるとしたら、それはタイムマシンを手に入れたのも同然だ、と言えるだろう。"
+style: "thumb"
+
+---
+
+![](http://ideyuta.com.s3.amazonaws.com/images/150418timemachine/overview01.jpg)
+![](http://ideyuta.com.s3.amazonaws.com/images/150418timemachine/overview02.jpg)
+![](http://ideyuta.com.s3.amazonaws.com/images/150418timemachine/overview03.jpg)
+
+人間は、同一時間軸上にひとつの視点しか持つことができない。もし、自分を外側から見る視点や、見過ごしている様々な視点を持つことができるとしたら、それはタイムマシンを手に入れたのも同然だ、と言えるだろう。
+同一時間軸上に同時並行的に存在する視点を切り取り、時間の流れを与える事で見えてくる過去と未来の新たな結節点。
+この作品は、32の視点をネットワーク制御することで、普段見ることのできない視点を創りだしている。
+マシンは、常に一定の間隔で世界を記録し続け、たった今過ぎ去った過去の視点を画面に刻々と映し出す。
+体験者は、過去の自分が映し出されている画面を見ている間、画面の後ろに流れる風景を見過ごしてしまうが、画面に触れているほんの数秒間だけ見過ごしたはずのもうひとつの視点で、はかなく消えていく世界を捉えることができる。
+
+![](http://ideyuta.com.s3.amazonaws.com/images/150418timemachine/diagram01.jpg)
+![](http://ideyuta.com.s3.amazonaws.com/images/150418timemachine/diagram02.jpg)
+
+直径2mの円に16台のiPadが設置され、隣り合うiPadとそれぞれ無線ネットワークで繋がっており、互いの動きを監視している。
+iPadは一周1.6秒という早さで順番に写真を撮影し、撮影した画像を画面に表示することで、円の中にひとつの時間軸が立ち上がるようにプログラムされている。
+人がiPadの画面に触れていないときは、過去をイメージした内側のタイムスケールが反時計回りに展開し、画面に触れると未来をイメージした外側のタイムスケールが時計回りに展開する。
+
+```
+2011
+インタラクティブ・アート
+戸田 傑
+井出 優太
+```
