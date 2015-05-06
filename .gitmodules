@@ -1,4 +1,0 @@
-[submodule "src/_components/zenigame"]
-	path = src/_components/zenigame
-	url = git@github.com:ideyuta/zenigame.git
-	branch = super-zenigame

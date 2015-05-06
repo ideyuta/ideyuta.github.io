@@ -1,35 +1,71 @@
-# Jekyll configuration precedence:
-# 1. Gruntfile task
-# 2. config.build.yml
-# 3. config.yml
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-name: ideyuta.github.io
-description: 
-author:
-  name: ideyuta
-  email: ide.yuta@gmail.com
-url: https://ideyuta.github.io
+# Site
+title: ideyuta.com
+subtitle:
+description:
+author: Yuta Ide
+language:
+timezone:
 
-# Grunt handles images and assets.
-exclude: ['img', 'css', 'js', 'fonts',
-          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://ideyuta.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
 
-# include: ['.htaccess']
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
-# _config.build.yml sets future and show_drafts to false on `grunt build`
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
 future: true
-show_drafts: true
+highlight:
+  enable: true
+  line_number: true
+  tab_replace:
 
-# Markdown library
-markdown: redcarpet
-#   extensions: ['fenced_code_blocks', 'smart']
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
 
-pygments: true
-
-source: src/jekyll
-
-permalink: /blog/:year/:month/:day/:title.html
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
 
 # Pagination
-#paginate: 6
-#paginate_path: "src/jekyll/page:num/"
+## Set per_page to 0 to disable pagination
+per_page: 2
+pagination_dir: page
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+#theme: mnmlpress
+theme: ideyuta
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type:
