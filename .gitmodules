@@ -1,4 +1,3 @@
-[submodule "src/_components/zenigame"]
-	path = src/_components/zenigame
-	url = git@github.com:ideyuta/zenigame.git
-	branch = super-zenigame
+[submodule "themes/paper"]
+	path = themes/paper
+	url = git@github.com:ideyuta/hexo-theme-paper.git
