@@ -1,0 +1,18 @@
+machine:
+  timezone: Asia/Tokyo
+
+dependencies:
+  pre:
+    - npm install -g gulp
+
+test:
+  override:
+    - echo 'test'
+
+deployment:
+  production:
+    branch: develop
+    commands:
+      - git config --global user.email "ide.yuta@gmail.com"
+      - git config --global user.name "Yuta Ide"
+      - hexo deploy -g
