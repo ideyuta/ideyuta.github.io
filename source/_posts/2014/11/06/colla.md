@@ -2,7 +2,9 @@
 layout: post
 title: "コラ画像作成の極意"
 date: 2014-11-06 00:00:00
-categories: Dev
+categories:
+- dev
+- neta
 description: "良いコラ画像をつくる極意は、素材集めに始まり素材集めに終わる。そういうことだ。"
 style: "text"
 
@@ -63,7 +65,7 @@ style: "text"
 
 ここにフリー素材活動家として有名な[@pstlm](https://twitter.com/pstlm)の画像がある。
 
-![](/img/blog/2014-11-06-colla/pstlm.jpg)
+![](http://ideyuta.com.s3.amazonaws.com/images/141106colla/pstlm.jpg)
 
 <br />
 
@@ -73,7 +75,7 @@ style: "text"
 
 <br />
 
-![](/img/blog/2014-11-06-colla/kawagoesan.jpg)
+![](http://ideyuta.com.s3.amazonaws.com/images/141106colla/kawagoesan.jpg)
 
 
 
@@ -81,4 +83,4 @@ style: "text"
 
 肖像権には注意が必要だ。訴えられる前にごめんなさいしよう。
 
-![](/img/blog/2014-11-06-colla/pstlm-colla.png)
+![](http://ideyuta.com.s3.amazonaws.com/images/141106colla/pstlm-colla.png)
