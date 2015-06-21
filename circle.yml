@@ -15,4 +15,8 @@ deployment:
     commands:
       - git config --global user.email "ide.yuta@gmail.com"
       - git config --global user.name "Yuta Ide"
-      - hexo deploy -g
+      - git submodule init
+      - git submodule update
+      - hexo clean
+      - hexo generate
+      - hexo deploy
