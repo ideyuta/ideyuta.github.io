@@ -9,9 +9,9 @@ style: "photo"
 ---
 
 <div class="images">
-![](http://ideyuta.com.s3.amazonaws.com/images/150408tohoku/DSC_0240_m.jpg)
-![](http://ideyuta.com.s3.amazonaws.com/images/150408tohoku/DSC_0462_m.jpg)
-![](http://ideyuta.com.s3.amazonaws.com/images/150408tohoku/DSC_0682_m.jpg)
+<img class="lazyload" src="http://ideyuta.com.s3.amazonaws.com/images/150408tohoku/low/DSC_0240_m.jpg" data-src="http://ideyuta.com.s3.amazonaws.com/images/150408tohoku/DSC_0240_m.jpg">
+<img class="lazyload" src="http://ideyuta.com.s3.amazonaws.com/images/150408tohoku/low/DSC_0462_m.jpg" data-src="http://ideyuta.com.s3.amazonaws.com/images/150408tohoku/DSC_0462_m.jpg">
+<img class="lazyload" src="http://ideyuta.com.s3.amazonaws.com/images/150408tohoku/low/DSC_0682_m.jpg" data-src="http://ideyuta.com.s3.amazonaws.com/images/150408tohoku/DSC_0682_m.jpg">
 </div>
 
 <div class="note">

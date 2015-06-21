@@ -16,8 +16,8 @@ style: "thumb"
 多摩美術大学大学院 情報デザイン領域有志による展覧会のwebサイト。
 多様な作品をフラッシュ表示することでカオスを表現している。
 
-![](http://ideyuta.com.s3.amazonaws.com/images/150615taumex2012/anime01.gif)
-![](http://ideyuta.com.s3.amazonaws.com/images/150615taumex2012/anime02.gif)
+<img class="lazyload" src="http://ideyuta.com.s3.amazonaws.com/images/150615taumex2012/low/anime01.jpg" data-src="http://ideyuta.com.s3.amazonaws.com/images/150615taumex2012/anime01.gif">
+<img class="lazyload" src="http://ideyuta.com.s3.amazonaws.com/images/150615taumex2012/low/anime02.jpg" data-src="http://ideyuta.com.s3.amazonaws.com/images/150615taumex2012/anime02.gif">
 
 <div class="note">
 Credits
