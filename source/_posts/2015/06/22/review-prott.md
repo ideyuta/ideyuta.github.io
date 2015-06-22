@@ -7,7 +7,7 @@ description: 'ちょっと機会があったので、GoodPatchさんが出して
 style: 'text'
 ---
 
-ちょっと機会があったので、GoodPatchさんが出してるプロトタイプツール「Prott<span class="super">※1</span>」を使ってプロトタイピングしてみました。30日間Pro機能が無料で使えるとのことだったので、Pro機能のレビュー（というか感想）になります。
+ちょっと機会があったので、Goodpatchさんが出してるプロトタイプツール「Prott<span class="super">※1</span>」を使ってプロトタイピングしてみました。30日間Pro機能が無料で使えるとのことだったので、Pro機能のレビュー（というか感想）になります。
 
 <div class="SideMatter" style="top:363px;"><ul>
 <li>
