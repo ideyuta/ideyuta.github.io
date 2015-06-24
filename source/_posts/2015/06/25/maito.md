@@ -2,7 +2,7 @@
 layout: post
 title: 'Maito'
 date: 2015-06-25 08:39:59
-categories: work
+categories: works
 thumb: "http://ideyuta.com.s3.amazonaws.com/images/150625maito/thumb.jpg"
 style: 'photo'
 ---
