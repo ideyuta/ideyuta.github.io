@@ -5,7 +5,7 @@
 # Site
 title: ideyuta.com
 subtitle:
-description:
+description: "ideyuta.com: () -> @$body.html portfolio(), blog()"
 author: Yuta Ide
 language:
 timezone:
