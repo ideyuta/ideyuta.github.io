@@ -2,9 +2,7 @@
 layout: post
 title: "コラ画像作成の極意"
 date: 2014-11-06 00:00:00
-categories:
-- dev
-- neta
+categories: neta
 description: "良いコラ画像をつくる極意は、素材集めに始まり素材集めに終わる。そういうことだ。"
 style: "text"
 
