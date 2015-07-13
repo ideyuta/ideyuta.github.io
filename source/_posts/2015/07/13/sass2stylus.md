@@ -64,13 +64,13 @@ sass2stylus<span class="super">※1</span>を使って変換しますが、い�
 
 ##Mixinにブロックコンテンツを渡す@contentは{block}で代用できるが、呼び出し側に+接頭詞が必要
 
-<div class="SideMatter" style="top:1772px;"><ul>
+<div class="SideMatter" style="top:1822px;"><ul>
 <li>
 <p>参考</p>
 <a href="https://learnboost.github.io/stylus/docs/mixins.html#block-mixins">Block Mixins - Stylus</a></li>
 </ul></div>
 
-###@contentはblockで代用
+###@contentは{block}で代用
 
 変換前
 ```scss
