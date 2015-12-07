@@ -1,10 +1,9 @@
 ---
 layout: post
-title: nbem
+title: 'nbem - JSX内でBEMを簡単かつ直感的に記述する'
 date: 2015-12-08 07:25:53
 categories: dev
-description: 'JSX内でBEMを直感的に記述するJSモジュールを作った。'
-thumb:
+description: '最近はReactを書く機会が増え、同時にJSXを書く機会が増えた。HTMLで書いていた時からBEM記法でのクラス記述の冗長性を疎ましく思っていたが、全てJSで書けるようになったので、JSX内でBEMを簡単に記述できるJSモジュールを作ることにした。'
 style: 'text'
 ---
 
