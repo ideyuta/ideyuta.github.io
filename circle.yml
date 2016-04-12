@@ -1,9 +1,9 @@
 machine:
+  node:
+    version: 5.5.0
+  post:
+    - npm i -g npm@3
   timezone: Asia/Tokyo
-
-test:
-  override:
-    - echo 'test'
 
 deployment:
   production:
