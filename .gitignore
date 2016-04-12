@@ -1,0 +1,11 @@
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+.eslintcache
+.gatsby-context.js
+node_modules/
+npm-debug.log
+public/
