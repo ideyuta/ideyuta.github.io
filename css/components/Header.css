@@ -1,0 +1,16 @@
+.Header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 48px;
+  &_title {
+    height: 32px;
+    margin: 0;
+  }
+  &_bio {
+    color: rgba(200, 200, 200, 0.48);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    margin-left: 16px;
+  }
+}

@@ -1,0 +1,11 @@
+/**
+ * Clearfix
+ * Support browser IE8+
+ */
+@define-mixin Clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
