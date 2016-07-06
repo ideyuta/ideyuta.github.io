@@ -14,35 +14,59 @@ const IMAGES = [
   `${imgPath}/150417slowland/overview01.jpg`,
   `${imgPath}/150416_628/anime01.gif`,
   `${imgPath}/150416_628/anime02.gif`,
-  `${imgPath}/150415ashiotorythem/anime03.gif`,
+  `${imgPath}/150415ashiotorythem/anime02.gif`,
   `${imgPath}/150413kasasasu/anime01.gif`,
   `${imgPath}/150413kasasasu/anime02.gif`
 ];
-const BG_IMAGE = IMAGES[Math.floor(Math.random() * IMAGES.length)];
 
 
 /**
  * Index
- *
- * @return {ReactElement}
  */
-export default function Index() {
-  return (
-    <div
-      className="Index"
-      style={{backgroundImage: `url(${BG_IMAGE})`}}
-    >
-      <Header />
-      <Helmet
-        meta={[
-          {
-            content: '井出優太のポートフォリオサイト。',
-            name: 'description'
-          }
-        ]}
-        title={config.siteTitle}
-      />
-      <div className="Index_thumb" />
-    </div>
-  );
+export default class Index extends React.Component {
+
+  /**
+   * constructor
+   *
+   * @param {Object} props - props
+   */
+  constructor(props) {
+    super(props);
+    this.state = {image: IMAGES[Math.floor(Math.random() * IMAGES.length)]};
+  }
+
+  /**
+   * 画像を変更
+   */
+  updateImage() {
+    this.setState({image: IMAGES[Math.floor(Math.random() * IMAGES.length)]});
+  }
+
+  /**
+   * render
+   *
+   * @returns {ReactElement}
+   */
+  render() {
+    return (
+      <div
+        className="Index"
+        style={{backgroundImage: `url(${this.state.image})`}}
+        onClick={() => this.updateImage()}
+        onTouchEnd={() => this.updateImage()}
+      >
+        <Header />
+        <Helmet
+          meta={[
+            {
+              content: '井出優太のポートフォリオサイト。',
+              name: 'description'
+            }
+          ]}
+          title={config.siteTitle}
+        />
+        <div className="Index_thumb" />
+      </div>
+    );
+  }
 }
