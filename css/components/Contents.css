@@ -1,0 +1,19 @@
+.Contents {
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 0 20px;
+  & .twitter-tweet {
+    margin: 0 auto;
+  }
+  &_body {
+    @mixin Body;
+    margin: 24px 0;
+  }
+  &_headline {
+    @mixin Title;
+    font-weight: 600;
+  }
+  &_spacer {
+    height: 48px;
+  }
+}

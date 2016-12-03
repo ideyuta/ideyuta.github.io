@@ -35,13 +35,8 @@ export default function Html(props) {
         {head.meta.toComponent()}
         {head.title.toComponent()}
         <link
-          href={props.favicon}
+          href={prefixLink('/images/favicon.ico')}
           rel="shortcut icon"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900"
-          rel="stylesheet"
-          type="text/css"
         />
         <link
           href="https://fonts.googleapis.com/css?family=Inconsolata"

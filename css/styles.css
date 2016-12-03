@@ -3,12 +3,18 @@
 @import './mixins';
 @import './base';
 
-@import './components/Header';
+@import './components/Contents';
+@import './components/Footer';
+@import './components/Ideyuta';
 
 .Index {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  background: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 2% auto;
+  width: 96%;
+  @media(--phoneSmall) {
+    border-width: 0;
+  }
 }

@@ -1,0 +1,37 @@
+.Ideyuta {
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 0 20px;
+  &_bio {
+    @mixin Body;
+  }
+  &_hello {
+    @mixin Title;
+    padding: 0 0 48px 0;
+  }
+  &_recentPhoto {
+    height: 200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    width: 200px;
+    &_copyright {
+      color: var(--gray400);
+      font-size: 10px;
+      text-align: center;
+      & a {color: var(--gray400);}
+    }
+    &_img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+  &_trademark {
+    height: 100px;
+    margin: 160px auto;
+    width: 100px;
+    &_img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
