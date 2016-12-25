@@ -20,3 +20,9 @@
     border-width: 0;
   }
 }
+.PageTitle {
+  @mixin Headline;
+  margin: 0 auto;
+  max-width: 560px;
+  padding-top: 80px;
+}

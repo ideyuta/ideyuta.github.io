@@ -27,6 +27,7 @@ export default class Markdown extends React.Component {
           titleTemplate={`%s | ${config.siteTitle}`}
         />
         <div className="Index">
+          <h1 className="PageTitle">{post.title}</h1>
           <div
             className="Markdown"
             dangerouslySetInnerHTML={{__html: post.body}}
