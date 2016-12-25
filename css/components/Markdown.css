@@ -1,0 +1,40 @@
+.Markdown {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 80px 20px;
+  & strong {
+    font-weight: 600;
+  }
+  & h1 {
+    @mixin Headline;
+  }
+  & h2 {
+    @mixin Title;
+    font-weight: 600;
+  }
+  & h3 {
+    @mixin Body;
+    font-weight: 600;
+  }
+  & img {
+    display: block;
+    margin: 0 auto;
+    max-height: 600px;
+    max-width: 100%;
+  }
+  & p {
+    @mixin Body;
+    margin: 24px 0;
+  }
+  & ul {
+    @mixin Body;
+  }
+
+  & .Caption {
+    @mixin Caption;
+    color: var(--gray500);
+    text-align: center;
+  }
+}
+

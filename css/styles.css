@@ -6,6 +6,7 @@
 @import './components/Contents';
 @import './components/Footer';
 @import './components/Ideyuta';
+@import './components/Markdown';
 
 .Index {
   background: #fff;
@@ -14,6 +15,7 @@
   height: 100%;
   margin: 2% auto;
   width: 96%;
+  word-break: break-all;
   @media(--phoneSmall) {
     border-width: 0;
   }

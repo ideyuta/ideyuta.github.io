@@ -44,6 +44,16 @@
 }
 
 /**
+ * Typography - Headline
+ */
+@define-mixin Headline {
+  color: var(--gray700);
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.7em;
+}
+
+/**
  * Typography - Title
  */
 @define-mixin Title {

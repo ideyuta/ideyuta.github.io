@@ -26,13 +26,9 @@ export default class Markdown extends React.Component {
           title={post.title}
           titleTemplate={`%s | ${config.siteTitle}`}
         />
-        <div className="Post">
-          <div className="PostHeader">
-            <h1 className="PostHeader__title">{post.title}</h1>
-            <span className="PostHeader__createdAt">Created {post.date}</span>
-          </div>
+        <div className="Index">
           <div
-            className="markdown"
+            className="Markdown"
             dangerouslySetInnerHTML={{__html: post.body}}
           />
         </div>
