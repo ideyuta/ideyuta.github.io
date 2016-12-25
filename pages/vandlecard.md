@@ -1,6 +1,6 @@
 ---
 title: "バンドルカード"
-date: "2016-12-11"
+createdAt: "2016-12-11"
 path: "/vandlecard"
 ---
 
