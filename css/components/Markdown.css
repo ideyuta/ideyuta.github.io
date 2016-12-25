@@ -27,7 +27,7 @@
     @mixin Body;
     margin: 24px 0;
   }
-  & ul {
+  & ul, & ol {
     @mixin Body;
   }
 
@@ -35,6 +35,22 @@
     @mixin Caption;
     color: var(--gray500);
     text-align: center;
+  }
+
+  & .Credit {
+    border: 1px solid var(--gray500);
+    border-width: 2px 0;
+    margin: 32px 0;
+    padding: 0 8px;
+    & h4 {
+      @mixin Caption;
+      font-weight: 600;
+    }
+    & ul {
+      @mixin Caption;
+      list-style: none;
+      padding: 0;
+    }
   }
 }
 
