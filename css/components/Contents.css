@@ -12,6 +12,7 @@
   &_headline {
     @mixin Title;
     font-weight: 600;
+    padding-top: 80px;
   }
   &_spacer {
     height: 48px;

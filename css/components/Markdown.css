@@ -38,7 +38,7 @@
   }
 
   & .Credit {
-    border: 1px solid var(--gray500);
+    border: 1px solid var(--gray800);
     border-width: 2px 0;
     margin: 32px 0;
     padding: 0 8px;
@@ -50,6 +50,18 @@
       @mixin Caption;
       list-style: none;
       padding: 0;
+    }
+  }
+  & .Youtube {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    & iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100% !important;
+      height: 100% !important;
     }
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import nbem from 'nbem';
+import {prefixLink} from 'gatsby-helpers';
 
 /**
  * Contents
@@ -25,6 +26,40 @@ export default function Contents() {
 
       <p className={c('&body')}>
         SELECKさんにどんな感じで開発しているかをまとめてもらいましたのでご興味があればどうぞ。<a href="https://seleck.cc/850" target="_blank">3人の開発チームで、Fintech事業をどう作る？最小構成のチームで挑む、その戦略とは</a>
+      </p>
+
+      <p className={c('&body')}>
+        バンドルカードの制作過程を簡単にまとめた記事を公開しています。
+        <a href={prefixLink('/vandlecard/')}>
+          <b>こちらからどうぞ。</b>
+        </a>
+      </p>
+
+
+      <h2 className={c('&headline')}>Works</h2>
+
+      <p className={c('&body')}>
+        <a href={prefixLink('/vandlecard/')}>
+          バンドルカードができるまで
+        </a>
+      </p>
+
+      <p className={c('&body')}>
+        <a href={prefixLink('/i-d-e/')}>
+          フリーランス時代の仕事
+        </a>
+      </p>
+
+      <p className={c('&body')}>
+        <a href={prefixLink('/design-st/')}>
+          学生時代にデザインしたもの
+        </a>
+      </p>
+
+      <p className={c('&body')}>
+        <a href={prefixLink('/mediaart/')}>
+          学生時代に制作したメディアアートたち
+        </a>
       </p>
 
     </div>
