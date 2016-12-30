@@ -46,7 +46,7 @@
   "scripts": {
     "build": "gatsby build --prefix-links",
     "deploy": "gh-pages -d public -b master",
-    "lint": "eslint ./ --cache --ignore-pattern",
+    "lint": "eslint ./ --cache",
     "start": "gatsby develop",
     "test": "npm run lint"
   }
