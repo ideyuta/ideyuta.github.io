@@ -12,6 +12,7 @@
   & h2 {
     @mixin Title;
     font-weight: 600;
+    margin-top: 3em;
   }
   & h3 {
     @mixin Body;
