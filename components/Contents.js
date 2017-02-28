@@ -15,7 +15,17 @@ export default function Contents() {
       <h2 className={c('&headline')}>最近</h2>
 
       <p className={c('&body')}>
-        <b>Visaのプリペイドカードをスマホアプリから簡単に発行できるサービス</b>を作っています。
+        2017年2月末で約4年勤めたカンムを退職し、ニューライトに入社しました。
+      </p>
+
+      <p className={c('&body')}>
+        「人に人らしい仕事を」 やっていきます。
+      </p>
+
+      <h2 className={c('&headline')}>バンドルカード</h2>
+
+      <p className={c('&body')}>
+        <b>Visaのプリペイドカードをスマホアプリから簡単に発行できるサービス</b>を作っていま<del>す</del>した。
       </p>
 
       <blockquote className="twitter-tweet" data-lang="ja"><p dir="ltr" lang="ja">ReactNative製のアプリ、バンドルカードリリースしました！ぜひ触ってみてください！<a href="https://t.co/0wG4NFZEr0">https://t.co/0wG4NFZEr0</a> <a href="https://t.co/6Ieb7JO4Vv">pic.twitter.com/6Ieb7JO4Vv</a></p>&mdash; └┐☺︎└┐ (@_ideyuta) <a href="https://twitter.com/_ideyuta/status/776617797153542144">2016年9月16日</a></blockquote>
