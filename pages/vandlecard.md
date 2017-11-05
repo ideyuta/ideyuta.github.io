@@ -392,3 +392,30 @@ https://vandle.jp/p/otato/#/
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">のんがいっぱい。じわ。<br>得点は、35,817点でした。<br><br>30,000点を超えると<br>300円GET出来るらしいので、<br>皆さんチャレンジしてみてください。<a href="https://twitter.com/hashtag/%E3%83%90%E3%83%B3%E3%83%89%E3%83%AB?src=hash">#バンドル</a> <a href="https://twitter.com/hashtag/300%E5%86%86%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88?src=hash">#300円プレゼント</a> <a href="https://twitter.com/hashtag/PR?src=hash">#PR</a> <a href="https://t.co/3SxXYJKQb8">https://t.co/3SxXYJKQb8</a> <a href="https://t.co/zAY6Noxhqq">pic.twitter.com/zAY6Noxhqq</a></p>&mdash; 前田希美 (@Maeda_Nozomi) <a href="https://twitter.com/Maeda_Nozomi/status/814737564749864960">2016年12月30日</a></blockquote>
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">POTATOかっぷるの画像を使ったゲーム、１回やってみて（笑）<br>指疲れる😂<br>連打しまくるゲームです（笑）<br><br>特典付きです🍟✨<br>     <br>   ちなみにおれは34089点！<br><br>みんな越えてみろ！！！！！（笑）<br>#バンドル#ポテト<a href="https://t.co/QCaWnud729">https://t.co/QCaWnud729</a> <a href="https://t.co/p1P4Oiwst7">pic.twitter.com/p1P4Oiwst7</a></p>&mdash; みーくん⍢⃝ (@0727_Miz_Kam) <a href="https://twitter.com/0727_Miz_Kam/status/814741189752565760">2016年12月30日</a></blockquote>
+
+
+## 複数カード対応
+
+いくつかのプロモーションを繰り返す中で、外して外して時には当たったりしていましたが、より着実にカード保有者を増やす方法として、「バンドルカード」以外の提携カードを発行することになりました。
+
+そこで、複数のカードに対応したアプリの開発が始まりました。
+
+どのカードの明細を見ているか、どのカードにチャージを行おうとしているか、といったことを直感的にわかりやすくするために、メイン画面ではカード情報が常に表示されるように UI を変更しました。
+
+![](/images/vandlecard/v034.png)
+<p class="Caption">複数カード対応 UI</p>
+
+この機能のデザインを終え、View 側の実装をほどほどに、僕のカンムとしての旅は終わりました。
+
+
+## バンドルカード
+
+バンドルカードは、わかりやすく使いやすいカードがあるべきだと考えた奴らが作り、誰もがインターネットで決済できる世界に受け入れられ広まっています。
+
+愚直に続けることがカンムの文化であり、最高のプロダクトを作るために全力を傾けているチームです。
+
+この記事を見てご興味が湧きましたらカンムまでご連絡ください。
+
+
+https://kanmu.co.jp
+
