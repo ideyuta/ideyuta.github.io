@@ -15,12 +15,15 @@ export default function Contents() {
       <h2 className={c('&headline')}>最近</h2>
 
       <p className={c('&body')}>
-        2017年2月末で約4年勤めたカンムを退職し、ニューライトに入社しました。
+        ニューライトという会社で働いています。
+        <br />
+        <a className={c('&body')} href="https://newlight.jp">
+          https://newlight.jp
+        </a>
       </p>
 
-      <p className={c('&body')}>
-        「人に人らしい仕事を」 やっていきます。
-      </p>
+      <img src="/images/newlight201710.png" />
+
 
       <h2 className={c('&headline')}>バンドルカード</h2>
 

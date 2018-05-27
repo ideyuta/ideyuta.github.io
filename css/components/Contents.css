@@ -17,4 +17,7 @@
   &_spacer {
     height: 48px;
   }
+  & img {
+    max-width: 100%;
+  }
 }

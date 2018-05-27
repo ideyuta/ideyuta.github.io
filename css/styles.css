@@ -8,18 +8,6 @@
 @import './components/Ideyuta';
 @import './components/Markdown';
 
-.Index {
-  background: #fff;
-  border-radius: 8px;
-  box-sizing: border-box;
-  height: 100%;
-  margin: 2% auto;
-  width: 96%;
-  word-break: break-all;
-  @media(--phoneSmall) {
-    border-width: 0;
-  }
-}
 .PageTitle {
   @mixin Headline;
   margin: 0 auto;
