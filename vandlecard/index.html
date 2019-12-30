@@ -1,9 +1,16 @@
-<!DOCTYPE html>
- <html><head><meta charset="utf-8"/><meta content="ideyuta &lt;ide.yuta@gmail.com&gt;" name="author"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" name="viewport"/><meta data-react-helmet="true" name="description"/><title data-react-helmet="true">バンドルカードができるまで | ideyuta.com</title><link href="/images/favicon.ico" rel="shortcut icon"/><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><link href="/styles.css" rel="stylesheet"/></head><body><div id="react-mount"><div data-reactroot="" data-reactid="1" data-react-checksum="1884697729"><div data-reactid="2"><!-- react-empty: 3 --><div class="Index" data-reactid="4"><h1 class="PageTitle" data-reactid="5">バンドルカードができるまで</h1><div class="Markdown" data-reactid="6"><h2>前置き</h2>
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta content="ideyuta &lt;ide.yuta@gmail.com&gt;" name="author"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" name="viewport"/><style data-href="/styles.ffc95e0c6ed8fd435e24.css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}code[class*=language-],pre[class*=language-]{color:#fff;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;text-shadow:0 -.1em .2em #000;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}:not(pre)>code[class*=language-],pre[class*=language-]{background:#141414}pre[class*=language-]{border-radius:.5em;border:.3em solid #545454;box-shadow:inset 1px 1px .5em #000;margin:.5em 0;overflow:auto;padding:1em}pre[class*=language-]::-moz-selection{background:#27292a}pre[class*=language-]::selection{background:#27292a}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{text-shadow:none;background:hsla(0,0%,93%,.15)}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:hsla(0,0%,93%,.15)}:not(pre)>code[class*=language-]{border-radius:.3em;border:.13em solid #545454;box-shadow:inset 1px 1px .3em -.1em #000;padding:.15em .2em .05em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#787878}.namespace,.token.punctuation{opacity:.7}.token.boolean,.token.deleted,.token.number,.token.tag{color:#cf694a}.token.builtin,.token.constant,.token.keyword,.token.property,.token.selector,.token.symbol{color:#f9ee9a}.language-css .token.string,.style .token.string,.token.attr-name,.token.attr-value,.token.char,.token.entity,.token.inserted,.token.operator,.token.string,.token.url,.token.variable{color:#919e6b}.token.atrule{color:#7386a5}.token.important,.token.regex{color:#e9c163}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}pre[data-line]{padding:1em 0 1em 3em;position:relative}.language-markup .token.attr-name,.language-markup .token.punctuation,.language-markup .token.tag{color:#ad895c}.token{position:relative;z-index:1}.line-highlight{background:rgba(84,84,84,.25);background:-webkit-gradient(linear,left top,right top,color-stop(70%,rgba(84,84,84,.1)),to(rgba(84,84,84,0)));background:linear-gradient(90deg,rgba(84,84,84,.1) 70%,rgba(84,84,84,0));border-bottom:1px dashed #545454;border-top:1px dashed #545454;left:0;line-height:inherit;margin-top:.75em;padding:inherit 0;pointer-events:none;position:absolute;right:0;white-space:pre;z-index:0}.line-highlight:before,.line-highlight[data-end]:after{background-color:#8794a6;border-radius:999px;box-shadow:0 1px #fff;color:#f5f2f0;content:attr(data-start);font:700 65%/1.5 sans-serif;left:.6em;min-width:1em;padding:0 .5em;position:absolute;text-align:center;text-shadow:none;top:.4em;vertical-align:.3em}.line-highlight[data-end]:after{bottom:.4em;content:attr(data-end);top:auto}.hljs{display:block;overflow-x:auto;padding:.5em;background:#1d1f21}.hljs::selection,.hljs span::selection{background:#373b41}.hljs::-moz-selection,.hljs span::-moz-selection{background:#373b41}.hljs{color:#c5c8c6}.hljs-name,.hljs-title{color:#f0c674}.hljs-comment,.hljs-meta,.hljs-meta .hljs-keyword{color:#707880}.hljs-deletion,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol{color:#c66}.hljs-addition,.hljs-doctag,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string{color:#b5bd68}.hljs-attribute,.hljs-code,.hljs-selector-id{color:#b294bb}.hljs-bullet,.hljs-keyword,.hljs-selector-tag,.hljs-tag{color:#81a2be}.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-variable{color:#8abeb7}.hljs-built_in,.hljs-builtin-name,.hljs-quote,.hljs-section,.hljs-selector-class,.hljs-type{color:#de935f}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}body{background:#fff;color:#08080e;font-family:Source Code Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Droid Sans,Verdana,Arial,Hiragino Sans,"\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3",Hiragino Kaku Gothic ProN,"\30E1\30A4\30EA\30AA",Meiryo,sans-serif;font-feature-settings:"palt" 1;font-size:16px;letter-spacing:.07em;-webkit-font-smoothing:antialiased}a:link,a:visited{color:#333}a:hover{color:#0278be}a:active{color:#333}h1,h2,h3,h4,h5,h6{line-height:1.45em}h2{font-size:1.4rem;padding:12px 0 0}h2,h3{font-weight:600}h3{font-size:1.2rem}h4{font-size:.875rem;font-weight:800}hr{background:#e9e9e9;border:0;height:1px;margin:32px 0}blockquote{border-left:4px solid #dcdce5;color:#808088;margin:0;padding:0 0 0 16px}img{max-width:100%}code{border:0!important;font-size:.75rem!important}a{line-height:1.5em}a,li,ol,p,ul{font-size:.875rem}li,ol,p,ul{font-weight:300;line-height:1.9em}.post li{padding:4px 0}.post ol,.post ul{padding:0 0 0 20px}pre{background:#000;border:0!important;color:#fff;font-size:.875rem;font-weight:400;letter-spacing:.02em;line-height:1.2em;padding:24px;white-space:pre-wrap}</style><meta name="generator" content="Gatsby 2.18.17"/><title data-react-helmet="true">バンドルカードができるまで - ideyuta.com</title><style data-styled="kmwswV iRzDOH dRSWNf dGOgxa evHmwV" data-styled-version="4.4.1">
+/* sc-component-id: Header__Anchor-hadsu4-0 */
+.iRzDOH{display:inline-block;font-size:1rem;-webkit-letter-spacing:0.03;-moz-letter-spacing:0.03;-ms-letter-spacing:0.03;letter-spacing:0.03;padding:4px 0;-webkit-text-decoration:none;text-decoration:none;} .iRzDOH:hover{color:#5AB87E;}
+/* sc-component-id: Header__Wrapper-hadsu4-1 */
+.kmwswV{box-sizing:border-box;padding:32px 24px;width:100vw;}
+/* sc-component-id: Spacer-sc-398nqh-0 */
+.evHmwV{height:24px;min-height:24px;min-width:24px;width:24px;}
+/* sc-component-id: post__Content-sc-8a5fik-0 */
+.dRSWNf{box-sizing:border-box;margin:0 auto;max-width:700px;padding:20px;word-break:break-all;}
+/* sc-component-id: post__Title-sc-8a5fik-1 */
+.dGOgxa{font-size:2.6rem;font-weight:400;margin:0;}</style><link rel="icon" href="/icons/icon-48x48.png?v=a341ebe2d8ccd6519ab79a9c3f6235b2"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#5AB87E"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=a341ebe2d8ccd6519ab79a9c3f6235b2"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=a341ebe2d8ccd6519ab79a9c3f6235b2"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=a341ebe2d8ccd6519ab79a9c3f6235b2"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=a341ebe2d8ccd6519ab79a9c3f6235b2"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=a341ebe2d8ccd6519ab79a9c3f6235b2"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=a341ebe2d8ccd6519ab79a9c3f6235b2"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=a341ebe2d8ccd6519ab79a9c3f6235b2"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=a341ebe2d8ccd6519ab79a9c3f6235b2"/><link as="script" rel="preload" href="/webpack-runtime-6dff0a4519671ae1b419.js"/><link as="script" rel="preload" href="/styles-153975cb1450f2848b68.js"/><link as="script" rel="preload" href="/app-2a4332b2069fb79fad85.js"/><link as="script" rel="preload" href="/commons-8b64a4ed23ee7f0f755d.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-01dc1b99fa80edd59341.js"/><link as="fetch" rel="preload" href="/page-data/vandlecard/page-data.json" crossorigin="anonymous"/><link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="Header__Wrapper-hadsu4-1 kmwswV"><a href="/" class="Header__Anchor-hadsu4-0 iRzDOH">ideyuta.com</a></div><div class="post__Content-sc-8a5fik-0 dRSWNf"><h2 class="post__Title-sc-8a5fik-1 dGOgxa">バンドルカードができるまで</h2><div class="Spacer-sc-398nqh-0 evHmwV"></div><div class="post"><h2>前置き</h2>
 <p>この記事は、バンドルカードができるまでにやったことをまとめています。デザイナー・フロントエンドエンジニアとして携わっているため、バックエンドやアライアンス等をどうやっていたかについての詳細な記述はありません。<br>
 また、記述されている多くの制作物は、チームで考え制作しており、僕個人ですべての意思決定・制作を行っているわけではありません。チームメンバーは、アライアンス・事業開発2人、エンジニア2人、デザイナー1人（僕）の5人です。</p>
-<br />
-<br />
 <br />
 <h2>CLO</h2>
 <p>2015年のはじめ。CardLinkedOffer（クレジットカード連動型優待）サービスを提供していた僕たちカンムは、このCLOというサービスをどうやって成長・収益化していくかに悩んでいました。</p>
@@ -12,17 +19,17 @@
 <h2>最強のカードを作ろう</h2>
 <p>カードを発行すると決め、まずはじめに行ったのはアライアンスの準備と既存サービスの調査、そして自分たちがどんなカードを作りたいのかを考えることでした。</p>
 <p>次の資金調達へ向け既存の事業を伸ばすことが前提にあったため、全社のリソースをカード事業に割くことはできなかったが、代表の八巻と僕とで作ったたたき台を元に社内で議論を始めていきました。</p>
-<p><img src="/images/vandlecard/v014.png" alt=""></p>
+<p><img src="/images/vandlecard/v014.png"></p>
 <p class="Caption">最強のカード作ってやろうぜ</p>
 <h2>調べて描いて考える</h2>
 <p>類似するサービスや人々に使われているアプリを調査し、機能やデザインを探っていきました。</p>
-<p><img src="/images/vandlecard/v003.png" alt=""></p>
+<p><img src="/images/vandlecard/v003.png"></p>
 <p class="Caption">類似サービスを探る</p>
 <p>安心して使える、拡張性がある、データから新しい発見ができるようになるという3つの軸を元に、いくつかのアイデアだしを行いました。</p>
-<p><img src="/images/vandlecard/v002.png" alt=""></p>
+<p><img src="/images/vandlecard/v002.png"></p>
 <p class="Caption">特徴を考える</p>
 <p>集めた情報やアイデアを元に描いて考えていきました。</p>
-<p><img src="/images/vandlecard/v001.png" alt=""></p>
+<p><img src="/images/vandlecard/v001.png"></p>
 <p class="Caption">描いて考える</p>
 <p>大きく分けると、以下のようなサービスに可能性がありそうだと考えました。</p>
 <ul>
@@ -37,13 +44,13 @@
 <h2>とにかく作って触ってみる</h2>
 <p>UIのプロトタイピングを行いながら、より具体的にサービスのイメージを膨らませていきました。
 これらのプロトタイプは、基本的にはDropboxで共有し、スマホで見た場合の感触を元に検討していきました。UIがある程度詰まった段階でProttなどで簡単に動くものを作って確認していました。</p>
-<p><img src="/images/vandlecard/v006.png" alt=""></p>
+<p><img src="/images/vandlecard/v006.png"></p>
 <p class="Caption">UIプロトタイピング 1</p>
-<p><img src="/images/vandlecard/v007.png" alt=""></p>
+<p><img src="/images/vandlecard/v007.png"></p>
 <p class="Caption">UIプロトタイピング 2</p>
-<p><img src="/images/vandlecard/v005.png" alt=""></p>
+<p><img src="/images/vandlecard/v005.png"></p>
 <p class="Caption">UIプロトタイピング 3</p>
-<p><img src="/images/vandlecard/v004.png" alt=""></p>
+<p><img src="/images/vandlecard/v004.png"></p>
 <p class="Caption">ターゲットの簡単な分析</p>
 <p>ポイントやステータスがどうこうよりも「わかりやすくて使いやすい1枚のカードがあれば良い」という価値観を持つ人のためのカード。アプリのようにアップデートされていくカードを作れたら面白いのではないか？これが僕らの考えた初期のコンセプトとなりました。</p>
 <h2>初期プロトタイピング</h2>
@@ -60,7 +67,7 @@
 <p>2015年8月から11月まで、とあるプリペイドカード及びスマホアプリを20名ほどに利用してもらい、事前アンケート、カードとアプリの利用状況データ、事後アンケートを行いました。</p>
 <h3>プロトタイプ</h3>
 <p>実際にカードで決済した結果がアプリと連動するように、他社のカードのweb明細と利用通知メールのスクレイピングを行ってサーバのデータを更新する仕組みを作り、PhoneGapベースのスマホアプリに表示・通知されるよう設計しました。</p>
-<p><img src="/images/vandlecard/v005.png" alt=""></p>
+<p><img src="/images/vandlecard/v005.png"></p>
 <p class="Caption">プロトタイプのUI</p>
 <p>ざっくり書くと以下のような機能が含まれています。</p>
 <ul>
@@ -88,20 +95,20 @@
 <h2>デザインプロトタイピング2</h2>
 <p>プロトタイピングの洞察を元に、再度デザインのプロタイピングを行いました。作成したUI案は、Pixateを使って触れるようにし、ユーザーテスト及びヒアリングを行っています。</p>
 <p>前回のプロトタイプはシンプルな明細でしたが、ここで一度大きく振って、グラフィカルなサマリー表示を軸としたUI案を作成しました。</p>
-<p><img src="/images/vandlecard/v008.png" alt=""></p>
+<p><img src="/images/vandlecard/v008.png"></p>
 <p class="Caption">サマリー表示を軸としたUI案</p>
 <p>期間表示を簡単に操作できるようなUI案も作成しています。カレンダーUIを使って、日付や指定期間で利用履歴をみることができます。一週間など期間を指定し、横スワイプで移動できるようなUIも考えました。</p>
-<p><img src="/images/vandlecard/v009.png" alt=""></p>
+<p><img src="/images/vandlecard/v009.png"></p>
 <p class="Caption">期間表示を軸としたUI案</p>
 <p>この辺りから、カードをアプリ上に表示する方法を考え始めています。また、全体的なデザインのトーン・マナーについての調整も始めました。</p>
-<p><img src="/images/vandlecard/v010.png" alt=""></p>
+<p><img src="/images/vandlecard/v010.png"></p>
 <p class="Caption">シンプルな見た目とカードらしさを表現するUI案</p>
 <p>リサーチの結果、金融系アプリは概して複雑に見えるという事実がありました。差別化の目的もあり、バンドルカードでは<strong>シンプルに見える</strong>ということを重視しようと決め、調整を始めました。</p>
-<p><img src="/images/vandlecard/v011.png" alt=""></p>
+<p><img src="/images/vandlecard/v011.png"></p>
 <p class="Caption">よりシンプルだと感じさせるように調整したUI案</p>
 <h2>技術選定</h2>
 <p>デザインプロトタイピングと並行して、スマホアプリを開発するための技術選定を行いました。僕たちのチームでSwiftやJavaを書ける人がいなかったため、当時の選択肢としてPhoneGapかReactNativeか、またはSwift・Javaを学ぶか、というのがありました。技術選定及びフロントの開発は、僕と岡田（<a href="https://twitter.com/moqada">@moqada</a>）で行っています。</p>
-<p><img src="/images/vandlecard/v033.png" alt=""></p>
+<p><img src="/images/vandlecard/v033.png"></p>
 <p class="Caption">コードを書きすぎた結果</p>
 <p>それまでReactjsでの開発を行っていたことと、PhoneGapでのパフォーマンスの低さを体感していたため、まずはReactNativeが本当に<strong>使えるのか</strong>を確認するためのプロトタイピングを行いました。</p>
 <blockquote>
@@ -135,22 +142,22 @@ ReactNative+Reduxという、2015年11月当時の最新スタックを導入し
 <h3>UIの最終調整・変更</h3>
 <p>開発中にUIを触り続けているので、細かい不整合などは気づいた時点で吸収しながらデザインの調整を行いました。<br>
 3人の開発チーム（フロントは1.5人）で進めていたため、<strong>コードが複雑化しないデザイン</strong>であることも重視していました。</p>
-<p><img src="/images/vandlecard/v012.png" alt=""></p>
+<p><img src="/images/vandlecard/v012.png"></p>
 <p class="Caption">実装可能性を考慮し最終調整したUI</p>
 <p>合わせて最終的なカラー定義も作成しています。</p>
-<p><img src="/images/vandlecard/v017.png" alt=""></p>
+<p><img src="/images/vandlecard/v017.png"></p>
 <p class="Caption">カラー定義</p>
 <h2>カード券面</h2>
 <p>カード券面のデザインは、本番開発とは切り離されたスケジュールで進んでいました。Visa・印刷会社・基幹システム・カンム間で多くのやりとりが行われるため、非常にスケジュールが立てづらくなっていたからです。</p>
 <p>カード券面は、当初から真っ白のカードでいこうと決まっていました。</p>
-<p><img src="/images/vandlecard/v015.png" alt=""></p>
+<p><img src="/images/vandlecard/v015.png"></p>
 <p class="Caption">カード券面</p>
 <p>なぜ白いカードにしようと思ったのか。それは最もシンプルなカードを作りたいという思いがあったからです。アップルの陶器のような白さを持つカードが出来たら、昨今のよくわからないグラフィックで覆われたカードよりも魅力的になるのではないかと考えました。</p>
 <p>実際のカードは、印刷会社の制約によって理想とはだいぶかけ離れた仕上がりとなっています。色やフォントの制約が多く存在し、カスタマイズはできません（多くのお金をかければできるとも言えます）。また、印刷品質の低さや印字の汚さなどの問題もあります。自分の力のなさを嘆きたくなりました。</p>
-<p><img src="/images/vandlecard/v019.png" alt=""></p>
+<p><img src="/images/vandlecard/v019.png"></p>
 <p class="Caption">バーチャルカード券面</p>
 <h2>シンボル</h2>
-<p>シンボルマークはかなり悩みました。もともとロゴやマークは得意分野ではなく、良いものができたとはあまり思っていません…。</p>
+<p>シンボルマークはかなり悩みました。もともとロゴやマークは得意分野ではなく、良いものができたとはあまり思っていません...。</p>
 <ul>
 <li>カードであることがわかる</li>
 <li>常に新しいことを取り入れていくカードである</li>
@@ -158,17 +165,17 @@ ReactNative+Reduxという、2015年11月当時の最新スタックを導入し
 <li>どこよりも柔軟に社会の変化に対応するカードである</li>
 </ul>
 <p>以上のような考えを元に、カードのイメージをベースとしてたまごや小鳥のようなイメージを合わせてシンボルを作成しました。</p>
-<p><img src="/images/vandlecard/v016.png" alt=""></p>
+<p><img src="/images/vandlecard/v016.png"></p>
 <p class="Caption">シンボルマーク</p>
 <h2>ネーミング</h2>
 <p>バンドルカードは、ValueとHandleから作った造語です。よりよくお金を使えるようにするというビジョンの元、このカードは価値を扱いやすくしてくれるものであるという考えからつけた名前です。</p>
-<p>シンボルマークとも、「鳥」をキーワードに印象がぶれないようにと考えましたが、そううまくいっているかはちょっとわかりません…。</p>
+<p>シンボルマークとも、「鳥」をキーワードに印象がぶれないようにと考えましたが、そううまくいっているかはちょっとわかりません..。</p>
 <h2>パッケージ</h2>
 <p>プラスチックカードを送付するためのパッケージを作成しました。
 カード、説明書、カード台紙、封筒、宛名シールなど、をいかに<strong>単価を最小にして簡単に封入できる形にするか</strong>を検討しました。</p>
 <p>送付のオペレーション上、カード裏面にあるIDをユーザーと結びつける必要があり、外部に委託するには精密なアセンブリ設計をする必要があることがわかりました。また、アセンブリ工程の複雑さが費用の増加に直結するため、いかに単純化、分担化できるかが問題となりました。</p>
 <p>まずは、台紙をなくし、ビニールの袋にすべてを包むようにすることでコスト減と作業の簡略化を実現しています。（特殊な台紙の印刷よりもビニールの袋の方が安価、かつアセンブリ作業が簡単）</p>
-<p><img src="/images/vandlecard/v018.png" alt=""></p>
+<p><img src="/images/vandlecard/v018.png"></p>
 <p class="Caption">パッケージ</p>
 <p>ほとんどの他社カードが定形封筒の味気ない形で送られてくる中で、僕らはそれを変えるべきだと考えていました。カード会社が物理的な接点を持つ機会として、リアルカードの送付という接点は非常に重要です。</p>
 <p>ユーザーに驚きを与えられるような、そんな送付パッケージにしたいという思いがありました。革のカードケースに入って送られてきたら嬉しいんじゃないかとか、そういったことを考えながら試作や業者との連携を進めていましたが、現実的に難しいという結果になりました。</p>
@@ -177,52 +184,52 @@ ReactNative+Reduxという、2015年11月当時の最新スタックを導入し
 <p>2016年7月11日、ランディングページを公開しました。これまで作成してきたリソースを使い、2週間程でデザインから開発まで行っています。<a href="https://github.com/gatsbyjs/gatsby">gatsbyjs</a>というReactベースのサイトジェネレータを使って作成しています。</p>
 <p>このライブラリの良いところはJavaScriptで記述できることで、webpackが組み込まれておりReact、PostCSSといったアセットを標準で持っていることです。さらにサーバサイドレンダリングでHTMLファイルをパブリッシュできるので、SEOの観点から見ても問題がないというのもあります。</p>
 <p>また、Markdownでも簡単に記事ページを作成することができる点も大きいです。</p>
-<p><img src="/images/vandlecard/v020.png" alt=""></p>
+<p><img src="/images/vandlecard/v020.png"></p>
 <p class="Caption">リリース前LP</p>
 <h2>カードが来たぞ</h2>
 <p>2016年の9月。印刷会社から本番カードが送られてきました。リリースの数日前のことです。</p>
-<p><img src="/images/vandlecard/v027.png" alt=""></p>
+<p><img src="/images/vandlecard/v027.png"></p>
 <p class="Caption">リアルカードを初めてアクティベーションした男</p>
 <h2>リリース</h2>
 <p>2016年9月16日、カンム、オリコさん、TISさん、昌栄印刷さんで作りあげたバンドルカードを無事リリースできました。</p>
-<p><img src="/images/vandlecard/v028.png" alt=""></p>
+<p><img src="/images/vandlecard/v028.png"></p>
 <p class="Caption">App Store</p>
 <h2>高校生プロモーション開始</h2>
 <p>バンドルカードのプロモーションとして、まずは高校生をターゲットにしたプロモーションを開始しました。</p>
-<p><img src="/images/vandlecard/v029.png" alt=""></p>
+<p><img src="/images/vandlecard/v029.png"></p>
 <p class="Caption">無限ポテト</p>
 <p>4人チームを作ってポテトを増やしまくり、スコアの一番高かった人が賞金（250円）を受け取れるというプロモーションをクローズで開始しました。しかし、ゲームを始めるにはバンドルカードのアカウントが必要かつ4人集めなければならないというのが想像以上のハードルとなり、ほとんど普及せずに終了しました。</p>
 <p><a href="https://vandle.jp/lp-campaign-potato/">https://vandle.jp/lp-campaign-potato/</a></p>
 <p>50人ほどの高校生に初期ユーザとして参加してもらい、SNSを通じて拡散を行いましたがほとんど利用されませんでした。しかし、カード自体を便利だと感じる高校生が半数ほどいたり、ゲーム自体の面白さは実証でき、始めるまでのハードルが問題であることがわかりました。</p>
-<p><img src="/images/vandlecard/v030.png" alt=""></p>
+<p><img src="/images/vandlecard/v030.png"></p>
 <p class="Caption">タップすると増え続ける...</p>
 <h2>ハロウィンイベント</h2>
 <p>バンドルカードプロモーションとして、ingさんに協力してもらい高校生限定ハロウィンイベントに協賛しカード配布を行いました。</p>
-<p><img src="/images/vandlecard/v021.jpg" alt=""></p>
+<p><img src="/images/vandlecard/v021.jpg"></p>
 <p class="Caption">ハロウィンイベント</p>
-<p>このイベントの準備は本当に時間がなく、全社で印刷物まで手で作るということをやりました…</p>
-<p><img src="/images/vandlecard/v026.png" alt=""></p>
+<p>このイベントの準備は本当に時間がなく、全社で印刷物まで手で作るということをやりました...</p>
+<p><img src="/images/vandlecard/v026.png"></p>
 <p class="Caption">全員でイベント準備</p>
 <h2>簡単ガイドブック</h2>
 <p>イベント等での配布用に二つ折りのガイドブックを作成しました。</p>
-<p><img src="/images/vandlecard/v022.jpg" alt=""></p>
+<p><img src="/images/vandlecard/v022.jpg"></p>
 <p class="Caption">ガイドブック表紙</p>
 <h2>竹下通りサンプリング</h2>
 <p>マイナビさんに協力してもらい、竹下通りのJOL原宿前でチラシの配布と、カードの登録ブースを設置してカード配布を行いました。</p>
-<p><img src="/images/vandlecard/v023.png" alt=""></p>
+<p><img src="/images/vandlecard/v023.png"></p>
 <p class="Caption">竹下通りでチラシを配布</p>
-<p><img src="/images/vandlecard/v024.png" alt=""></p>
+<p><img src="/images/vandlecard/v024.png"></p>
 <p class="Caption">バンドルカードブース</p>
-<p><img src="/images/vandlecard/v025.jpg" alt=""></p>
+<p><img src="/images/vandlecard/v025.jpg"></p>
 <p class="Caption">配布物</p>
 <h2>Androidリリース</h2>
 <p>2016年12月16日。Android版をリリース。</p>
 <p>同時にリリース記念キャンペーンを開催</p>
-<p><img src="/images/vandlecard/v031.png" alt=""></p>
+<p><img src="/images/vandlecard/v031.png"></p>
 <p class="Caption">Androidリリース記念キャンペーン</p>
 <h2>お年玉キャンペーン</h2>
 <p>12月から入ってくれている中川君の発案で2017年に向けてお年玉キャンペーンを実施。これまでにないフォロワー・会員獲得率を記録している。</p>
-<p><img src="/images/vandlecard/v032.png" alt=""></p>
+<p><img src="/images/vandlecard/v032.png"></p>
 <p class="Caption">お年玉キャンペーン</p>
 <h2>無限ポテトキャンペーン改</h2>
 <p>前回の無限ポテトのリベンジとして、ゲーム参加までのハードルを下げたり、画像の投稿などの機能をつけたWebアプリを作成。</p>
@@ -233,12 +240,11 @@ ReactNative+Reduxという、2015年11月当時の最新スタックを導入し
 <p>いくつかのプロモーションを繰り返す中で、外して外して時には当たったりしていましたが、より着実にカード保有者を増やす方法として、「バンドルカード」以外の提携カードを発行することになりました。</p>
 <p>そこで、複数のカードに対応したアプリの開発が始まりました。</p>
 <p>どのカードの明細を見ているか、どのカードにチャージを行おうとしているか、といったことを直感的にわかりやすくするために、メイン画面ではカード情報が常に表示されるように UI を変更しました。</p>
-<p><img src="/images/vandlecard/v034.png" alt=""></p>
+<p><img src="/images/vandlecard/v034.png"></p>
 <p class="Caption">複数カード対応 UI</p>
 <p>この機能のデザインを終え、View 側の実装をほどほどに、僕のカンムとしての旅は終わりました。</p>
 <h2>バンドルカード</h2>
 <p>バンドルカードは、わかりやすく使いやすいカードがあるべきだと考えた奴らが作り、誰もがインターネットで決済できる世界に受け入れられ広まっています。</p>
 <p>愚直に続けることがカンムの文化であり、最高のプロダクトを作るために全力を傾けているチームです。</p>
 <p>この記事を見てご興味が湧きましたらカンムまでご連絡ください。</p>
-<p><a href="https://kanmu.co.jp">https://kanmu.co.jp</a></p>
-</div></div></div></div></div><script src="/bundle.js"></script><script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-36151317-1", "auto");ga("send", "pageview");</script><script async="" src="//platform.instagram.com/jp/embeds.js"></script><script async="" src="//platform.twitter.com/widgets.js"></script><script async="" defer="" src="//assets.pinterest.com/js/pinit.js"></script></body></html>
+<p><a href="https://kanmu.co.jp">https://kanmu.co.jp</a></p></div></div></div></div><script src="https://platform.twitter.com/widgets.js"></script><script src="https://www.instagram.com/embed.js"></script><script src="https://embedr.flickr.com/assets/client-code.js"></script><script src="https://embed.redditmedia.com/widgets/platform.js"></script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/vandlecard";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-2a4332b2069fb79fad85.js"],"component---src-templates-post-js":["/component---src-templates-post-js-01dc1b99fa80edd59341.js"],"component---src-pages-index-js":["/component---src-pages-index-js-db77aa2fed2931bdfeab.js"]};/*]]>*/</script><script src="/component---src-templates-post-js-01dc1b99fa80edd59341.js" async=""></script><script src="/commons-8b64a4ed23ee7f0f755d.js" async=""></script><script src="/app-2a4332b2069fb79fad85.js" async=""></script><script src="/styles-153975cb1450f2848b68.js" async=""></script><script src="/webpack-runtime-6dff0a4519671ae1b419.js" async=""></script><script src="/bundle.js"></script><script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-36151317-1", "auto");ga("send", "pageview");</script></body></html>
