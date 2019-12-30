@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{RXBc:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return r}));var a=t("q1tI"),c=t.n(a),i=t("TJpk"),o=t.n(i);function r(){return c.a.createElement("div",{className:"Index"},c.a.createElement(o.a,{meta:[{content:"こんにちは、井出優太です。東京でデザイナーをしています。インタラクションのデザインを軸にデザインしたりコードを書いたりしています。",name:"description"}],title:"ideyuta.com"}),c.a.createElement("p",null,"hoge"))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-fade505fc27ed9265a59.js.map
