@@ -17,6 +17,7 @@
     "fs-extra": "^8.1.0",
     "gatsby": "^2.18.17",
     "gatsby-plugin-manifest": "^2.2.34",
+    "gatsby-plugin-no-sourcemaps": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-styled-components": "^3.1.16",
     "gatsby-remark-prismjs": "^3.3.28",
@@ -35,6 +36,7 @@
     "url": "https://github.com/ideyuta/ideyuta.github.io"
   },
   "scripts": {
+    "prebuild": "gatsby clean",
     "build": "gatsby build --prefix-links",
     "deploy": "gh-pages -d public -b master",
     "lint": "eslint ./ --cache",
