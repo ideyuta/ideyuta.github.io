@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import '../images/reactions/god_han.gif';
+import '../images/reactions/miso_dope.gif';
+import '../images/reactions/miso_sama.gif';
 
 const reactions = [
   'god_han',

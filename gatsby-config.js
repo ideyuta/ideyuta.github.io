@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `ideyuta.com`,
-        icon: `src/images/icon.png`,
+        icon: `static/images/icon.png`,
         short_name: `ideyuta.com`,
         start_url: `/`,
         background_color: `#fff`,

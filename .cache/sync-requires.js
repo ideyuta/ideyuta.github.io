@@ -6,6 +6,7 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---src-templates-post-js": hot(preferDefault(require("/Users/ide/Works/ideyuta.github.io/src/templates/post.js"))),
+  "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/ide/Works/ideyuta.github.io/.cache/dev-404-page.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/ide/Works/ideyuta.github.io/src/pages/index.js")))
 }
 

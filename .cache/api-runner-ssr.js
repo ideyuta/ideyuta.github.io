@@ -9,7 +9,7 @@ var plugins = [{
       options: {"plugins":[],"usePrefix":false},
     },{
       plugin: require('/Users/ide/Works/ideyuta.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"ideyuta.com","icon":"src/images/icon.png","short_name":"ideyuta.com","start_url":"/","background_color":"#fff","theme_color":"#5AB87E","display":"standalone"},
+      options: {"plugins":[],"name":"ideyuta.com","icon":"static/images/icon.png","short_name":"ideyuta.com","start_url":"/","background_color":"#fff","theme_color":"#5AB87E","display":"standalone"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
