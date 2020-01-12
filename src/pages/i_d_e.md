@@ -2,6 +2,7 @@
 title: "フリーランス時代の仕事"
 createdAt: "2016-12-26"
 path: "/i-d-e"
+type: "work"
 ---
 
 ide design and engineeringの屋号で2012年12月から2013年8月までフリーランスをしていました。その時の仕事の一部をまとめています。

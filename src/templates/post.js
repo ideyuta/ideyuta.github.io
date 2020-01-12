@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import PostFooter from '../components/PostFooter';
 import Spacer from '../components/Spacer';
 
 const Content = styled.div`
@@ -42,6 +43,8 @@ export default function Template({ data }) {
         <Spacer size="regular" />
         <div className="post" dangerouslySetInnerHTML={{ __html: html }} />
       </Content>
+      <Spacer size="large" />
+      <PostFooter profileType={frontmatter.type} />
       <Footer />
     </>
   );
@@ -54,32 +57,8 @@ export const pageQuery = graphql`
       frontmatter {
         createdAt
         path
+        type
         title
-      }
-    }
-    posts: allMarkdownRemark(
-      sort: { fields: [frontmatter___createdAt], order: ASC }
-    ) {
-      edges {
-        next {
-          frontmatter {
-            createdAt
-            path
-            title
-          }
-        }
-        previous {
-          frontmatter {
-            createdAt
-            path
-            title
-          }
-        }
-        node {
-          frontmatter {
-            path
-          }
-        }
       }
     }
   }

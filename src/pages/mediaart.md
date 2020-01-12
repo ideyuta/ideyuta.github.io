@@ -2,6 +2,7 @@
 title: "学生時代に制作したメディアアートたち"
 createdAt: "2016-12-26"
 path: "/mediaart"
+type: "work"
 ---
 
 - かささす（2008）

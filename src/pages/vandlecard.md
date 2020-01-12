@@ -2,6 +2,7 @@
 title: "バンドルカードができるまで"
 createdAt: "2016-12-11"
 path: "/vandlecard"
+type: "work"
 ---
 
 ## 前置き
