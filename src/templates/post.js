@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Spacer from '../components/Spacer';
 
@@ -41,6 +42,7 @@ export default function Template({ data }) {
         <Spacer size="regular" />
         <div className="post" dangerouslySetInnerHTML={{ __html: html }} />
       </Content>
+      <Footer />
     </>
   );
 }
