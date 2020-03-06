@@ -95,7 +95,7 @@ export default class Profile extends React.Component {
         ) : (
           <>
             <Content>
-              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はCoineyとSTORESをつなぐプロジェクトをやっています。
+              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はCoineyとSTORESをつないでいたり、ナイスな生活をやっていたりします。
             </Content>
             <Spacer size="small" />
             <Content>
@@ -111,7 +111,7 @@ export default class Profile extends React.Component {
               Email: <a href="mailto:ide.yuta@gmail.com">ide.yuta@gmail.com</a>
             </Content>
             <Content>
-              Work: <a href="https://hey.jp">hey,inc.</a>
+              Work: <a href="https://hey.jp">hey,inc.</a> / <a href="https://somewhere-inc.co.jp/">Somewhere,inc.</a>
             </Content>
           </>
         )}
