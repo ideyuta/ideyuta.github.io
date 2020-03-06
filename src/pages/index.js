@@ -81,6 +81,7 @@ export default function Index() {
         <SectionHeader>
           SOFAR
         </SectionHeader>
+        <A to="2020/03">2020/03</A>
         <A to="2020/02">2020/02</A>
         <A to="one_fine_day">ある晴れた日のこと</A>
         <A to="2020/01">2020/01</A>
