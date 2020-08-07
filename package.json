@@ -26,7 +26,7 @@
     "gatsby-transformer-remark": "^2.6.45",
     "gh-pages": "^2.1.1",
     "prettier": "1.19.1",
-    "prismjs": "^1.17.1"
+    "prismjs": "^1.21.0"
   },
   "license": "MIT",
   "main": "n/a",
