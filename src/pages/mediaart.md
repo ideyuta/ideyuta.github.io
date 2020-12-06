@@ -11,9 +11,6 @@ type: "work"
 - 結（2010）
 - TimeMachine（2011）
 
-<br />
-<br />
-
 
 ## かささす
 

@@ -102,3 +102,12 @@ pre {
   color: #999;
   text-align: center;
 }
+
+.Credit {
+  background: #f4f4f6;
+  border-radius: 16px;
+  padding: 16px;
+}
+.Credit li {
+  font-size: 0.75rem !important;
+}

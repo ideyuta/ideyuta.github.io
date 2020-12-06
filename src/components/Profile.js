@@ -19,6 +19,8 @@ const Photo = styled.img`
   cursor: pointer;
   max-width: 130px;
   position: relative;
+  transition-property: all;
+  transition-duration: 0.3s;
 `;
 const PhotoWrapper = styled.div`
   position: relative;
@@ -80,7 +82,7 @@ export default class Profile extends React.Component {
         <Spacer size="small" />
         {type === 'private' ? (
           <>
-            <Content>88年静岡県生まれ。4歳と1歳の娘がいます。料理と散歩が趣味で、おじいさんみたいに朝早くから活動しています。最近はパソコンを買うためにECでお商売をやりたいなあとか思っています。</Content>
+            <Content>88年静岡県生まれ。5歳と2歳の娘がいます。料理と散歩が趣味で、おじいさんみたいに朝早くから活動しています。最近はイケてる電動自転車をかっ飛ばしています。</Content>
             <Spacer size="small" />
             <Content>
               Twitter: <a href="https://twitter.com/_ideyuta">@_ideyuta</a>
@@ -95,7 +97,7 @@ export default class Profile extends React.Component {
         ) : (
           <>
             <Content>
-              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はCoineyとSTORESをつないでいたり、ナイスな生活をやっていたりします。
+              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近は新規事業を立ち上げたりデザインをやったりしています。
             </Content>
             <Spacer size="small" />
             <Content>
@@ -105,13 +107,10 @@ export default class Profile extends React.Component {
               GitHub: <a href="https://github.com/ideyuta">ideyuta</a>
             </Content>
             <Content>
-              YOUTRUST: <a href="https://youtrust.jp/users/19d51a1ae3a1f1d24cc199d4d54caa20">ideyuta</a>
-            </Content>
-            <Content>
               Email: <a href="mailto:ide.yuta@gmail.com">ide.yuta@gmail.com</a>
             </Content>
             <Content>
-              Work: <a href="https://hey.jp">hey,inc.</a> / <a href="https://somewhere-inc.co.jp/">Somewhere,inc.</a>
+              Work: <a href="https://hey.jp">hey,inc.</a>
             </Content>
           </>
         )}
