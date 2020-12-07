@@ -24,7 +24,7 @@
     "gatsby-remark-responsive-iframe": "^2.2.30",
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-remark": "^2.6.45",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^3.1.0",
     "prettier": "1.19.1",
     "prismjs": "^1.17.1"
   },
@@ -37,7 +37,7 @@
   },
   "scripts": {
     "prebuild": "gatsby clean",
-    "build": "gatsby build --prefix-links",
+    "build": "gatsby build --prefix-paths",
     "deploy": "gh-pages -d public -b master",
     "lint": "eslint ./ --cache",
     "start": "gatsby develop",
