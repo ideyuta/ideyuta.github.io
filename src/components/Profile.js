@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Spacer from './Spacer';
 import { colors } from '../assets';
-import ide from "../images/ideyuta3.png";
-import ide2 from "../images/ideyuta2.png";
 
 const Content = styled.p`
   margin: 2px 0;
@@ -57,7 +55,7 @@ export default class Profile extends React.Component {
         <PhotoWrapper>
           <Photo
             onClick={() => this.setState({ type: 'private' })}
-            src={ide}
+            src="../images/profile_p.png"
             style={{
               opacity: type === 'private' ? 1 :  0.08,
               zIndex: type === 'private' ? 100 : 1,
@@ -65,7 +63,7 @@ export default class Profile extends React.Component {
           />
           <Photo
             onClick={() => this.setState({ type: 'work' })}
-            src={ide2}
+            src="../images/profile_w.png"
             style={{
               position: 'absolute',
               left: '36px',

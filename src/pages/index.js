@@ -23,7 +23,7 @@ const Portrait = styled.img`
   display: block;
   height: 480px;
   object-fit: cover;
-  object-position: 50% 80%;
+  object-position: 50% 50%;
   position: relative;
     max-width: 100vw;
     width: 100vw;
@@ -65,7 +65,7 @@ export default function Index() {
         </p>
       </Section>
 
-      <Portrait src="../images/ideyuta.png" />
+      <Portrait src="../images/ideyuta.jpg" />
       <Section bgColor={colors.theme}>
 
         <Spacer size="small" />
@@ -75,7 +75,7 @@ export default function Index() {
           title="井出 優太 / Yuta Ide"
         />
 
-          <p>略歴　88年静岡県生まれ。多摩美術大学大学院 情報デザイン研究領域修了。5歳と2歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て、2013年にカンムへ入社。2016年にバンドルカードをリリースしました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。代表としてSMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、heyにてsoiという事業を立ち上げました。最近は別の新規事業のプロダクトオーナーと、STORESすべてのプロダクトのデザインリードをやっています。</p>
+          <p>略歴　88年静岡県生まれ。多摩美術大学大学院 情報デザイン研究領域修了。5歳と2歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て、2013年にカンムへ入社。2016年にバンドルカードをリリースしました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。代表としてSMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、heyにてsoiという事業を立ち上げました。最近は別の新規事業を立ち上げたり、STORES全プロダクトのデザインリードをやっていたりします。</p>
         <Spacer size="medium" />
       </Section>
 
