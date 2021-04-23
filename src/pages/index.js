@@ -91,6 +91,13 @@ export default function Index() {
         />
         <Line />
         <Anchor
+          date="2019"
+          label="ヘイ"
+          path="soi"
+          title="soiの記録"
+        />
+        <Line />
+        <Anchor
           date="2016"
           label="カンム"
           path="vandlecard"
