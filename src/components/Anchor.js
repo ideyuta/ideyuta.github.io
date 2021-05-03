@@ -25,7 +25,6 @@ const Date = styled.span`
   display: inline-block;
   border: 1px solid ${colors.gray300};
   border-width: 0 0 0 1px;
-  font-weight: 400;
   padding: 0 0 0 8px;
   margin: 0 0 0 8px;
   letter-spacing: 0.02em;

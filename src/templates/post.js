@@ -14,9 +14,9 @@ const Content = styled.div`
   padding: 20px;
   word-break: break-all;
 `;
-const Title = styled.h2`
+const Title = styled.h1`
   font-size: 2.6rem;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
 `;
 
@@ -30,8 +30,8 @@ export default function Template({ data }) {
         { name: 'description', content: '' },
         { property: 'og:title', content: frontmatter.title },
         { property: 'og:type', content: 'blog' },
-        { property: 'og:url', content: `http://ideyuta.com${frontmatter.path}` },
-        { property: 'og:image', content: `http://ideyuta.com/images${frontmatter.path}/ogp.png` },
+        { property: 'og:url', content: `https://ideyuta.com${frontmatter.path}` },
+        { property: 'og:image', content: `https://ideyuta.com/images${frontmatter.path}/ogp.png` },
         { property: 'og:description', content: '' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@_ideyuta' },

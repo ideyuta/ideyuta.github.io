@@ -20,7 +20,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link
-          href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,800&display=swap"
+          href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700&display=swap"
           rel="stylesheet"
         />
         <link
