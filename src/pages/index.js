@@ -84,6 +84,13 @@ export default function Index() {
           PROJECTS
         </SectionHeader>
         <Anchor
+          date="2021"
+          label="ヘイ"
+          path="stores_regi"
+          title="STORESレジができるまで"
+        />
+        <Line />
+        <Anchor
           date="2020"
           label="ヘイ"
           path="stores_dashboard_new_design"
