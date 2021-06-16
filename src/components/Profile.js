@@ -3,6 +3,12 @@ import styled from 'styled-components';
 import Spacer from './Spacer';
 import { colors } from '../assets';
 
+const A = styled.a`
+  &:link { border-bottom: 1px solid #08080e; }
+  &:visited { border-bottom: 1px solid #08080e; }
+  &:hover { border-bottom: 1px solid #5ab87e; }
+  &:active { border-bottom: 1px solid #08080e; }
+`;
 const Content = styled.p`
   margin: 2px 0;
 `;
@@ -83,32 +89,32 @@ export default class Profile extends React.Component {
             <Content>88年静岡県生まれ。5歳と2歳の娘がいます。料理と散歩が趣味で、おじいさんみたいに朝早くから活動しています。最近はイケてる電動自転車をかっ飛ばしています。</Content>
             <Spacer size="small" />
             <Content>
-              Twitter: <a href="https://twitter.com/_ideyuta">@_ideyuta</a>
+              Twitter: <A href="https://twitter.com/_ideyuta">@_ideyuta</A>
             </Content>
             <Content>
-              Threads: <a href="https://instagram.com/_ideyuta">@_ideyuta</a>
+              Threads: <A href="https://instagram.com/_ideyuta">@_ideyuta</A>
             </Content>
             <Content>
-              Store: <a href="https://ideyuta.stores.jp">ideyuta.store</a>
+              Store: <A href="https://ideyuta.stores.jp">ideyuta.store</A>
             </Content>
           </>
         ) : (
           <>
             <Content>
-              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近は新規事業を立ち上げたりデザインをやったりしています。
+              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はSTORESレジを立ち上げたりデザインリードをやったりしています。
             </Content>
             <Spacer size="small" />
             <Content>
-              Twitter: <a href="https://twitter.com/_ideyuta">@_ideyuta</a>
+              Twitter: <A href="https://twitter.com/_ideyuta">@_ideyuta</A>
             </Content>
             <Content>
-              GitHub: <a href="https://github.com/ideyuta">ideyuta</a>
+              GitHub: <A href="https://github.com/ideyuta">ideyuta</A>
             </Content>
             <Content>
-              Email: <a href="mailto:ide.yuta@gmail.com">ide.yuta@gmail.com</a>
+              Email: <A href="mailto:ide.yuta@gmail.com">ide.yuta@gmail.com</A>
             </Content>
             <Content>
-              Work: <a href="https://hey.jp">hey,inc.</a>
+              Work: <A href="https://hey.jp">hey,inc.</A>
             </Content>
           </>
         )}
