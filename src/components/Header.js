@@ -1,7 +1,7 @@
-import React from 'react';
-import { withPrefix } from 'gatsby-link';
-import styled from 'styled-components';
-import { colors } from '../assets';
+import React from "react";
+import { withPrefix } from "gatsby-link";
+import styled from "styled-components";
+import { colors } from "../assets";
 
 const Anchor = styled.a`
   display: inline-block;
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 export default function Header() {
   return (
     <Wrapper>
-      <Anchor href={withPrefix('/')}>ideyuta.com</Anchor>
+      <Anchor href={withPrefix("/")}>ideyuta.com</Anchor>
     </Wrapper>
   );
 }

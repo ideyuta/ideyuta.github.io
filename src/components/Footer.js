@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { colors } from '../assets';
+import React from "react";
+import styled from "styled-components";
+import { colors } from "../assets";
 
 const Wrapper = styled.div`
   background: ${colors.gray20};
@@ -9,10 +9,12 @@ const Wrapper = styled.div`
   width: 100vw;
 `;
 
-export default () => {
+const Footer = () => {
   return (
     <Wrapper>
       <p>&copy; ideyuta.com</p>
     </Wrapper>
   );
-}
+};
+
+export default Footer;

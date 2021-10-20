@@ -1,11 +1,11 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import styled from 'styled-components';
-import media from 'styled-media-query';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Spacer from '../components/Spacer';
-import { colors } from '../assets';
+import React from "react";
+import Helmet from "react-helmet";
+import styled from "styled-components";
+import media from "styled-media-query";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Spacer from "../components/Spacer";
+import { colors } from "../assets";
 
 const A = styled.a`
   &:link {
@@ -68,16 +68,19 @@ export default function Invites() {
       <Helmet
         meta={[
           {
-            content: 'こんにちは、いでです。いろんな募集をしています。',
-            name: 'description'
+            content: "こんにちは、いでです。いろんな募集をしています。",
+            name: "description",
           },
-          { property: 'og:title', content: "募集 - ideyuta.com" },
-          { property: 'og:type', content: 'blog' },
-          { property: 'og:url', content: `https://ideyuta.com/invites` },
-          { property: 'og:image', content: `https://ideyuta.com/images/invites/ogp.png` },
-          { property: 'og:description', content: '' },
-          { name: 'twitter:card', content: 'summary_large_image' },
-          { name: 'twitter:site', content: '@_ideyuta' },
+          { property: "og:title", content: "募集 - ideyuta.com" },
+          { property: "og:type", content: "blog" },
+          { property: "og:url", content: `https://ideyuta.com/invites` },
+          {
+            property: "og:image",
+            content: `https://ideyuta.com/images/invites/ogp.png`,
+          },
+          { property: "og:description", content: "" },
+          { name: "twitter:card", content: "summary_large_image" },
+          { name: "twitter:site", content: "@_ideyuta" },
         ]}
         title="募集 - ideyuta.com"
       />
@@ -85,14 +88,29 @@ export default function Invites() {
 
       <Content>
         <SectionTitle>イベント告知</SectionTitle>
-        <Title>hey<br/>Talk<br/>Engineers</Title>
+        <Title>
+          hey
+          <br />
+          Talk
+          <br />
+          Engineers
+        </Title>
         <Spacer size="small" />
-        <SubTitle>新プロダクト「STORES レジ」を支えるエンジニアリング<br /><span role="img" aria-label="calender">📅</span> 2021/8/18 (水) 19:30 ~ 21:00</SubTitle>
+        <SubTitle>
+          新プロダクト「STORES レジ」を支えるエンジニアリング
+          <br />
+          <span role="img" aria-label="calender">
+            📅
+          </span>{" "}
+          2021/8/18 (水) 19:30 ~ 21:00
+        </SubTitle>
         <Spacer size="small" />
         <A href="https://hey.connpass.com/event/219835/">申し込みはこちら</A>
         <Spacer size="small" />
-        <Comment>ide - STORESではバックエンド、フロントエンド、モバイルエンジニアを募集しています。STORESはこれまで3つの独立したサービスを運営してきましたが、レジのリリースを皮切りにプラットフォームとしてサービスを連携させた新しい価値を提供していくブランドへと進みはじめました。ぜひこのエキサイティングなタイミングで一緒にプロダクトを作る仲間を増やしたいと思っています。レジの開発について、実際に開発に携わったエンジニアの話を聞く機会があるのでぜひ気になった方はご参加ください！</Comment>
-
+        <Comment>
+          ide -
+          STORESではバックエンド、フロントエンド、モバイルエンジニアを募集しています。STORESはこれまで3つの独立したサービスを運営してきましたが、レジのリリースを皮切りにプラットフォームとしてサービスを連携させた新しい価値を提供していくブランドへと進みはじめました。ぜひこのエキサイティングなタイミングで一緒にプロダクトを作る仲間を増やしたいと思っています。レジの開発について、実際に開発に携わったエンジニアの話を聞く機会があるのでぜひ気になった方はご参加ください！
+        </Comment>
       </Content>
 
       <Spacer size="large" />
@@ -104,10 +122,12 @@ export default function Invites() {
         <Title>よいプロダクトをつくりたい人へ</Title>
         <Spacer size="small" />
 
-        <p>STORESでデザイナーをしている<A href="https://ideyuta.com">いで</A>です。ネットショップの作成管理、お店のキャッシュレス決済、ネット予約管理、ネットと店舗をつないだレジといったプロダクトを作っています。ユーザーの課題と事業に向き合い、難しいトレードオフを繰り返しながら、かんたんで使いやすいプロダクトをつくることに熱意のある方と一緒に働きたいと思っています。ご興味ある方はぜひ。</p>
+        <p>
+          STORESでデザイナーをしている<A href="https://ideyuta.com">いで</A>
+          です。ネットショップの作成管理、お店のキャッシュレス決済、ネット予約管理、ネットと店舗をつないだレジといったプロダクトを作っています。ユーザーの課題と事業に向き合い、難しいトレードオフを繰り返しながら、かんたんで使いやすいプロダクトをつくることに熱意のある方と一緒に働きたいと思っています。ご興味ある方はぜひ。
+        </p>
         <Spacer size="small" />
         <A href="https://herp.careers/v1/heyinc/nNwZN6QbsTmj">応募はこちら</A>
-
       </Content>
 
       <Spacer size="large" />
@@ -116,8 +136,14 @@ export default function Invites() {
       <Content>
         <SectionTitle>過去のイベント</SectionTitle>
 
-        <p>hey designers night vol.4 | STORES レジ - 新規プロダクト開発とデザイナーの役割 <span role="img" aria-label="calender">📅</span> 2021/7/28 (木) 19:30 ~ 21:00</p>
-
+        <p>
+          hey designers night vol.4 | STORES レジ -
+          新規プロダクト開発とデザイナーの役割{" "}
+          <span role="img" aria-label="calender">
+            📅
+          </span>{" "}
+          2021/7/28 (木) 19:30 ~ 21:00
+        </p>
       </Content>
 
       <Spacer size="large" />

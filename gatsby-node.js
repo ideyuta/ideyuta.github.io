@@ -1,9 +1,9 @@
-const path = require("path")
+const path = require("path");
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
-  const casePostTemplate = path.resolve(`src/templates/post.js`)
+  const casePostTemplate = path.resolve(`src/templates/post.js`);
 
   return graphql(`
     {
@@ -20,9 +20,9 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
-      return Promise.reject(result.errors)
+      return Promise.reject(result.errors);
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
@@ -30,7 +30,7 @@ exports.createPages = ({ actions, graphql }) => {
         path: node.frontmatter.path,
         component: casePostTemplate,
         context: {},
-      })
-    })
-  })
-}
+      });
+    });
+  });
+};

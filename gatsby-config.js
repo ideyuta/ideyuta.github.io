@@ -1,16 +1,16 @@
 module.exports = {
-  pathPrefix: '',
+  pathPrefix: "",
   siteMetadata: {
-    title: 'ideyuta.com',
+    title: "ideyuta.com",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
-    'gatsby-plugin-no-sourcemaps',
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-no-sourcemaps",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'markdown-pages',
+        name: "markdown-pages",
         path: `${__dirname}/src/pages/`,
       },
     },
@@ -22,7 +22,7 @@ module.exports = {
             resolve: `@raae/gatsby-remark-oembed`,
             options: { usePrefix: false },
           },
-          'gatsby-remark-responsive-iframe',
+          "gatsby-remark-responsive-iframe",
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -49,4 +49,4 @@ module.exports = {
       },
     },
   ],
-}
+};
