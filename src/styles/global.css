@@ -140,6 +140,17 @@ pre {
   color: #999;
   text-align: center;
   margin-bottom: 40px;
+  a {
+    color: #999;
+  }
+}
+.Caption a {
+  color: #999 !important;
+  border-color: #999 !important;
+}
+
+.Caption a:hover {
+  border-color: #5ab87e !important;
 }
 
 .Credit {
