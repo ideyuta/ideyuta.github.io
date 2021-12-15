@@ -95,7 +95,7 @@ export default class Profile extends React.Component {
         {type === "private" ? (
           <>
             <Content>
-              88年静岡県生まれ。5歳と2歳の娘がいます。料理と散歩が趣味で、おじいさんみたいに朝早くから活動しています。最近はイケてる電動自転車をかっ飛ばしています。
+              88年静岡県生まれ。6歳と3歳の娘がいます。料理と散歩が趣味で、おじいさんみたいに朝早くから活動しています。最近はイケてる電動自転車をかっ飛ばしています。
             </Content>
             <Spacer size="small" />
             <Content>
@@ -111,7 +111,7 @@ export default class Profile extends React.Component {
         ) : (
           <>
             <Content>
-              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はSTORESレジを立ち上げたりデザインリードをやったりしています。
+              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はヘイでデザイナーをやったりしています。
             </Content>
             <Spacer size="small" />
             <Content>

@@ -9,9 +9,6 @@ const Anchor = styled.a`
   letter-spacing: 0.03;
   padding: 4px 0;
   text-decoration: none;
-  :hover {
-    color: ${colors.theme};
-  }
 `;
 
 const Wrapper = styled.div`

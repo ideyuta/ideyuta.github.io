@@ -1,9 +1,10 @@
 import React from "react";
+import { withPrefix } from "gatsby-link";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import Anchor from "../components/Anchor";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Gallery from "../components/Gallery";
 import Section from "../components/Section";
 import SectionHeader from "../components/SectionHeader";
 import SectionSummary from "../components/SectionSummary";
@@ -18,6 +19,26 @@ const Line = styled.div`
 `;
 const Date = styled.p`
   color: ${colors.gray500};
+`;
+const Logo = styled.a`
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0.03;
+  padding: 4px 0;
+  text-decoration: none;
+  color: ${colors.gray100} !important;
+`;
+const Header = styled.div`
+  background: ${colors.gray900};
+  box-sizing: border-box;
+  padding: 32px 24px;
+  width: 100vw;
+`;
+const LightText = styled.p`
+  color: ${colors.gray100};
+`;
+const Strong = styled.span`
+  font-weight: bold;
 `;
 const Portrait = styled.img`
   display: block;
@@ -50,30 +71,21 @@ export default function Index() {
         ]}
         title="ideyuta.com"
       />
-      <Header />
-      <Section>
-        <SectionHeader>
-          <Reaction random size="16" />
-        </SectionHeader>
-        <p>
-          こんにちは、いでです。
-          <br />
-          今日は2021年でもっとも縁起の良い日だそうです。かつげるものはかついでいきます。
-          <br />
-          <Date>2021年6月15日</Date>
-        </p>
-      </Section>
+      <Gallery />
+      <Header>
+        <Logo href={withPrefix("/")}>ideyuta.com</Logo>
+      </Header>
+      <Section bgColor="#00454E">
 
-      <Portrait src="../images/ideyuta.jpg" />
-      <Section bgColor={colors.theme}>
+        <img src="/images/ideyuta_2021.png" />
         <Spacer size="small" />
 
-        <SectionSummary content="デザイナー" title="井出 優太 / Yuta Ide" />
+        <LightText><Strong>井出 優太 / Yuta Ide</Strong></LightText>
+        <LightText><Strong>デザイナー<br />hey,inc. Head of Product Design</Strong></LightText>
 
-        <p>
-          略歴　88年静岡県生まれ。多摩美術大学大学院
-          情報デザイン研究領域修了。5歳と2歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て、2013年にカンムへ入社。2016年にバンドルカードをリリースしました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。代表としてSMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、heyにてsoiという事業を立ち上げましたが2019年にクローズ。2021年6月、STORESレジをリリースしました。最近はSTORESレジをやったりSTORESプラットフォーム全体のデザインリードをやっていたりします。
-        </p>
+        <LightText>
+          88年静岡県生まれ。多摩美術大学大学院 情報デザイン研究領域修了(Master of Fine Arts)。6歳と3歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て、2013年にカンムへ入社。2016年にバンドルカードをリリースしました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。SMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、heyにてsoiという事業を立ち上げましたが2019年にクローズ。その後STORESレジのプロジェクトリーダー/リードデザイナーをつとめ、2021年6月にリリース。最近は、Head of Product DesignとしてSTORESプラットフォーム全体のデザインリードをやっていたりします。
+        </LightText>
         <Spacer size="medium" />
       </Section>
 

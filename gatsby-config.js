@@ -44,7 +44,7 @@ module.exports = {
         short_name: `ideyuta.com`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#5AB87E`,
+        theme_color: `#fff`,
         display: `standalone`,
       },
     },

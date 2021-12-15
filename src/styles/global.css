@@ -1,10 +1,10 @@
 body {
   background: #fff;
-  color: #08080e;
+  color: #02272C;
   font-family: 'Source Code Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, "Droid Sans", Verdana, Arial,  "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-feature-settings : "pkna" 1;
   font-size: 16px;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.09em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -18,16 +18,16 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #08080e;
+  color: #02272c;
 }
 a:visited {
-  color: #08080e;
+  color: #02272c;
 }
 a:hover {
-  color: #5ab87e;
+  color: #35BA7A;
 }
 a:active {
-  color: #08080e;
+  color: #02272c;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,10 +59,19 @@ hr {
 }
 
 blockquote {
-  border-left: 4px solid #dcdce5;
-  color: #808088;
+  border-left: 4px solid #D7DCCD;
+  color: #80978C;
   margin: 0;
   padding: 0 0 0 16px;
+}
+
+blockquote a {
+  color: #80978C !important;
+  border-color: #80978C !important;
+}
+blockquote a:hover {
+  border-color: #35BA7A !important;
+  color: #35BA7A !important;
 }
 
 img {
@@ -104,20 +113,20 @@ p, ul, ol, li {
 }
 
 .post a:link {
-  color: #08080e;
-  border-bottom: 1px solid #08080e;
+  color: #02272c;
+  border-bottom: 1px solid #02272c;
 }
 .post a:visited {
-  color: #08080e;
-  border-bottom: 1px solid #08080e;
+  color: #02272c;
+  border-bottom: 1px solid #02272c;
 }
 .post a:hover {
-  color: #5ab87e;
-  border-bottom: 1px solid #5ab87e;
+  color: #35BA7A;
+  border-bottom: 1px solid #35BA7A;
 }
 .post a:active {
-  color: #08080e;
-  border-bottom: 1px solid #08080e;
+  color: #02272c;
+  border-bottom: 1px solid #02272c;
 }
 
 pre {
@@ -137,20 +146,21 @@ pre {
 }
 
 .Caption {
-  color: #999;
+  color: #80978C;
   text-align: center;
   margin-bottom: 40px;
   a {
-    color: #999;
+    color: #80978C;
   }
 }
 .Caption a {
-  color: #999 !important;
-  border-color: #999 !important;
+  color: #80978C !important;
+  border-color: #80978C !important;
 }
 
 .Caption a:hover {
-  border-color: #5ab87e !important;
+  color: #35BA7A !important;
+  border-color: #35BA7A !important;
 }
 
 .Credit {
