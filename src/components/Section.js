@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Inner = styled.div`
   box-sizing: border-box;
@@ -9,17 +9,17 @@ const Inner = styled.div`
   word-break: break-all;
 `;
 const Wrapper = styled.div`
-  background: ${props => props.bgColor || '#fff'};
+  background: ${(props) => props.bgColor || "#fff"};
   padding: 0;
   width: 100%;
 `;
 
-export default props => {
+const Section = (props) => {
   return (
     <Wrapper bgColor={props.bgColor}>
-      <Inner>
-        {props.children}
-      </Inner>
+      <Inner>{props.children}</Inner>
     </Wrapper>
   );
-}
+};
+
+export default Section;

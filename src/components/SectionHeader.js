@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Head = styled.h2`
   font-size: 1rem;
@@ -14,10 +14,12 @@ const Wrapper = styled.div`
   width: 100vw;
 `;
 
-export default props => {
+const SectionHeader = (props) => {
   return (
     <Wrapper>
       <Head>{props.children}</Head>
     </Wrapper>
   );
-}
+};
+
+export default SectionHeader;

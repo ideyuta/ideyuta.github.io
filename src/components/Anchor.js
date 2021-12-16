@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import { colors } from '../assets';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import { colors } from "../assets";
 
 const A = styled(Link)`
-  display: block; 
+  display: block;
   padding: 32px 0;
   text-decoration: none;
   transition-duration: 0.7s;
@@ -37,7 +37,7 @@ const Title = styled.h3`
   margin: 12px 0 4px 0;
 `;
 
-export default (props) => {
+const Anchor = (props) => {
   return (
     <A to={props.path}>
       <Title>{props.title}</Title>
@@ -47,4 +47,6 @@ export default (props) => {
       </Data>
     </A>
   );
-}
+};
+
+export default Anchor;

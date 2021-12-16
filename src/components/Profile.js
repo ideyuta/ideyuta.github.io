@@ -1,13 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
-import Spacer from './Spacer';
-import { colors } from '../assets';
+import React from "react";
+import styled from "styled-components";
+import Spacer from "./Spacer";
+import { colors } from "../assets";
 
 const A = styled.a`
-  &:link { border-bottom: 1px solid #08080e; }
-  &:visited { border-bottom: 1px solid #08080e; }
-  &:hover { border-bottom: 1px solid #5ab87e; }
-  &:active { border-bottom: 1px solid #08080e; }
+  &:link {
+    border-bottom: 1px solid #08080e;
+  }
+  &:visited {
+    border-bottom: 1px solid #08080e;
+  }
+  &:hover {
+    border-bottom: 1px solid #5ab87e;
+  }
+  &:active {
+    border-bottom: 1px solid #08080e;
+  }
 `;
 const Content = styled.p`
   margin: 2px 0;
@@ -47,7 +55,7 @@ const Wrapper = styled.div`
 export default class Profile extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { type: props.type};
+    this.state = { type: props.type };
     console.log(props);
   }
 
@@ -60,22 +68,22 @@ export default class Profile extends React.Component {
 
         <PhotoWrapper>
           <Photo
-            onClick={() => this.setState({ type: 'private' })}
+            onClick={() => this.setState({ type: "private" })}
             src="../images/profile_p.png"
             style={{
-              opacity: type === 'private' ? 1 :  0.08,
-              zIndex: type === 'private' ? 100 : 1,
+              opacity: type === "private" ? 1 : 0.08,
+              zIndex: type === "private" ? 100 : 1,
             }}
           />
           <Photo
-            onClick={() => this.setState({ type: 'work' })}
+            onClick={() => this.setState({ type: "work" })}
             src="../images/profile_w.png"
             style={{
-              position: 'absolute',
-              left: '36px',
-              top: '12px',
-              opacity: type === 'work' ? 1 :  0.08,
-              zIndex: type === 'work' ? 100 : 1,
+              position: "absolute",
+              left: "36px",
+              top: "12px",
+              opacity: type === "work" ? 1 : 0.08,
+              zIndex: type === "work" ? 100 : 1,
             }}
           />
         </PhotoWrapper>
@@ -84,9 +92,11 @@ export default class Profile extends React.Component {
         <Name>井出 優太 / Yuta Ide</Name>
         <Post>デザイナー</Post>
         <Spacer size="small" />
-        {type === 'private' ? (
+        {type === "private" ? (
           <>
-            <Content>88年静岡県生まれ。5歳と2歳の娘がいます。料理と散歩が趣味で、おじいさんみたいに朝早くから活動しています。最近はイケてる電動自転車をかっ飛ばしています。</Content>
+            <Content>
+              88年静岡県生まれ。6歳と3歳の娘がいます。料理と散歩が趣味で、おじいさんみたいに朝早くから活動しています。最近はイケてる電動自転車をかっ飛ばしています。
+            </Content>
             <Spacer size="small" />
             <Content>
               Twitter: <A href="https://twitter.com/_ideyuta">@_ideyuta</A>
@@ -101,7 +111,7 @@ export default class Profile extends React.Component {
         ) : (
           <>
             <Content>
-              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はSTORESレジを立ち上げたりデザインリードをやったりしています。
+              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はヘイでデザイナーをやったりしています。
             </Content>
             <Spacer size="small" />
             <Content>

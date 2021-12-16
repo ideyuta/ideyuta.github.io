@@ -1,7 +1,6 @@
-import React from 'react';
-import { withPrefix } from 'gatsby-link';
-import styled from 'styled-components';
-import { colors } from '../assets';
+import React from "react";
+import { withPrefix } from "gatsby-link";
+import styled from "styled-components";
 
 const Anchor = styled.a`
   display: inline-block;
@@ -9,9 +8,6 @@ const Anchor = styled.a`
   letter-spacing: 0.03;
   padding: 4px 0;
   text-decoration: none;
-  :hover {
-    color: ${colors.theme};
-  }
 `;
 
 const Wrapper = styled.div`
@@ -23,7 +19,7 @@ const Wrapper = styled.div`
 export default function Header() {
   return (
     <Wrapper>
-      <Anchor href={withPrefix('/')}>ideyuta.com</Anchor>
+      <Anchor href={withPrefix("/")}>ideyuta.com</Anchor>
     </Wrapper>
   );
 }

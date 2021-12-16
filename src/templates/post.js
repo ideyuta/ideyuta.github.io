@@ -1,11 +1,11 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import { Helmet } from 'react-helmet';
-import styled from 'styled-components';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import PostFooter from '../components/PostFooter';
-import Spacer from '../components/Spacer';
+import React from "react";
+import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
+import styled from "styled-components";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import PostFooter from "../components/PostFooter";
+import Spacer from "../components/Spacer";
 
 const Content = styled.div`
   box-sizing: border-box;
@@ -24,19 +24,25 @@ export default function Template({ data }) {
   const { frontmatter, html } = data.post;
   return (
     <>
-    <Helmet
-      title={`${frontmatter.title} - ideyuta.com`}
-      meta={[
-        { name: 'description', content: '' },
-        { property: 'og:title', content: frontmatter.title },
-        { property: 'og:type', content: 'blog' },
-        { property: 'og:url', content: `https://ideyuta.com${frontmatter.path}` },
-        { property: 'og:image', content: `https://ideyuta.com/images${frontmatter.path}/ogp.png` },
-        { property: 'og:description', content: '' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:site', content: '@_ideyuta' },
-      ]}
-    />
+      <Helmet
+        title={`${frontmatter.title} - ideyuta.com`}
+        meta={[
+          { name: "description", content: "" },
+          { property: "og:title", content: frontmatter.title },
+          { property: "og:type", content: "blog" },
+          {
+            property: "og:url",
+            content: `https://ideyuta.com${frontmatter.path}`,
+          },
+          {
+            property: "og:image",
+            content: `https://ideyuta.com/images${frontmatter.path}/ogp.png`,
+          },
+          { property: "og:description", content: "" },
+          { name: "twitter:card", content: "summary_large_image" },
+          { name: "twitter:site", content: "@_ideyuta" },
+        ]}
+      />
       <Header />
       <Content>
         <Title>{frontmatter.title}</Title>
@@ -51,7 +57,7 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
