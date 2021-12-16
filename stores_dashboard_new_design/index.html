@@ -1,64 +1,70 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta content="ideyuta &lt;ide.yuta@gmail.com&gt;" name="author"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" name="viewport"/><style data-href="/styles.13e45dba70a7c3e5d565.css" id="gatsby-global-css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}code[class*=language-],pre[class*=language-]{color:#fff;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;text-shadow:0 -.1em .2em #000;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}:not(pre)>code[class*=language-],pre[class*=language-]{background:#141414}pre[class*=language-]{border-radius:.5em;border:.3em solid #545454;box-shadow:inset 1px 1px .5em #000;margin:.5em 0;overflow:auto;padding:1em}pre[class*=language-]::selection{background:#27292a}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:hsla(0,0%,93%,.15)}:not(pre)>code[class*=language-]{border-radius:.3em;border:.13em solid #545454;box-shadow:inset 1px 1px .3em -.1em #000;padding:.15em .2em .05em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#787878}.token.namespace,.token.punctuation{opacity:.7}.token.boolean,.token.deleted,.token.number,.token.tag{color:#cf694a}.token.builtin,.token.constant,.token.keyword,.token.property,.token.selector,.token.symbol{color:#f9ee9a}.language-css .token.string,.style .token.string,.token.attr-name,.token.attr-value,.token.char,.token.entity,.token.inserted,.token.operator,.token.string,.token.url,.token.variable{color:#919e6b}.token.atrule{color:#7386a5}.token.important,.token.regex{color:#e9c163}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}pre[data-line]{padding:1em 0 1em 3em;position:relative}.language-markup .token.attr-name,.language-markup .token.punctuation,.language-markup .token.tag{color:#ad895c}.token{position:relative;z-index:1}.line-highlight{background:rgba(84,84,84,.25);background:linear-gradient(90deg,rgba(84,84,84,.1) 70%,rgba(84,84,84,0));border-bottom:1px dashed #545454;border-top:1px dashed #545454;left:0;line-height:inherit;margin-top:.75em;padding:inherit 0;pointer-events:none;position:absolute;right:0;white-space:pre;z-index:0}.line-highlight:before,.line-highlight[data-end]:after{background-color:#8794a6;border-radius:999px;box-shadow:0 1px #fff;color:#f5f2f0;content:attr(data-start);font:700 65%/1.5 sans-serif;left:.6em;min-width:1em;padding:0 .5em;position:absolute;text-align:center;text-shadow:none;top:.4em;vertical-align:.3em}.line-highlight[data-end]:after{bottom:.4em;content:attr(data-end);top:auto}.hljs{display:block;overflow-x:auto;padding:.5em;background:#1d1f21}.hljs::selection,.hljs span::selection{background:#373b41}.hljs::-moz-selection,.hljs span::-moz-selection{background:#373b41}.hljs{color:#c5c8c6}.hljs-name,.hljs-title{color:#f0c674}.hljs-comment,.hljs-meta,.hljs-meta .hljs-keyword{color:#707880}.hljs-deletion,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol{color:#c66}.hljs-addition,.hljs-doctag,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string{color:#b5bd68}.hljs-attribute,.hljs-code,.hljs-selector-id{color:#b294bb}.hljs-bullet,.hljs-keyword,.hljs-selector-tag,.hljs-tag{color:#81a2be}.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-variable{color:#8abeb7}.hljs-built_in,.hljs-builtin-name,.hljs-quote,.hljs-section,.hljs-selector-class,.hljs-type{color:#de935f}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}body{background:#fff;color:#08080e;font-family:Source Code Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Droid Sans,Verdana,Arial,Hiragino Sans,"\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3",Hiragino Kaku Gothic ProN,"\30E1\30A4\30EA\30AA",Meiryo,sans-serif;font-feature-settings:"pkna" 1;font-size:16px;letter-spacing:.07em;-webkit-font-smoothing:antialiased}@media (min-width:420px){html{font-size:20px}}a{text-decoration:none}a:link,a:visited{color:#08080e}a:hover{color:#5ab87e}a:active{color:#08080e}h1,h2,h3,h4,h5,h6{line-height:1.45em}h2{font-size:2rem}h2,h3{font-weight:600;padding:1.5em 0 0}h3{font-size:1.4rem}h4{font-size:.875rem;font-weight:800}hr{background:#e9e9e9;border:0;height:1px;margin:32px 0}blockquote{border-left:4px solid #dcdce5;color:#808088;margin:0;padding:0 0 0 16px}img{max-width:100%;border-radius:3px}.img_w_border{box-sizing:border-box;border:1px solid rgba(0,0,0,.06)}code{border:0!important;font-size:.75rem!important}a{line-height:1.5em}a,li,ol,p,ul{font-size:.875rem}li,ol,p,ul{font-weight:300;line-height:1.9em}.post li{padding:4px 0}.post ol,.post ul{padding:0 0 0 20px}.post a{text-decoration:none}.post a:link,.post a:visited{color:#08080e;border-bottom:1px solid #08080e}.post a:hover{color:#5ab87e;border-bottom:1px solid #5ab87e}.post a:active{color:#08080e;border-bottom:1px solid #08080e}pre{background:#000;border:0!important;color:#fff;font-size:.875rem;font-weight:400;letter-spacing:.02em;line-height:1.2em;padding:24px;white-space:pre-wrap}.twitter-tweet{margin:36px auto}.Caption{color:#999;text-align:center;margin-bottom:40px;a{color:#999}}.Caption a{color:#999!important;border-color:#999!important}.Caption a:hover{border-color:#5ab87e!important}.Credit{background:#f4f4f6;border-radius:16px;padding:16px}.Credit li{font-size:.75rem!important}</style><meta name="generator" content="Gatsby 2.28.0"/><title data-react-helmet="true">STORESのダッシュボードをリニューアルしました - ideyuta.com</title><meta data-react-helmet="true" name="description" content=""/><meta data-react-helmet="true" property="og:title" content="STORESのダッシュボードをリニューアルしました"/><meta data-react-helmet="true" property="og:type" content="blog"/><meta data-react-helmet="true" property="og:url" content="https://ideyuta.com/stores_dashboard_new_design"/><meta data-react-helmet="true" property="og:image" content="https://ideyuta.com/images/stores_dashboard_new_design/ogp.png"/><meta data-react-helmet="true" property="og:description" content=""/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:site" content="@_ideyuta"/><style data-styled="kmwswV iRzDOH dRSWNf dcbrSK evHmwV jQKcRX hXYXuZ gMQubw kFtPNS hZWEhg gxLsMx eDPVdp DwEfP jKQsxr dKRsTf bdGneO fFoqwM fVWkBm" data-styled-version="4.4.1">
-/* sc-component-id: Footer__Wrapper-sc-109fzf0-0 */
-.fVWkBm{background:#f4f4f6;box-sizing:border-box;padding:32px 24px;width:100vw;}
-/* sc-component-id: Header__Anchor-hadsu4-0 */
-.iRzDOH{display:inline-block;font-size:1rem;-webkit-letter-spacing:0.03;-moz-letter-spacing:0.03;-ms-letter-spacing:0.03;letter-spacing:0.03;padding:4px 0;-webkit-text-decoration:none;text-decoration:none;} .iRzDOH:hover{color:#5AB87E;}
-/* sc-component-id: Header__Wrapper-hadsu4-1 */
-.kmwswV{box-sizing:border-box;padding:32px 24px;width:100vw;}
-/* sc-component-id: Spacer-sc-398nqh-0 */
-.evHmwV{height:24px;min-height:24px;min-width:24px;width:24px;}.jQKcRX{height:48px;min-height:48px;min-width:48px;width:48px;}.hXYXuZ{height:16px;min-height:16px;min-width:16px;width:16px;}.gMQubw{height:32px;min-height:32px;min-width:32px;width:32px;}
-/* sc-component-id: Profile__A-sc-1x6d4d2-0 */
-.fFoqwM:link{border-bottom:1px solid #08080e;} .fFoqwM:visited{border-bottom:1px solid #08080e;} .fFoqwM:hover{border-bottom:1px solid #5ab87e;} .fFoqwM:active{border-bottom:1px solid #08080e;}
-/* sc-component-id: Profile__Content-sc-1x6d4d2-1 */
-.bdGneO{margin:2px 0;}
-/* sc-component-id: Profile__Name-sc-1x6d4d2-2 */
-.jKQsxr{margin:0;}
-/* sc-component-id: Profile__Post-sc-1x6d4d2-3 */
-.dKRsTf{margin:0;}
-/* sc-component-id: Profile__Photo-sc-1x6d4d2-4 */
-.DwEfP{border-radius:1px;cursor:pointer;max-width:130px;position:relative;-webkit-transition-property:all;transition-property:all;-webkit-transition-duration:0.3s;transition-duration:0.3s;}
-/* sc-component-id: Profile__PhotoWrapper-sc-1x6d4d2-5 */
-.eDPVdp{position:relative;z-index:0;width:100%;}
-/* sc-component-id: Profile__SectionTitle-sc-1x6d4d2-6 */
-.gxLsMx{color:#808088;font-size:0.75rem;margin:0;}
-/* sc-component-id: Profile__Wrapper-sc-1x6d4d2-7 */
-.hZWEhg{box-sizing:border-box;max-width:700px;margin:0 auto;padding:72px 24px;word-break:break-all;}
-/* sc-component-id: PostFooter__Wrapper-vkrl7g-0 */
-.kFtPNS{background:#f4f4f6;box-sizing:border-box;width:100vw;}
-/* sc-component-id: post__Content-sc-8a5fik-0 */
-.dRSWNf{box-sizing:border-box;margin:0 auto;max-width:700px;padding:20px;word-break:break-all;}
-/* sc-component-id: post__Title-sc-8a5fik-1 */
-.dcbrSK{font-size:2.6rem;font-weight:700;margin:40px 0 0 0;}</style><link rel="icon" href="/favicon-32x32.png?v=24497a212c8fcbf977cc1353434cda9f" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#5AB87E"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=24497a212c8fcbf977cc1353434cda9f"/><link as="script" rel="preload" href="/webpack-runtime-c8b424eb40220044ffac.js"/><link as="script" rel="preload" href="/styles-8fab2804fb6f85b824b6.js"/><link as="script" rel="preload" href="/framework-d585a04b7d285a7760d6.js"/><link as="script" rel="preload" href="/app-bbdebe7e065fa38502d7.js"/><link as="script" rel="preload" href="/commons-8378b0baca8406c9563f.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-59d4642561128f8e016d.js"/><link as="fetch" rel="preload" href="/page-data/stores_dashboard_new_design/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Header__Wrapper-hadsu4-1 kmwswV"><a href="/" class="Header__Anchor-hadsu4-0 iRzDOH">ideyuta.com</a></div><div class="post__Content-sc-8a5fik-0 dRSWNf"><h1 class="post__Title-sc-8a5fik-1 dcbrSK">STORESのダッシュボードをリニューアルしました</h1><div class="Spacer-sc-398nqh-0 evHmwV"></div><div class="post"><p>娘と机を並べて仕事をし、天気が良ければ昼の休憩時間に散歩をする。毎日顔を合わせて議論をしてきた仲間たちが、画面の向こうにいるなんて想像だにしていなかったけれど、それでも前を見て進めていること、大きな混乱もなく今日を迎えられたことにホッとしています。</p>
-<p>この半年ほど、STORESのデザインチーム、フロントチームとともに、STORESのダッシュボード（ストアオーナーさん向け管理画面）のリニューアルに取り組んできました。</p>
-<p>8年続くSTORESというプロダクトの全体を理解するところからはじまったリニューアルプロジェクトでしたが、ようやく2020年5月19日にリニューアルを迎えることができ、まあここからが本当のはじまりなわけなんですけど、区切りとしてこのテキストを書いています。</p>
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta content="ideyuta &lt;ide.yuta@gmail.com&gt;" name="author"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0" name="viewport"/><style data-href="/styles.3de206607c31eb02abe4.css" data-identity="gatsby-global-css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;text-shadow:0 -.1em .2em #000;white-space:pre;word-break:normal;word-spacing:normal}:not(pre)>code[class*=language-],pre[class*=language-]{background:#141414}pre[class*=language-]{border:.3em solid #545454;border-radius:.5em;box-shadow:inset 1px 1px .5em #000;margin:.5em 0;overflow:auto;padding:1em}pre[class*=language-]::selection{background:#27292a}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:hsla(0,0%,93%,.15);text-shadow:none}:not(pre)>code[class*=language-]{border:.13em solid #545454;border-radius:.3em;box-shadow:inset 1px 1px .3em -.1em #000;padding:.15em .2em .05em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#787878}.token.namespace,.token.punctuation{opacity:.7}.token.boolean,.token.deleted,.token.number,.token.tag{color:#cf694a}.token.builtin,.token.constant,.token.keyword,.token.property,.token.selector,.token.symbol{color:#f9ee9a}.language-css .token.string,.style .token.string,.token.attr-name,.token.attr-value,.token.char,.token.entity,.token.inserted,.token.operator,.token.string,.token.url,.token.variable{color:#919e6b}.token.atrule{color:#7386a5}.token.important,.token.regex{color:#e9c163}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.language-markup .token.attr-name,.language-markup .token.punctuation,.language-markup .token.tag{color:#ad895c}.token{position:relative;z-index:1}.line-highlight.line-highlight{background:hsla(0,0%,33%,.25);background:linear-gradient(90deg,hsla(0,0%,33%,.1) 70%,hsla(0,0%,33%,0));border-bottom:1px dashed #545454;border-top:1px dashed #545454;margin-top:.75em;z-index:0}.line-highlight.line-highlight:before,.line-highlight.line-highlight[data-end]:after{background-color:#8794a6;color:#f5f2f0}pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1d1f21;color:#c5c8c6}.hljs::selection,.hljs span::selection{background:#373b41}.hljs::-moz-selection,.hljs span::-moz-selection{background:#373b41}.hljs-name,.hljs-title{color:#f0c674}.hljs-comment,.hljs-meta,.hljs-meta .hljs-keyword{color:#707880}.hljs-deletion,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol{color:#c66}.hljs-addition,.hljs-doctag,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string{color:#b5bd68}.hljs-attribute,.hljs-code,.hljs-selector-id{color:#b294bb}.hljs-bullet,.hljs-keyword,.hljs-selector-tag,.hljs-tag{color:#81a2be}.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-variable{color:#8abeb7}.hljs-built_in,.hljs-quote,.hljs-section,.hljs-selector-class,.hljs-type{color:#de935f}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}body{font-feature-settings:"pkna" 1;-webkit-font-smoothing:antialiased;background:#fff;color:#02272c;font-family:Source Code Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Droid Sans,Verdana,Arial,Hiragino Sans,ヒラギノ角ゴ ProN W3,Hiragino Kaku Gothic ProN,メイリオ,Meiryo,sans-serif;font-size:16px;letter-spacing:.09em}::selection{background-color:#35ba7a}@media (min-width:420px){html{font-size:20px}}a{text-decoration:none}a:link,a:visited{color:#02272c}a:hover{color:#35ba7a}a:active{color:#02272c}h1,h2,h3,h4,h5,h6{line-height:1.45em}h2{font-size:2rem}h2,h3{font-weight:600;padding:1.5em 0 0}h3{font-size:1.4rem}h4{font-size:.875rem;font-weight:800}hr{background:#e9e9e9;border:0;height:1px;margin:32px 0}blockquote{border-left:4px solid #d7dccd;color:#80978c;margin:0;padding:0 0 0 16px}blockquote a{border-color:#80978c!important;color:#80978c!important}blockquote a:hover{border-color:#35ba7a!important;color:#35ba7a!important}img{border-radius:3px;max-width:100%}.img_w_border{border:1px solid rgba(0,0,0,.06);box-sizing:border-box}code{border:0!important;font-size:.75rem!important}a{line-height:1.5em}a,li,ol,p,ul{font-size:.875rem}li,ol,p,ul{font-weight:300;line-height:1.9em}.post li{padding:4px 0}.post ol,.post ul{padding:0 0 0 20px}.post a{text-decoration:none}.post a:link,.post a:visited{border-bottom:1px solid #02272c;color:#02272c}.post a:hover{border-bottom:1px solid #35ba7a;color:#35ba7a}.post a:active{border-bottom:1px solid #02272c;color:#02272c}pre{background:#000;border:0!important;color:#fff;font-size:.875rem;font-weight:400;letter-spacing:.02em;line-height:1.2em;padding:24px;white-space:pre-wrap}.twitter-tweet{margin:36px auto}.Caption{color:#80978c;margin-bottom:40px;text-align:center;a{color:#80978c}}.Caption a{border-color:#80978c!important;color:#80978c!important}.Caption a:hover{border-color:#35ba7a!important;color:#35ba7a!important}.Credit{background:#f4f4f6;border-radius:16px;padding:16px}.Credit li{font-size:.75rem!important}</style><meta name="generator" content="Gatsby 3.14.3"/><title data-react-helmet="true">STORESのダッシュボードをリニューアルしました - ideyuta.com</title><meta data-react-helmet="true" name="description" content=""/><meta data-react-helmet="true" property="og:title" content="STORESのダッシュボードをリニューアルしました"/><meta data-react-helmet="true" property="og:type" content="blog"/><meta data-react-helmet="true" property="og:url" content="https://ideyuta.com/stores_dashboard_new_design"/><meta data-react-helmet="true" property="og:image" content="https://ideyuta.com/images/stores_dashboard_new_design/ogp.png"/><meta data-react-helmet="true" property="og:description" content=""/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:site" content="@_ideyuta"/><style data-styled="" data-styled-version="5.3.3">.fUcLNC{background:#F2F2EE;box-sizing:border-box;padding:32px 24px;width:100vw;}/*!sc*/
+data-styled.g5[id="Footer__Wrapper-sc-109fzf0-0"]{content:"fUcLNC,"}/*!sc*/
+.cprQVc{height:24px;min-height:24px;min-width:24px;width:24px;}/*!sc*/
+.iEzIDQ{height:48px;min-height:48px;min-width:48px;width:48px;}/*!sc*/
+.dyuzQw{height:16px;min-height:16px;min-width:16px;width:16px;}/*!sc*/
+.lprkdY{height:32px;min-height:32px;min-width:32px;width:32px;}/*!sc*/
+data-styled.g11[id="Spacer-sc-398nqh-0"]{content:"cprQVc,iEzIDQ,dyuzQw,lprkdY,"}/*!sc*/
+.mnMne{display:inline-block;font-size:1rem;-webkit-letter-spacing:0.03;-moz-letter-spacing:0.03;-ms-letter-spacing:0.03;letter-spacing:0.03;padding:4px 0;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+data-styled.g19[id="Header__Anchor-sc-hadsu4-0"]{content:"mnMne,"}/*!sc*/
+.mGeok{box-sizing:border-box;padding:32px 24px;width:100vw;}/*!sc*/
+data-styled.g20[id="Header__Wrapper-sc-hadsu4-1"]{content:"mGeok,"}/*!sc*/
+.nCpVH:link{border-bottom:1px solid #08080e;}/*!sc*/
+.nCpVH:visited{border-bottom:1px solid #08080e;}/*!sc*/
+.nCpVH:hover{border-bottom:1px solid #5ab87e;}/*!sc*/
+.nCpVH:active{border-bottom:1px solid #08080e;}/*!sc*/
+data-styled.g28[id="Profile__A-sc-1x6d4d2-0"]{content:"nCpVH,"}/*!sc*/
+.kLoKdw{margin:2px 0;}/*!sc*/
+data-styled.g29[id="Profile__Content-sc-1x6d4d2-1"]{content:"kLoKdw,"}/*!sc*/
+.kQfysD{margin:0;}/*!sc*/
+data-styled.g30[id="Profile__Name-sc-1x6d4d2-2"]{content:"kQfysD,"}/*!sc*/
+.dYsrJp{margin:0;}/*!sc*/
+data-styled.g31[id="Profile__Post-sc-1x6d4d2-3"]{content:"dYsrJp,"}/*!sc*/
+.eCIIoa{border-radius:1px;cursor:pointer;max-width:130px;position:relative;-webkit-transition-property:all;transition-property:all;-webkit-transition-duration:0.3s;transition-duration:0.3s;}/*!sc*/
+data-styled.g32[id="Profile__Photo-sc-1x6d4d2-4"]{content:"eCIIoa,"}/*!sc*/
+.mZGnU{position:relative;z-index:0;width:100%;}/*!sc*/
+data-styled.g33[id="Profile__PhotoWrapper-sc-1x6d4d2-5"]{content:"mZGnU,"}/*!sc*/
+.boEWub{color:#80978C;font-size:0.75rem;margin:0;}/*!sc*/
+data-styled.g34[id="Profile__SectionTitle-sc-1x6d4d2-6"]{content:"boEWub,"}/*!sc*/
+.dmxveQ{box-sizing:border-box;max-width:700px;margin:0 auto;padding:72px 24px;word-break:break-all;}/*!sc*/
+data-styled.g35[id="Profile__Wrapper-sc-1x6d4d2-7"]{content:"dmxveQ,"}/*!sc*/
+.kwna-Ds{background:#F2F2EE;box-sizing:border-box;width:100vw;}/*!sc*/
+data-styled.g36[id="PostFooter__Wrapper-sc-vkrl7g-0"]{content:"kwna-Ds,"}/*!sc*/
+.eDjEla{box-sizing:border-box;margin:0 auto;max-width:700px;padding:20px;word-break:break-all;}/*!sc*/
+data-styled.g37[id="post__Content-sc-8a5fik-0"]{content:"eDjEla,"}/*!sc*/
+.cFoykf{font-size:2.6rem;font-weight:700;margin:40px 0 0 0;}/*!sc*/
+data-styled.g38[id="post__Title-sc-8a5fik-1"]{content:"cFoykf,"}/*!sc*/
+</style><link rel="icon" href="/favicon-32x32.png?v=24497a212c8fcbf977cc1353434cda9f" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#F2F2EE"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=24497a212c8fcbf977cc1353434cda9f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=24497a212c8fcbf977cc1353434cda9f"/><link as="script" rel="preload" href="/webpack-runtime-0fce7eacfd1aaeff7ea2.js"/><link as="script" rel="preload" href="/framework-9905f14ac51f27117976.js"/><link as="script" rel="preload" href="/app-cbdecf58cabc93195bb5.js"/><link as="script" rel="preload" href="/commons-2b4fdcd3cc8dc1ac9efc.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-d861b38e8a1a1b6674d8.js"/><link as="fetch" rel="preload" href="/page-data/stores_dashboard_new_design/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Header__Wrapper-sc-hadsu4-1 mGeok"><a href="/" class="Header__Anchor-sc-hadsu4-0 mnMne">ideyuta.com</a></div><div class="post__Content-sc-8a5fik-0 eDjEla"><h1 class="post__Title-sc-8a5fik-1 cFoykf">STORESのダッシュボードをリニューアルしました</h1><div class="Spacer-sc-398nqh-0 cprQVc"></div><div class="post"><p>娘と机を並べて仕事をし、天気が良ければ昼の休憩時間に散歩をする。毎日顔を合わせて議論をしてきた仲間たちが、画面の向こうにいるなんて想像だにしていなかったけれど、それでも前を見て進めていること、大きな混乱もなく今日を迎えられたことにホッとしています。</p>
+<p>この半年ほど、STORES のデザインチーム、フロントチームとともに、STORES のダッシュボード（ストアオーナーさん向け管理画面）のリニューアルに取り組んできました。</p>
+<p>8 年続く STORES というプロダクトの全体を理解するところからはじまったリニューアルプロジェクトでしたが、ようやく 2020 年 5 月 19 日にリニューアルを迎えることができ、まあここからが本当のはじまりなわけなんですけど、区切りとしてこのテキストを書いています。</p>
 <p>このテキストは、リニューアルにあたりどんなことをしたかを書いていますが、プロジェクト/デザインのリードとしての僕個人の目線から見ている話が多いので、事実と異なる可能性があったり、抜けもれていたり内容が薄かったりする箇所があります。また、書いてある内容を実行しているのはチームのみんなであることが多いのでご留意ください。</p>
 <h2>はじまり</h2>
-<p>2019年の夏から、STORESとCoiney(現STORESターミナル)の間で、オンライン・オフラインをまたいでお商売をする人たちにむけたプロダクトを作っています。オンラインとオフラインを自由に行き来し、自分たちのブランドにあっていればなんでも柔軟に取り入れチャレンジしていく、商品フォーマットすらも関係ないような、そんなお商売をするブランドさんが抱える負担をできるだけなくすことが僕らの目指しているものです。</p>
+<p>2019 年の夏から、STORES と Coiney(現 STORES ターミナル)の間で、オンライン・オフラインをまたいでお商売をする人たちにむけたプロダクトを作っています。オンラインとオフラインを自由に行き来し、自分たちのブランドにあっていればなんでも柔軟に取り入れチャレンジしていく、商品フォーマットすらも関係ないような、そんなお商売をするブランドさんが抱える負担をできるだけなくすことが僕らの目指しているものです。</p>
 <blockquote>
 <p>これ <a href="https://note.com/naokos/n/n61c18c8019ed">naoko - 全社横断の新規事業をはじめます</a></p>
 </blockquote>
-<p>ECとターミナルの間にいて、3-5年というタームでプロダクトを考えているので、日々の改善や機能開発とはまた別の視点でプロダクトを見つめることが多いんですが、今回のリニューアルはそういった時間軸の中で、今後のSTORESを見据えたときにある大きな課題を解決するプロジェクトとしてはじまりました。</p>
-<p><img src="/images/stores_dashboard_new_design/img001.jpg"></p>
+<p>EC とターミナルの間にいて、3-5 年というタームでプロダクトを考えているので、日々の改善や機能開発とはまた別の視点でプロダクトを見つめることが多いんですが、今回のリニューアルはそういった時間軸の中で、今後の STORES を見据えたときにある大きな課題を解決するプロジェクトとしてはじまりました。</p>
+<p><img src="/images/stores_dashboard_new_design/img001.jpg" alt=""></p>
 <p class="Caption">2人のデザイナー（すなすなとかたぴー）とはじまった</p>
 <h2>これまでとこれからをつなぐ</h2>
-<p>STORES（EC）は、かれこれ8年続いているサービスなので、本当にたくさんの機能があります。かんたんにはじめられ、無料でこれだけ多くのことができるのは、これまで積み重ねてきたチームの成果であり、本当にすごいことです。</p>
-<p>しかし、<a href="https://stores.jp/brand">CoineyとSTORES.jpがひとつのSTORESブランドとなった</a>ように、これからさらに多くの機能やサービスがSTORESというブランドのもとで利用できるようになっていくことを考えると、これまでの姿のプロダクトでSTORESを支えるのはむずかしそうだと考えました。</p>
-<p><img src="/images/stores_dashboard_new_design/img002.jpg"></p>
+<p>STORES（EC）は、かれこれ 8 年続いているサービスなので、本当にたくさんの機能があります。かんたんにはじめられ、無料でこれだけ多くのことができるのは、これまで積み重ねてきたチームの成果であり、本当にすごいことです。</p>
+<p>しかし、<a href="https://stores.jp/brand">Coiney と STORES.jp がひとつの STORES ブランドとなった</a>ように、これからさらに多くの機能やサービスが STORES というブランドのもとで利用できるようになっていくことを考えると、これまでの姿のプロダクトで STORES を支えるのはむずかしそうだと考えました。</p>
+<p><img src="/images/stores_dashboard_new_design/img002.jpg" alt=""></p>
 <p class="Caption">旧ダッシュボード</p>
 <p>僕がいうまでもなくチームのみんなは気づいていたことですが、これまでのダッシュボードはいくつか大きな課題が抱えていました。</p>
 <ul>
 <li>ナビゲーションの限界</li>
 <li>局所最適された情報設計</li>
-<li>統一されていないUIコンポーネント</li>
+<li>統一されていない UI コンポーネント</li>
 <li>ブランドの変更が反映されない</li>
 <li>新旧のダッシュボードが混在する(新:Vue / 旧:Angular）</li>
-<li>デスクトップ/スマホで異なるUIが存在する（レスポンシブではない）</li>
+<li>デスクトップ/スマホで異なる UI が存在する（レスポンシブではない）</li>
 <li>....</li>
 </ul>
 <p>ただ、こういったユーザーさんへ直接的に価値提供しづらい改善/負債解消のような大きな課題を解決していくには、それ相応のリスクを伴う意思決定が必要になります。何しろ、デザインチーム、フロントチームをこの課題の解決に拘束し、それ以外のことができなくなってしまうのですから、すごく重要な意思決定です。</p>
 <p>自分たちの作りたい世界、ちょっと先の未来への投資としてこの意思決定ができるチームは、結構すごいのではと思っています。</p>
 <h2>デザインを考えはじめる</h2>
-<p>で、やるからには絶対にいいものにするぞ！ということで、進めはじめたわけなんですが、いろいろな制約上すべてを同時に解決はできないので、まずはこの2つ</p>
+<p>で、やるからには絶対にいいものにするぞ！ということで、進めはじめたわけなんですが、いろいろな制約上すべてを同時に解決はできないので、まずはこの 2 つ</p>
 <ul>
 <li>ナビゲーションの課題</li>
 <li>リブランディングのトンマナの反映</li>
@@ -66,48 +72,46 @@
 <p>の課題を解決するデザインを考えていきました。</p>
 <h3>ナビゲーション</h3>
 <p>まずはナビゲーションのデザインを考えていきました。
-これまで上ヘッダーのナビゲーションでしたが、機能が多くなってきたことで横幅が足りなくなってきている問題がありました。これからSTORESブランドとしてプロダクトを連携させたり、新しいプロダクトを作っていこうとするときにこれでは耐えられないので、情報設計を見直したり、左カラムのナビゲーションに変更するアイデアのスタディを行っていきました。</p>
-<p><img src="/images/stores_dashboard_new_design/img004.jpg"></p>
+これまで上ヘッダーのナビゲーションでしたが、機能が多くなってきたことで横幅が足りなくなってきている問題がありました。これから STORES ブランドとしてプロダクトを連携させたり、新しいプロダクトを作っていこうとするときにこれでは耐えられないので、情報設計を見直したり、左カラムのナビゲーションに変更するアイデアのスタディを行っていきました。</p>
+<p><img src="/images/stores_dashboard_new_design/img004.jpg" alt=""></p>
 <p class="Caption">ナビゲーションのデザインスタディ</p>
 <p>ナビゲーションを階層化してみる方法を考えてみたり、上部のヘッダーを残す案を考えてみたり...</p>
 <p>情報設計を見直すことで項目自体を少なくできるかを考えたり...</p>
-<p><img src="/images/stores_dashboard_new_design/img005.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img005.jpg" alt=""></p>
 <p class="Caption">主要な機能を整理した</p>
 <p>整理してもだいぶ項目が多いわけですが、ユーザーが画面上のヒントから探索でき、自己学習的に機能を使いこなせる状態を目指すことを考えると、ナビゲーションを極端に減らすことが使いやすさにはつながらないはずで、そうであれば増えていくナビゲーションに対応するために左カラムにナビゲーションを移す必要性が高そうだという考えが強くなっていきました。</p>
 <p>検討を重ね、ナビゲーションを上から左に変えることを決めました。位置を変えることを決定したので、逆に今回は情報設計までいじらないことも同時に決めました。なぜなら、これまでご利用いただいているユーザーさんにとって、位置と項目が変更されてしまったら使いたいと思った機能へのアクセス方法がわからなくなり、著しく使い勝手が悪くなってしまうからです。</p>
 <p>今回の変更のスコープが決まったので、トンマナとディテールを探っていきました。</p>
 <h3>リブランディングを反映させる</h3>
-<p>STORESは、2019年7月に一度リブランディングを行っています。</p>
+<p>STORES は、2019 年 7 月に一度リブランディングを行っています。</p>
 <blockquote>
 <p>こちら <a href="https://note.com/shuarak/n/n1886c2331ec7">STORES.jp リブランディングのお話</a></p>
 </blockquote>
-<p><img src="/images/stores_dashboard_new_design/img007.jpg">
-<img src="/images/stores_dashboard_new_design/img008.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img007.jpg" alt="">
+<img src="/images/stores_dashboard_new_design/img008.jpg" alt=""></p>
 <p>このリブランディングでは、まずは第一弾としてサービスサイトがリニューアルされました。ダッシュボードは変更されなかったので、早くこのリブランディングを反映したいよねという話はずっとしていて、今回こういうタイミングが来たのでやるしかねえ！という感じで取り組みはじめました。</p>
-<p><img src="/images/stores_dashboard_new_design/img009.jpg"></p>
-<p>基本的なUIの構成は変更せず（そこまでやってしまうと開発に時間がかかりすぎるのと、ユーザーさんへの一度の変更の影響が大きすぎるので...）、カラーや余白などを調整していきました。ナビゲーションも構成要素は変えないという意思決定をしましたが、全体の印象を大きく変えるのでスタディを重ねていきました。</p>
-<p><img src="/images/stores_dashboard_new_design/img006.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img009.jpg" alt=""></p>
+<p>基本的な UI の構成は変更せず（そこまでやってしまうと開発に時間がかかりすぎるのと、ユーザーさんへの一度の変更の影響が大きすぎるので...）、カラーや余白などを調整していきました。ナビゲーションも構成要素は変えないという意思決定をしましたが、全体の印象を大きく変えるのでスタディを重ねていきました。</p>
+<p><img src="/images/stores_dashboard_new_design/img006.jpg" alt=""></p>
 <p class="Caption">トンマナとディテールを探る</p>
-<p>ところがですよ、知っている方もいると思いますが、2020年1月にSTORES.jpとCoineyがひとつのSTORESブランドとして統合されて、新しいブランドになっちゃったんですよね...</p>
+<p>ところがですよ、知っている方もいると思いますが、2020 年 1 月に STORES.jp と Coiney がひとつの STORES ブランドとして統合されて、新しいブランドになっちゃったんですよね...</p>
 <img src="/images/stores_dashboard_new_design/img010.gif" style="display:block;margin:48px auto;" />
 <h2>新しいカラーシステムを作る</h2>
-<p>新しいSTORESブランドとしてやっていくぞ！となったのに、その後のリニューアルが旧ブランディングなのは意味わからんやろ...ということで、すでに開発が進んでいましたが新しいカラーシステムを検討しはじめました。</p>
-<p><img src="/images/stores_dashboard_new_design/img011.png"></p>
+<p>新しい STORES ブランドとしてやっていくぞ！となったのに、その後のリニューアルが旧ブランディングなのは意味わからんやろ...ということで、すでに開発が進んでいましたが新しいカラーシステムを検討しはじめました。</p>
+<p><img src="/images/stores_dashboard_new_design/img011.png" alt=""></p>
 <p class="Caption">ブランドカラーをそのまま当てはめてみる</p>
 <p>単純にグラデーションの先端を持ってきて使うと、コントラストが足りず視認性が悪かったり、カラーとしても少し古い印象になったりしてしまいました。</p>
-<p>STORESのダッシュボードは、オーナーさんたちの毎日の仕事を支えるプロダクトなので、とにかく見やすく、長時間使い続けても負担の少ない状態にしたいと考えています。ブランドイメージとプロダクトとして使うカラーは、用途も求められる要件も違う。もしかしたら同一でなくても良いのかもしれないと思い、可能性を探っていくことにしました。</p>
-<p>考えていくにあたり、Stripeの事例とかW3Cが提供しているアクセシビリティに関するテキストも見直したりして、いくつかの前提条件を整理しました。</p>
+<p>STORES のダッシュボードは、オーナーさんたちの毎日の仕事を支えるプロダクトなので、とにかく見やすく、長時間使い続けても負担の少ない状態にしたいと考えています。ブランドイメージとプロダクトとして使うカラーは、用途も求められる要件も違う。もしかしたら同一でなくても良いのかもしれないと思い、可能性を探っていくことにしました。</p>
+<p>考えていくにあたり、Stripe の事例とか W3C が提供しているアクセシビリティに関するテキストも見直したりして、いくつかの前提条件を整理しました。</p>
 <blockquote>
 <p>主な参考テキスト</p>
 <ul>
-<li>
-<p><a href="https://stripe.com/au/blog/accessible-color-systems">Stripe : Designing accessible color systems</a></p>
+<li><a href="https://stripe.com/au/blog/accessible-color-systems">Stripe : Designing accessible color systems</a>
 <ul>
-<li><a href="https://www.google.co.jp/amp/s/gigazine.net/amp/20191017-stripe-designing-accessible-color-systems">Gigazineによる日本語解説</a></li>
+<li><a href="https://www.google.co.jp/amp/s/gigazine.net/amp/20191017-stripe-designing-accessible-color-systems">Gigazine による日本語解説</a></li>
 </ul>
 </li>
-<li>
-<p><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html#contents">WCAG2.0解説書</a></p>
+<li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html#contents">WCAG2.0 解説書</a>
 <ul>
 <li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">コントラスト (最低限): 達成基準 1.4.3 を理解する</a></li>
 <li><a href="https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast7.html">コントラスト (高度): 達成基準 1.4.6 を理解する</a></li>
@@ -120,18 +124,18 @@
 <p><strong>アクセシビリティ</strong></p>
 <ul>
 <li>コントラスト比を意識する(テキスト、アイコン、塗り、背景色の有無ごとにコントラスト比を確認する)</li>
-<li>人間が見たときの色相ごとの明度の違いを意識する(「<a href="https://programmingdesignsystems.com/color/perceptually-uniform-color-spaces/">Perceptually uniform color spaces</a>」と呼ばれる色空間は、人間の視覚で見た際の色の明度を正しくモデル化したものであり、HSLが明度において抱えていた問題点を解消した色空間)</li>
+<li>人間が見たときの色相ごとの明度の違いを意識する(「<a href="https://programmingdesignsystems.com/color/perceptually-uniform-color-spaces/">Perceptually uniform color spaces</a>」と呼ばれる色空間は、人間の視覚で見た際の色の明度を正しくモデル化したものであり、HSL が明度において抱えていた問題点を解消した色空間)</li>
 </ul>
 <p><strong>ユーザー</strong></p>
 <ul>
-<li>20-40代が中心</li>
+<li>20-40 代が中心</li>
 <li>性別での利用傾向の差はない</li>
 <li>アプリやウェブサービスの利用に対して一般的なリテラシーを持っている</li>
 </ul>
 <p><strong>環境</strong></p>
 <ul>
 <li>ハイエンドな端末を利用してはいない</li>
-<li>Window利用者も存在する（X%）</li>
+<li>Window 利用者も存在する（X%）</li>
 <li>外光のある空間から、暗い寝室までさまざまな場所で利用される</li>
 </ul>
 <p><strong>使用状況</strong></p>
@@ -148,67 +152,67 @@
 </blockquote>
 <p>このあたりを前提に、カラーの検証を行っていきました。<br>
 まず、ブラックはブランドカラーと揃えないと印象がかなりぶれてしまうので、揃えた上でダッシュボードで必要な幅を作っていく作業を行いました。</p>
-<p><img src="/images/stores_dashboard_new_design/img013.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img013.jpg" alt=""></p>
 <p class="Caption">ブラックの検証</p>
 <blockquote>
 <p>左<br>
-Blackから透明度を下げたパターン<br>
-透明度が高くなるほど彩度が落ちるので赤みが増す  </p>
+Black から透明度を下げたパターン<br>
+透明度が高くなるほど彩度が落ちるので赤みが増す</p>
 <p>真ん中<br>
-Blackの青味を維持するように目で見て調整したパターン<br>
-見た目の印象は近く  </p>
+Black の青味を維持するように目で見て調整したパターン<br>
+見た目の印象は近く</p>
 <p>右<br>
-BlackのHueを固定して調整したパターン<br>
+Black の Hue を固定して調整したパターン<br>
 ロゴの印象には近くなったのでこの方向で調整する感じになりそう</p>
 </blockquote>
 <p>ブラックは右をベースに最終調整していくことになりました。</p>
 <p>問題は他のカラーで、本当にたくさんのスタディを重ねてカラーを選択し、微調整を行っていきました。</p>
-<p><img src="/images/stores_dashboard_new_design/img012.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img012.jpg" alt=""></p>
 <p class="Caption">スタディスタディスタディ</p>
-<p>カラーは、どう使われるかが重要です。カラーそのものの見え方よりも、使われ方によって印象が大きく変わっていきます。なので、実際のUIに適用しながら調整を繰り返していきました。</p>
-<p>STORES.jpがリブランディングしたときに、プライマリーカラーを青から緑に変えたので、状態を表すカラーも緑/赤かなあみたいな先入観があったんですが、どうにかそれを振り払おうと悩み続けていた時もありました。</p>
-<p><img src="/images/stores_dashboard_new_design/img016.png"></p>
+<p>カラーは、どう使われるかが重要です。カラーそのものの見え方よりも、使われ方によって印象が大きく変わっていきます。なので、実際の UI に適用しながら調整を繰り返していきました。</p>
+<p>STORES.jp がリブランディングしたときに、プライマリーカラーを青から緑に変えたので、状態を表すカラーも緑/赤かなあみたいな先入観があったんですが、どうにかそれを振り払おうと悩み続けていた時もありました。</p>
+<p><img src="/images/stores_dashboard_new_design/img016.png" alt=""></p>
 <p class="Caption">左の数字はコントラスト比</p>
 <p>特に赤と緑は色覚異常のある方には見分けづらい可能性が高く、多くのユーザーさんに使っていただくことを目指していくにあたり、アクションを促すメインのカラーとして緑を選択することに抵抗がありました。</p>
 <p>めちゃくちゃ悩んで、毎日デザインチームで議論しました。なんとか決着をつけ、最終的に出来上がったカラーシステムがこちらです。</p>
-<p><img src="/images/stores_dashboard_new_design/img014.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img014.jpg" alt=""></p>
 <p class="Caption">プロダクトカラーシステム v1.0</p>
 <p>プライマリーカラーはブラックでいくこととし、状態やアクションを促すような要素に使うカラーをプロダクトのカラーシステムとして定義しました。</p>
-<p><img src="/images/stores_dashboard_new_design/img015.png"></p>
+<p><img src="/images/stores_dashboard_new_design/img015.png" alt=""></p>
 <p class="Caption">カラーシステムが適用されたダッシュボード</p>
 <p>そしてこれを...全画面に適用していく.......（デザインチームが）</p>
-<p><img src="/images/stores_dashboard_new_design/img030.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img030.jpg" alt=""></p>
 <p class="Caption">マインクラフトを現実世界に適用してく...？</p>
-<h2>オレたちはようやくのぼりはじm...</h2>
+<h2>オレたちはようやくのぼりはじ m...</h2>
 <p>フロントチームへ開発をお願いするために、全画面のデザインを完成させる必要がありました。基本的には共通コンポーネントやガイドラインに沿ってもらうことにはなっていますが、レイアウトまではわからないので...</p>
 <p>全画面にカラーシステムを適用する話の前に、ちょっと遡ってコンポーネントとガイドラインの話をしたいと思います。</p>
 <h3>コンポーネントとガイドライン</h3>
-<p>STORESには元々コンポーネントライブラリが存在するので、主要なページのデザインを作ってから、コンポーネントの修正を進めていきました。</p>
-<p><img src="/images/stores_dashboard_new_design/img019.jpg"></p>
+<p>STORES には元々コンポーネントライブラリが存在するので、主要なページのデザインを作ってから、コンポーネントの修正を進めていきました。</p>
+<p><img src="/images/stores_dashboard_new_design/img019.jpg" alt=""></p>
 <p class="Caption">コンポーネントたち</p>
-<p>僕自身は、フロントチームとデザインチームが議論しながら進めていくのをSlackで眺めていただけですが、コンポーネントのスタイルや挙動から名前まで、よりよくなるように議論を諦めない姿勢は本当に良いチームだなと思いました。</p>
-<p>上のコンポーネントはFigma上で使うものなので、状態やバリエーションなどが網羅されていないんですが、フロントチームが使うStorybookには全てのパターンを載せていくので、Storybookとの対応表もデザインチームで作っていきました。</p>
-<p><img src="/images/stores_dashboard_new_design/img018.jpg"></p>
+<p>僕自身は、フロントチームとデザインチームが議論しながら進めていくのを Slack で眺めていただけですが、コンポーネントのスタイルや挙動から名前まで、よりよくなるように議論を諦めない姿勢は本当に良いチームだなと思いました。</p>
+<p>上のコンポーネントは Figma 上で使うものなので、状態やバリエーションなどが網羅されていないんですが、フロントチームが使う Storybook には全てのパターンを載せていくので、Storybook との対応表もデザインチームで作っていきました。</p>
+<p><img src="/images/stores_dashboard_new_design/img018.jpg" alt=""></p>
 <p class="Caption">StorybookとFigmaの対応表</p>
 <p>このコンポーネントを使って画面を作っていくわけなんですが、画面数が本当に多いので、レイアウトを統一するのも大変...と思っていたらすなすながいつのまにかガイドラインを作ってくれて最高でした。すなすなはこういうあったら良さそうみたいなものを作る速さが尋常じゃない...</p>
-<p><img src="/images/stores_dashboard_new_design/img017.png"></p>
+<p><img src="/images/stores_dashboard_new_design/img017.png" alt=""></p>
 <p class="Caption">レイアウトガイドライン</p>
 <p>そして...</p>
 <h3>すべての画面を作る</h3>
 <p>作りきった！！すごい！！！！マジで！！すごい！！！！！</p>
-<p><img src="/images/stores_dashboard_new_design/img020.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img020.jpg" alt=""></p>
 <p>（僕はほとんどやっていないけどな）</p>
 <h2>ホーム画面と開設フロー</h2>
 <p>今回大きく変更した部分に、実はホーム画面とストア開設フローがあります。</p>
-<p><img src="/images/stores_dashboard_new_design/img021.gif"></p>
-<p>STORESは、誰でもかんたんにオンラインストアをはじめられることを大事にしてきました。しかし、オーナーさんがより安全にネットショップを運営し、購入者さんがより安心して購入していただくために、オーナーさんに求めなければならないハードルが少しずつ増えてきています。</p>
+<p><img src="/images/stores_dashboard_new_design/img021.gif" alt=""></p>
+<p>STORES は、誰でもかんたんにオンラインストアをはじめられることを大事にしてきました。しかし、オーナーさんがより安全にネットショップを運営し、購入者さんがより安心して購入していただくために、オーナーさんに求めなければならないハードルが少しずつ増えてきています。</p>
 <p>例えばクレジットカード決済をストアに導入するためには審査が必要になったように、オーナーさんがオンラインストアを作るときに提出を求められる情報は多くなってくる可能性があります。</p>
-<p>そうなったとしても、かんたんにスムーズにはじめられるというSTORESの良さを残しつつ、より安全・安心な取引を実現できるように、開設フローとホーム画面でのオンボーディングの改善に取り組みました。</p>
+<p>そうなったとしても、かんたんにスムーズにはじめられるという STORES の良さを残しつつ、より安全・安心な取引を実現できるように、開設フローとホーム画面でのオンボーディングの改善に取り組みました。</p>
 <p>今回はいろいろと制約があったのでもっと良くできるところがたくさんあって悔しい...というのが本音ですが、これからガンガン改善していきたいと思います...！</p>
 <h2>Figma</h2>
-<p><img src="/images/stores_dashboard_new_design/img023.png"></p>
-<p>STORESのデザインチームはこれまでSketchを使っていたんですが、Figmaへと移行しました。元々の導入は、新しいプロダクトを作っていく時にFigma試してみようか〜という感じで始めたんですが、Sketchとほとんど変わらない使い心地だしプロトタイプも作れるし共同編集もできる、最高じゃない？となって移行することにしました。</p>
-<p>まだまだFigmaを使いはじめたばかりなので、どうやっていこうかなあと思っている部分が多々あったりします。例えば...</p>
+<p><img src="/images/stores_dashboard_new_design/img023.png" alt=""></p>
+<p>STORES のデザインチームはこれまで Sketch を使っていたんですが、Figma へと移行しました。元々の導入は、新しいプロダクトを作っていく時に Figma 試してみようか〜という感じで始めたんですが、Sketch とほとんど変わらない使い心地だしプロトタイプも作れるし共同編集もできる、最高じゃない？となって移行することにしました。</p>
+<p>まだまだ Figma を使いはじめたばかりなので、どうやっていこうかなあと思っている部分が多々あったりします。例えば...</p>
 <ul>
 <li>単一プロダクト内の複数プロジェクトの同期をどうやってとるか</li>
 <li>マスターデータの管理をどうやってやるか</li>
@@ -216,92 +220,96 @@ BlackのHueを固定して調整したパターン<br>
 <li>プロジェクト・ファイル・ページはどういう単位で切るか</li>
 <li>...</li>
 </ul>
-<p>CoineyのデザインチームでもFigmaを利用していたので、今年からhey全体で共有しはじめた結果かなり煩雑になってきており、このリリースが終わったらちゃんと整理しようね..という話をしています。なんとか時間を作ってやりたい...</p>
-<p>リモートワークになった今を考えると、本当にFigmaに移行しておいて良かったと思います。同期的に作業ができなかったと思うとリリースがあと1, 2ヶ月は遅れていたんじゃないかと思います...</p>
+<p>Coiney のデザインチームでも Figma を利用していたので、今年から hey 全体で共有しはじめた結果かなり煩雑になってきており、このリリースが終わったらちゃんと整理しようね..という話をしています。なんとか時間を作ってやりたい...</p>
+<p>リモートワークになった今を考えると、本当に Figma に移行しておいて良かったと思います。同期的に作業ができなかったと思うとリリースがあと 1, 2 ヶ月は遅れていたんじゃないかと思います...</p>
 <h2>プロダクトデザイン定例</h2>
-<p>STORESは、僕がこれまで関わった中で一番大きいプロダクトで、たくさんの機能があり、すべてを一人で見通すことがかなり難しくなっています。デザインチームで知見を持ち寄って、いまはこうなってる、というのを確認しながら新しいデザインを作り、その進捗を細かく共有していくことで最終的なレビューコストを下げようと考えて毎日の定例を開催することにしました。</p>
-<p>11月から毎日MTGをし、気付いたら半年経っていました...</p>
-<p><img src="/images/stores_dashboard_new_design/img024.png"></p>
+<p>STORES は、僕がこれまで関わった中で一番大きいプロダクトで、たくさんの機能があり、すべてを一人で見通すことがかなり難しくなっています。デザインチームで知見を持ち寄って、いまはこうなってる、というのを確認しながら新しいデザインを作り、その進捗を細かく共有していくことで最終的なレビューコストを下げようと考えて毎日の定例を開催することにしました。</p>
+<p>11 月から毎日 MTG をし、気付いたら半年経っていました...</p>
+<p><img src="/images/stores_dashboard_new_design/img024.png" alt=""></p>
 <p class="Caption">積み上げたログがすごいことに</p>
-<p>当初は全員でFigmaを同時編集しながらデザインディスカッションみたいなことをやっていたんですが、結果としてこれには良い面も悪い面もあると感じました。ざっくり言うと</p>
+<p>当初は全員で Figma を同時編集しながらデザインディスカッションみたいなことをやっていたんですが、結果としてこれには良い面も悪い面もあると感じました。ざっくり言うと</p>
 <ul>
-<li>良い面は、お互いに何を考えてデザインを進めていくかがわかるので納得感を得やすいことと、単純に平均的なクオリティが上がること</li>
-<li>悪い面は、答えが出づらかったり、決断するには議論をしっかり整理する必要がある場合などは、うまくまとまらず効率が悪いこと</li>
+<li>
+<p>良い面は、お互いに何を考えてデザインを進めていくかがわかるので納得感を得やすいことと、単純に平均的なクオリティが上がること</p>
+</li>
+<li>
+<p>悪い面は、答えが出づらかったり、決断するには議論をしっかり整理する必要がある場合などは、うまくまとまらず効率が悪いこと</p>
+</li>
 </ul>
-<p>いまのSTORESデザインチームにとってはこういう影響があった、ということなのでチームが変わればやり方も影響も変わると思うんですが、ひとまず基本的にはこの定例の中でFigmaを触りながら大きなディスカッションをすることはやめました。</p>
-<p>ただ、デザイン業務にもレイヤーがあって、どのレイヤーの業務が定例中にFigmaで共同作業することと相性が良いかというのを少しずつ整理しています。</p>
-<p><img src="/images/stores_dashboard_new_design/img025.jpg"></p>
+<p>いまの STORES デザインチームにとってはこういう影響があった、ということなのでチームが変わればやり方も影響も変わると思うんですが、ひとまず基本的にはこの定例の中で Figma を触りながら大きなディスカッションをすることはやめました。</p>
+<p>ただ、デザイン業務にもレイヤーがあって、どのレイヤーの業務が定例中に Figma で共同作業することと相性が良いかというのを少しずつ整理しています。</p>
+<p><img src="/images/stores_dashboard_new_design/img025.jpg" alt=""></p>
 <p class="Caption">定例を見守る守神miso様</p>
-<p>定例のやり方も数ヶ月を経て磨かれていて、本当に小さいIssueの場合や、緊急対応が必要ですぐに解決したい場合などは、定例内で片付けてしまうことにしています。全員で30分でそのIssueを倒すことで、全員（いまは7人体制）がその変更を認識できるし、素早くレビューまで完了させることができるので良い感じです。</p>
+<p>定例のやり方も数ヶ月を経て磨かれていて、本当に小さい Issue の場合や、緊急対応が必要ですぐに解決したい場合などは、定例内で片付けてしまうことにしています。全員で 30 分でその Issue を倒すことで、全員（いまは 7 人体制）がその変更を認識できるし、素早くレビューまで完了させることができるので良い感じです。</p>
 <p>機能開発のプロジェクトは、リードするデザイナーとサポートするデザイナーの二人体制だったりして、また進め方が違っていたりしますが、基本的に全プロジェクトの進捗は定例で共有するようになりました。</p>
 <p>まだ運用しはじめてそんなに経っていないですが、最終的にデザインチーム全体でレビューをするコストも下がったと感じています。</p>
 <p>現時点ではチームビルディングという観点からもデイリーの定例はあると良いと思っているけれど、どのチームにも当てはまる良いやり方ではないかもしれないし、僕らもこれからやり方を変えていくかもしれないません。自分たちのチームにあったやり方を常に考えて実行していくのが大切だと思っています。</p>
 <p>この辺はリニューアルというよりもプロダクトデザインの進め方みたいな感じになってくるのでまたいつか書くかも...しれない...</p>
-<p><img src="/images/stores_dashboard_new_design/img026.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img026.jpg" alt=""></p>
 <p class="Caption">定例に1分でも遅刻すると...</p>
 <h2>開発へ</h2>
-<p>基本的なコンポーネントの整理ができた11月頃から、すなすなとかたぴーでコーディングを進めていきました。</p>
-<p>これまでのSTORESは、デスクトップとスマホのUIが別で存在していましたが、今回のリニューアルで両方を変更するか、レスポンシブで書き直すのどちらが早いかを見積もった結果、レスポンシブで書き直したほうが早そうだということで、画面のほとんどをレスポンシブに対応させていきました。</p>
-<p><img src="/images/stores_dashboard_new_design/img022.gif"></p>
+<p>基本的なコンポーネントの整理ができた 11 月頃から、すなすなとかたぴーでコーディングを進めていきました。</p>
+<p>これまでの STORES は、デスクトップとスマホの UI が別で存在していましたが、今回のリニューアルで両方を変更するか、レスポンシブで書き直すのどちらが早いかを見積もった結果、レスポンシブで書き直したほうが早そうだということで、画面のほとんどをレスポンシブに対応させていきました。</p>
+<p><img src="/images/stores_dashboard_new_design/img022.gif" alt=""></p>
 <p class="Caption">すなすなが作ってくれたレスポンシブ早見表</p>
-<p>12月中盤まではフロントチームは別のプロジェクトで動いていましたが、徐々に参戦。コーディングのレビューから進んでいきました。</p>
-<p><img src="/images/stores_dashboard_new_design/img027.png"></p>
+<p>12 月中盤まではフロントチームは別のプロジェクトで動いていましたが、徐々に参戦。コーディングのレビューから進んでいきました。</p>
+<p><img src="/images/stores_dashboard_new_design/img027.png" alt=""></p>
 <p class="Caption">よこちん参戦！！</p>
-<p><img src="/images/stores_dashboard_new_design/img028.png"></p>
+<p><img src="/images/stores_dashboard_new_design/img028.png" alt=""></p>
 <p class="Caption">プロジェクトを終えたメンバーが参戦し徐々に増えていくフロントチーム...</p>
-<p><img src="/images/stores_dashboard_new_design/img029.png"></p>
+<p><img src="/images/stores_dashboard_new_design/img029.png" alt=""></p>
 <p class="Caption">そして2月にはついにフロントチームがフルコミット...！</p>
 <p>フロントチームは、途中から開発に加わったエンジニアがキャッチアップしやすくするために<strong>入隊キット</strong>を作っていて、これが本当によい。</p>
-<p><img src="/images/stores_dashboard_new_design/img031.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img031.jpg" alt=""></p>
 <p class="Caption">入隊キット</p>
 <p>スプリントや過去対応のヒストリーなども残しているので、全体を把握しやすくなるし納得感もあがるのでおすすめです。</p>
 <p>フロントチームは、リーダーのよこちんさんが見てくれているので完全に任せていたんですが、よこちんさんを筆頭にめちゃくちゃ頼りになるメンバーが多いので本当に助かりました...</p>
-<p><img src="/images/stores_dashboard_new_design/img032.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img032.jpg" alt=""></p>
 <p class="Caption">頑張りすぎて女体化したよこちん</p>
-<h2>QAをやる</h2>
-<p>STORESには専属のQAチームがまだないので、デザインチームとフロントチームがQAを行っていきました。Figmaのデザインデータと開発した画面を見比べつつ、表示の崩れや機能の動作確認をしていく作業を、デザイナーのかたぴーがリードして、2月末から約2ヶ月かけて繰り返し繰り返し行いました。</p>
-<p><img src="/images/stores_dashboard_new_design/img033.jpg"></p>
+<h2>QA をやる</h2>
+<p>STORES には専属の QA チームがまだないので、デザインチームとフロントチームが QA を行っていきました。Figma のデザインデータと開発した画面を見比べつつ、表示の崩れや機能の動作確認をしていく作業を、デザイナーのかたぴーがリードして、2 月末から約 2 ヶ月かけて繰り返し繰り返し行いました。</p>
+<p><img src="/images/stores_dashboard_new_design/img033.jpg" alt=""></p>
 <p class="Caption">かたぴーが作ったQA管理表</p>
 <p>とにかく知らなかった仕様や未検討の問題がワラワラ出てくるし、既存のバグも把握して一旦積んでおかなければならないなど、本当に大変な作業だったと思います。（僕は状況確認と調整だけでみんなが頑張ってくれた...）</p>
-<p>毎日デザインチームとフロントチームでMTGを繰り返して、デザインの作成漏れや未検討の仕様などを潰しつつ、300以上のIssueを立てて消化していきました。大きな不具合のない状態でこの規模のリリースまで持っていけたのはすごいことだと思っています。今回のリニューアルのいちばんの功労者は完全にかたぴ〜です。</p>
-<p><img src="/images/stores_dashboard_new_design/img034.png"></p>
+<p>毎日デザインチームとフロントチームで MTG を繰り返して、デザインの作成漏れや未検討の仕様などを潰しつつ、300 以上の Issue を立てて消化していきました。大きな不具合のない状態でこの規模のリリースまで持っていけたのはすごいことだと思っています。今回のリニューアルのいちばんの功労者は完全にかたぴ〜です。</p>
+<p><img src="/images/stores_dashboard_new_design/img034.png" alt=""></p>
 <p class="Caption">そんな時期でした</p>
 <p>ダッシュボードのほぼ全容を両チームが把握したのは副次的にすごい良かったです。</p>
 <h2>リモートワーク</h2>
-<p>振り返ってみたら、2/18くらいからリモートワークがはじまっていたようでした(もう3ヶ月も経ったのか..）</p>
-<p><img src="/images/stores_dashboard_new_design/img037.jpg"></p>
+<p>振り返ってみたら、2/18 くらいからリモートワークがはじまっていたようでした(もう 3 ヶ月も経ったのか..）</p>
+<p><img src="/images/stores_dashboard_new_design/img037.jpg" alt=""></p>
 <p class="Caption">ナタデココ化したかたぴー</p>
-<p>一瞬だけSnapCameraが流行ったりしていました。</p>
-<p>プロジェクト自体は、Figmaの同時編集、毎日の定例、esaを使った同期的ドキュメンテーション、Slackの雑談スレッドなどを駆使して、前向きなメンバーに支えられてなんとか進められました。</p>
+<p>一瞬だけ SnapCamera が流行ったりしていました。</p>
+<p>プロジェクト自体は、Figma の同時編集、毎日の定例、esa を使った同期的ドキュメンテーション、Slack の雑談スレッドなどを駆使して、前向きなメンバーに支えられてなんとか進められました。</p>
 <p>ただ、やはり仕事以外のコミュニケーションだったり、余白みたいなものが失われてしまっている感じはあったし、やはり孤独感みたいなものも少なからず感じはじめていたので、みんなでバーチャルオフィスを作ることにしました。</p>
-<p><img src="/images/stores_dashboard_new_design/img038.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img038.jpg" alt=""></p>
 <p class="Caption">バーチャルエフニッセイ恵比寿ビル1日目</p>
 <p>実はデザインチームにプロが混じっていたようで一瞬で出来上がってしまった...</p>
-<p><img src="/images/stores_dashboard_new_design/img039.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img039.jpg" alt=""></p>
 <p class="Caption">1週間後</p>
-<p>デザインチームでは雑談をするために月に1度くらいのペースでお茶会というただただしゃべる会をやっているんですが、前回はこのバーチャルエフニッセイ恵比寿ビルで無事開催されました！</p>
-<p><img src="/images/stores_dashboard_new_design/img040.jpg"></p>
+<p>デザインチームでは雑談をするために月に 1 度くらいのペースでお茶会というただただしゃべる会をやっているんですが、前回はこのバーチャルエフニッセイ恵比寿ビルで無事開催されました！</p>
+<p><img src="/images/stores_dashboard_new_design/img040.jpg" alt=""></p>
 <p class="Caption">お茶会の様子</p>
 <p>マイクラをはじめて良かったのは、リモートに入ったと同時に入社したデザイナーのなかじ〜が、チームにうまく溶け込むきっかけになったことでした。やっぱり余白みたいなものがコミュニケーションには大切で、そういうものをリモートでも作っていけるようにしたいと思っています。</p>
 <h2>出来上がってくる</h2>
-<p>開発もガンガン進んでいき、3月にはVue(Nuxt)側の実装が完了しました。</p>
-<p><img src="/images/stores_dashboard_new_design/img041.png"></p>
-<p>GWも働き、なんとかゴールが見えてきました。（代休はちゃんと取得します！！）</p>
-<p><img src="/images/stores_dashboard_new_design/img035.jpg">
-<img src="/images/stores_dashboard_new_design/img036.png"></p>
+<p>開発もガンガン進んでいき、3 月には Vue(Nuxt)側の実装が完了しました。</p>
+<p><img src="/images/stores_dashboard_new_design/img041.png" alt=""></p>
+<p>GW も働き、なんとかゴールが見えてきました。（代休はちゃんと取得します！！）</p>
+<p><img src="/images/stores_dashboard_new_design/img035.jpg" alt="">
+<img src="/images/stores_dashboard_new_design/img036.png" alt=""></p>
 <p>そしてついに...</p>
-<p><img src="/images/stores_dashboard_new_design/img042.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img042.jpg" alt=""></p>
 <h2>こっそりメールマガジンもリニューアル</h2>
 <p>メールマガジンのテンプレートのリニューアルも行いました。前から変えたい変えたいと言いつつ、特にこのタイミングで変えるという話はまったく上がっていなかったんですが、ダッシュボードがリニューアルするしそれをお知らせするメールマガジンもどうせならリニューアルしたい...！という気持ちが芽生えてしまい、やってしまいました。</p>
-<p><img src="/images/stores_dashboard_new_design/img043.jpg"></p>
+<p><img src="/images/stores_dashboard_new_design/img043.jpg" alt=""></p>
 <p>僕が勝手に作ってしまったので、デザインチームには突然のレビュー大会をお願いしてしまったので申し訳ないと思いつつ、いいものができたので許してくれという気持ち...</p>
 <h2>リリース準備</h2>
-<p>すべてのユーザーさんに大きな影響があるリリースなので、3月から事前告知を開始していました。</p>
-<p><img src="/images/stores_dashboard_new_design/img044.jpg"></p>
+<p>すべてのユーザーさんに大きな影響があるリリースなので、3 月から事前告知を開始していました。</p>
+<p><img src="/images/stores_dashboard_new_design/img044.jpg" alt=""></p>
 <p class="Caption">3月に送った事前告知メルマガ</p>
-<p>この事前告知に、Figmaのプロトタイプを掲載して実際に触ってもらえるようにしたんですが、実はFigmaのプロトタイプって同時アクセスが50人までだったんですよね...完全にパンクしてしまって大変だったのでみんなも気をつけてね...</p>
+<p>この事前告知に、Figma のプロトタイプを掲載して実際に触ってもらえるようにしたんですが、実は Figma のプロトタイプって同時アクセスが 50 人までだったんですよね...完全にパンクしてしまって大変だったのでみんなも気をつけてね...</p>
 <p>旧ダッシュボードへも全画面にリニューアル告知を行い、とにかく切り替わったときにオーナーさんがびっくりしてしまわないように慎重にコミュニケーションをとることを意識していました。</p>
-<p><img src="/images/stores_dashboard_new_design/img045.png"></p>
+<p><img src="/images/stores_dashboard_new_design/img045.png" alt=""></p>
 <p class="Caption">告知バー表示</p>
 <p>ビジネスチームと連携しながら、当日の不具合やお問い合わせに対応できるように事前準備を念入りにしていきました。</p>
 <ul>
@@ -309,28 +317,28 @@ BlackのHueを固定して調整したパターン<br>
 <li>影響範囲の見積もりと優先順位付けの参考情報収集</li>
 <li>不具合レベルと対応策の整理</li>
 <li>当日の対応フローとシフト</li>
-<li>想定されるお問い合わせへの対応方法とFAQの整備</li>
+<li>想定されるお問い合わせへの対応方法と FAQ の整備</li>
 </ul>
-<p>などなど、とにかく不安要素を洗い出して、連携を強化し、オーナーさんが困ってしまった時に即時対応できるように体制を整えていきました。リリース周りのサポートとしてSTORES PMのはまむーが入ってくれて、細かいところを拾ってくれたのが本当に助かりました...彼がいなかったらスムーズにリリースまでいけませんでした。</p>
+<p>などなど、とにかく不安要素を洗い出して、連携を強化し、オーナーさんが困ってしまった時に即時対応できるように体制を整えていきました。リリース周りのサポートとして STORES PM のはまむーが入ってくれて、細かいところを拾ってくれたのが本当に助かりました...彼がいなかったらスムーズにリリースまでいけませんでした。</p>
 <img src="/images/stores_dashboard_new_design/img050.png" style="display: block; margin: 40px auto 0 auto;" />
 <p class="Caption">三島のはまむー</p>
 <h2>リリース</h2>
-<p>リモートでのこんなに大きなリリースは初めてだったので、みんなソワソワしつつGoogle Meetに集まっていました...</p>
-<p><img src="/images/stores_dashboard_new_design/img046.jpg"></p>
-<p>深夜2時対応だったんですが、みんな今までに聞いたことないぐらい萎びた声で笑ってしまった。</p>
+<p>リモートでのこんなに大きなリリースは初めてだったので、みんなソワソワしつつ Google Meet に集まっていました...</p>
+<p><img src="/images/stores_dashboard_new_design/img046.jpg" alt=""></p>
+<p>深夜 2 時対応だったんですが、みんな今までに聞いたことないぐらい萎びた声で笑ってしまった。</p>
 <p>そしてはじまる...</p>
-<p><img src="/images/stores_dashboard_new_design/img047.png"></p>
+<p><img src="/images/stores_dashboard_new_design/img047.png" alt=""></p>
 <p class="Caption">リリース作業を開始... </p>
 <p>ついに...</p>
-<p><img src="/images/stores_dashboard_new_design/img048.gif"></p>
+<p><img src="/images/stores_dashboard_new_design/img048.gif" alt=""></p>
 <p class="Caption">やったー！</p>
 <p>まじ本当みんなお疲れ様やで...</p>
 <hr>
 <p>リリースが終わってから、本番での動作確認を進めていきました。</p>
-<p>リリースに関連していただいたお問い合わせは、すべてひとつのSlackチャンネルに集約されるように事前に整えていたので、そこに集まってきたお問い合わせを整理して、優先して対応すべきものを決め、修正対応を進めていきました。</p>
-<p>今回のリリースで強く感じたのは、STORESというサービスがどれだけオーナーさんの仕事と密接につながっているかということです。</p>
+<p>リリースに関連していただいたお問い合わせは、すべてひとつの Slack チャンネルに集約されるように事前に整えていたので、そこに集まってきたお問い合わせを整理して、優先して対応すべきものを決め、修正対応を進めていきました。</p>
+<p>今回のリリースで強く感じたのは、STORES というサービスがどれだけオーナーさんの仕事と密接につながっているかということです。</p>
 <p>ひとつの小さい変更や不具合が、仕事のスピードや生産性に大きく影響してしまう。どんな変更であれ、これまでのやり方の変更を余儀なくされ、そのオペレーションは売っている商品や規模によって違っていたりする。ひとつの小さい手間が累積して大きな負担になる。いろんなお商売があり、喜んでくれる人と、負担に感じる人がいる。</p>
 <p>どれだけオーナーさんに会いに行って、話を聞いて、想像しても、おそらくすべてのオーナーさんにとって最高のプロダクトを作るのは難しいでしょう。それでも、まだまだまだまだやれることがあります。</p>
-<p>STORESはこれからもっと大きく変わっていこうとしています。いまのプロダクトももっと良くしたいし、新しくできることも増やしていきたいです。ひとりひとりのオーナーさんが今日も明日も楽しく仕事ができているかを想像しながら、僕らも頑張っていきたいなと思っています。</p>
-<p><img src="/images/stores_dashboard_new_design/img049.jpg"></p>
-<p>2020年5月20日</p></div></div><div class="Spacer-sc-398nqh-0 jQKcRX"></div><div class="PostFooter__Wrapper-vkrl7g-0 kFtPNS"><div class="Profile__Wrapper-sc-1x6d4d2-7 hZWEhg"><p class="Profile__SectionTitle-sc-1x6d4d2-6 gxLsMx">プロフィール</p><div class="Spacer-sc-398nqh-0 hXYXuZ"></div><div class="Profile__PhotoWrapper-sc-1x6d4d2-5 eDPVdp"><img src="../images/profile_p.png" style="opacity:0.08;z-index:1" class="Profile__Photo-sc-1x6d4d2-4 DwEfP"/><img src="../images/profile_w.png" style="position:absolute;left:36px;top:12px;opacity:1;z-index:100" class="Profile__Photo-sc-1x6d4d2-4 DwEfP"/></div><div class="Spacer-sc-398nqh-0 gMQubw"></div><h4 class="Profile__Name-sc-1x6d4d2-2 jKQsxr">井出 優太 / Yuta Ide</h4><p class="Profile__Post-sc-1x6d4d2-3 dKRsTf">デザイナー</p><div class="Spacer-sc-398nqh-0 hXYXuZ"></div><p class="Profile__Content-sc-1x6d4d2-1 bdGneO">88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はSTORESレジを立ち上げたりデザインリードをやったりしています。</p><div class="Spacer-sc-398nqh-0 hXYXuZ"></div><p class="Profile__Content-sc-1x6d4d2-1 bdGneO">Twitter: <a href="https://twitter.com/_ideyuta" class="Profile__A-sc-1x6d4d2-0 fFoqwM">@_ideyuta</a></p><p class="Profile__Content-sc-1x6d4d2-1 bdGneO">GitHub: <a href="https://github.com/ideyuta" class="Profile__A-sc-1x6d4d2-0 fFoqwM">ideyuta</a></p><p class="Profile__Content-sc-1x6d4d2-1 bdGneO">Email: <a href="mailto:ide.yuta@gmail.com" class="Profile__A-sc-1x6d4d2-0 fFoqwM">ide.yuta@gmail.com</a></p><p class="Profile__Content-sc-1x6d4d2-1 bdGneO">Work: <a href="https://hey.jp" class="Profile__A-sc-1x6d4d2-0 fFoqwM">hey,inc.</a></p></div></div><div class="Footer__Wrapper-sc-109fzf0-0 fVWkBm"><p>© ideyuta.com</p></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script src="https://platform.twitter.com/widgets.js"></script><script src="https://www.instagram.com/embed.js"></script><script src="https://embedr.flickr.com/assets/client-code.js"></script><script src="https://embed.redditmedia.com/widgets/platform.js"></script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/stores_dashboard_new_design";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-092c4c6a41bb38cca3d9.js"],"app":["/app-bbdebe7e065fa38502d7.js"],"component---src-pages-index-js":["/component---src-pages-index-js-b48f039f59fcc7401f0a.js"],"component---src-pages-invites-js":["/component---src-pages-invites-js-a8407024d1f34803ca2e.js"],"component---src-templates-post-js":["/component---src-templates-post-js-59d4642561128f8e016d.js"]};/*]]>*/</script><script src="/polyfill-092c4c6a41bb38cca3d9.js" nomodule=""></script><script src="/component---src-templates-post-js-59d4642561128f8e016d.js" async=""></script><script src="/commons-8378b0baca8406c9563f.js" async=""></script><script src="/app-bbdebe7e065fa38502d7.js" async=""></script><script src="/framework-d585a04b7d285a7760d6.js" async=""></script><script src="/styles-8fab2804fb6f85b824b6.js" async=""></script><script src="/webpack-runtime-c8b424eb40220044ffac.js" async=""></script><script src="/bundle.js"></script><script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-36151317-1", "auto");ga("send", "pageview");</script></body></html>
+<p>STORES はこれからもっと大きく変わっていこうとしています。いまのプロダクトももっと良くしたいし、新しくできることも増やしていきたいです。ひとりひとりのオーナーさんが今日も明日も楽しく仕事ができているかを想像しながら、僕らも頑張っていきたいなと思っています。</p>
+<p><img src="/images/stores_dashboard_new_design/img049.jpg" alt=""></p>
+<p>2020 年 5 月 20 日</p></div></div><div class="Spacer-sc-398nqh-0 iEzIDQ"></div><div class="PostFooter__Wrapper-sc-vkrl7g-0 kwna-Ds"><div class="Profile__Wrapper-sc-1x6d4d2-7 dmxveQ"><p class="Profile__SectionTitle-sc-1x6d4d2-6 boEWub">プロフィール</p><div class="Spacer-sc-398nqh-0 dyuzQw"></div><div class="Profile__PhotoWrapper-sc-1x6d4d2-5 mZGnU"><img src="../images/profile_p.png" style="opacity:0.08;z-index:1" class="Profile__Photo-sc-1x6d4d2-4 eCIIoa"/><img src="../images/profile_w.png" style="position:absolute;left:36px;top:12px;opacity:1;z-index:100" class="Profile__Photo-sc-1x6d4d2-4 eCIIoa"/></div><div class="Spacer-sc-398nqh-0 lprkdY"></div><h4 class="Profile__Name-sc-1x6d4d2-2 kQfysD">井出 優太 / Yuta Ide</h4><p class="Profile__Post-sc-1x6d4d2-3 dYsrJp">デザイナー</p><div class="Spacer-sc-398nqh-0 dyuzQw"></div><p class="Profile__Content-sc-1x6d4d2-1 kLoKdw">88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はヘイでデザイナーをやったりしています。</p><div class="Spacer-sc-398nqh-0 dyuzQw"></div><p class="Profile__Content-sc-1x6d4d2-1 kLoKdw">Twitter: <a href="https://twitter.com/_ideyuta" class="Profile__A-sc-1x6d4d2-0 nCpVH">@_ideyuta</a></p><p class="Profile__Content-sc-1x6d4d2-1 kLoKdw">GitHub: <a href="https://github.com/ideyuta" class="Profile__A-sc-1x6d4d2-0 nCpVH">ideyuta</a></p><p class="Profile__Content-sc-1x6d4d2-1 kLoKdw">Email: <a href="mailto:ide.yuta@gmail.com" class="Profile__A-sc-1x6d4d2-0 nCpVH">ide.yuta@gmail.com</a></p><p class="Profile__Content-sc-1x6d4d2-1 kLoKdw">Work: <a href="https://hey.jp" class="Profile__A-sc-1x6d4d2-0 nCpVH">hey,inc.</a></p></div></div><div class="Footer__Wrapper-sc-109fzf0-0 fUcLNC"><p>© ideyuta.com</p></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script src="https://platform.twitter.com/widgets.js"></script><script src="https://www.instagram.com/embed.js"></script><script src="https://embedr.flickr.com/assets/client-code.js"></script><script src="https://embed.redditmedia.com/widgets/platform.js"></script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/stores_dashboard_new_design";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-4c64e9d290da78ca8cf9.js"],"app":["/app-cbdecf58cabc93195bb5.js"],"component---src-pages-index-js":["/component---src-pages-index-js-593dbd861592e5bfa81d.js"],"component---src-pages-invites-js":["/component---src-pages-invites-js-b646edaed853f3f941e9.js"],"component---src-templates-post-js":["/component---src-templates-post-js-d861b38e8a1a1b6674d8.js"]};/*]]>*/</script><script src="/polyfill-4c64e9d290da78ca8cf9.js" nomodule=""></script><script src="/component---src-templates-post-js-d861b38e8a1a1b6674d8.js" async=""></script><script src="/commons-2b4fdcd3cc8dc1ac9efc.js" async=""></script><script src="/app-cbdecf58cabc93195bb5.js" async=""></script><script src="/framework-9905f14ac51f27117976.js" async=""></script><script src="/webpack-runtime-0fce7eacfd1aaeff7ea2.js" async=""></script><script src="/bundle.js"></script><script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-36151317-1", "auto");ga("send", "pageview");</script></body></html>
