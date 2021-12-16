@@ -8,6 +8,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+*::selection {
+  background-color: #35BA7A;
+}
+
 @media (min-width: 420px) {
   html {
     font-size: 20px;

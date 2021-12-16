@@ -1,7 +1,6 @@
 import React from "react";
 import { withPrefix } from "gatsby-link";
 import styled from "styled-components";
-import { colors } from "../assets";
 
 const Anchor = styled.a`
   display: inline-block;

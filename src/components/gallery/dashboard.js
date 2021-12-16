@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
-import { useTexture, PresentationControls } from "@react-three/drei";
+import { Html, useTexture, PresentationControls } from "@react-three/drei";
 import { useSpring, animated, config } from "@react-spring/three";
 import { isMobile } from "react-device-detect";
 
@@ -42,6 +42,11 @@ const Dashboard = (props) => {
         shadow-mapSize={[512, 512]}
         castShadow
       />
+      {!isMobile && active && (
+        <Html scale={.1} position={[0, -.87, 0]} transform occlude>
+          <p style={{ color: "#BAC7B9" }}>STORESダッシュボード - 2020</p>
+        </Html>
+      )}
       <planeGeometry args={[2, 1.485, 1]} />
       <meshPhongMaterial map={img} transparent={true} />
       {light && <primitive object={light.target} position={[0.5, 0, 0]} />}

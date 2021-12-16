@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
-import { useTexture, PresentationControls } from "@react-three/drei";
+import { Html, useTexture, PresentationControls } from "@react-three/drei";
 import { useSpring, animated, config } from "@react-spring/three";
 import { isMobile } from "react-device-detect";
 
@@ -43,6 +43,11 @@ const Regi = (props) => {
         shadow-mapSize={[512, 512]}
         castShadow
       />
+      {!isMobile && active && (
+        <Html scale={.1} position={[0, -.85, 0]} transform occlude>
+          <p style={{ color: "#BAC7B9" }}>STORESレジ - 2021</p>
+        </Html>
+      )}
       <planeGeometry args={[2, 1.428, 1]} />
       <meshPhongMaterial map={img} transparent={true} />
       {light && <primitive object={light.target} position={[0.4, 0.2, 0]} />}

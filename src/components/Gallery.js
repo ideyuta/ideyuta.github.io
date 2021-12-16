@@ -9,8 +9,11 @@ import VandleCard from "./gallery/vandlecard";
 
 const Wrapper = styled.div`
   background: #f2f2ee;
-  height: 90vh;
+  height: 86vh;
   width: 100vw;
+  p::selection {
+    background-color: transparent;
+  }
 `;
 
 const Gallery = (props) => {
@@ -19,8 +22,8 @@ const Gallery = (props) => {
       <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 6], fov: 50 }}>
         <Suspense fallback={null}>
           <MapControls
-            panSpeed={1.4}
-            zoomSpeed={0.4}
+            panSpeed={1.6}
+            zoomSpeed={0.6}
             enableRotate={false}
           />
           <hemisphereLight intensity={0.8} />
