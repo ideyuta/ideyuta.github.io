@@ -7,7 +7,6 @@
     "@react-spring/three": "^9.3.1",
     "@react-three/drei": "^8.0.0",
     "@react-three/fiber": "^7.0.24",
-    "ghost-writer": "^0.2.1",
     "highlight.js": "^11.3.1",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
@@ -47,8 +46,6 @@
     "build": "gatsby build --prefix-paths",
     "deploy": "gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint": "eslint ./ --cache",
-    "start": "gatsby develop",
-    "test": "npm run lint"
+    "start": "gatsby develop"
   }
 }
