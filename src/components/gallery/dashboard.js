@@ -43,7 +43,7 @@ const Dashboard = (props) => {
         castShadow
       />
       {!isMobile && active && (
-        <Html scale={.1} position={[0, -.87, 0]} transform occlude>
+        <Html scale={0.1} position={[0, -0.87, 0]} transform occlude>
           <p style={{ color: "#BAC7B9" }}>STORESダッシュボード - 2020</p>
         </Html>
       )}

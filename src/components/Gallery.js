@@ -16,16 +16,12 @@ const Wrapper = styled.div`
   }
 `;
 
-const Gallery = (props) => {
+const Gallery = ({ height }) => {
   return (
-    <Wrapper>
+    <Wrapper style={{ height: height ? (height*0.86) : '86vh' }}>
       <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 6], fov: 50 }}>
         <Suspense fallback={null}>
-          <MapControls
-            panSpeed={1.6}
-            zoomSpeed={0.6}
-            enableRotate={false}
-          />
+          <MapControls panSpeed={1.6} zoomSpeed={0.6} enableRotate={false} />
           <hemisphereLight intensity={0.8} />
           <ContactShadows
             rotation-x={Math.PI / 2}

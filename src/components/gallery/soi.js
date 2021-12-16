@@ -44,7 +44,7 @@ const Soi = (props) => {
         castShadow
       />
       {!isMobile && active && (
-        <Html scale={.1} position={[0, -1.15, 0]} transform occlude>
+        <Html scale={0.1} position={[0, -1.15, 0]} transform occlude>
           <p style={{ color: "#BAC7B9" }}>soi - 2018</p>
         </Html>
       )}
