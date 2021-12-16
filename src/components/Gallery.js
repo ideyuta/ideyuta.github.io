@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
 const Gallery = ({ height }) => {
   return (
-    <Wrapper style={{ height: height ? (height*0.86) : '86vh' }}>
+    <Wrapper style={{ height: height ? height * 0.86 : "86vh" }}>
       <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 6], fov: 50 }}>
         <Suspense fallback={null}>
           <MapControls panSpeed={1.6} zoomSpeed={0.6} enableRotate={false} />

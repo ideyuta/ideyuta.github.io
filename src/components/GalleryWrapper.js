@@ -37,22 +37,21 @@ const Wrapper = styled.div`
 `;
 
 class GalleryWrapper extends React.Component {
-
   constructor(props) {
     super(props);
-    this.state = { height: null }
+    this.state = { height: null };
   }
 
   componentDidMount() {
-    this.setState({ height: window.innerHeight })
+    this.setState({ height: window.innerHeight });
   }
 
   render() {
     const { height } = this.state;
     return (
-      <Wrapper style={{ height: height ? height : '100vh' }}>
+      <Wrapper style={{ height: height ? height : "100vh" }}>
         <Gallery height={height} />
-        <Header style={{ height: height ? (height*0.14) : '14vh' }}>
+        <Header style={{ height: height ? height * 0.14 : "14vh" }}>
           <Logo href={withPrefix("/")}>
             <LogoMark src="/images/logomark.png" />
             ideyuta.com
@@ -61,6 +60,6 @@ class GalleryWrapper extends React.Component {
       </Wrapper>
     );
   }
-};
+}
 
 export default GalleryWrapper;
