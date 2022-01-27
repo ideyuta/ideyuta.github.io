@@ -16,7 +16,7 @@
     "react-spring": "^9.3.2",
     "styled-components": "^5.3.3",
     "styled-media-query": "^2.1.2",
-    "three": "^0.135.0"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "@raae/gatsby-remark-oembed": "^0.1.1",
