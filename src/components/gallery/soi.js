@@ -36,7 +36,7 @@ const Soi = (props) => {
     >
       <spotLight
         ref={set}
-        intensity={0.7}
+        intensity={2.2}
         position={[-4, -4, 5]}
         angle={0.12}
         penumbra={1}
@@ -45,11 +45,11 @@ const Soi = (props) => {
       />
       {!isMobile && active && (
         <Html scale={0.1} position={[0, -1.15, 0]} transform occlude>
-          <p style={{ color: "#BAC7B9" }}>soi - 2018</p>
+          <p style={{ color: "#00454E" }}>soi - 2018</p>
         </Html>
       )}
       <planeGeometry args={[1, 2.03, 1]} />
-      <meshPhongMaterial map={img} transparent={true} />
+      <meshStandardMaterial metalness={.8} map={img} transparent={true} />
       {light && <primitive object={light.target} position={[0.5, 0, 0]} />}
     </animated.mesh>
   );

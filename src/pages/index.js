@@ -54,7 +54,7 @@ export default function Index() {
           <Strong>
             デザイナー
             <br />
-            hey / Head of Product Design
+            hey, inc.
           </Strong>
         </LightText>
 

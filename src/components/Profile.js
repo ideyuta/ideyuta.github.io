@@ -95,14 +95,11 @@ export default class Profile extends React.Component {
         {type === "private" ? (
           <>
             <Content>
-              88年静岡県生まれ。6歳と3歳の娘がいます。料理と散歩が趣味で、おじいさんみたいに朝早くから活動しています。最近はイケてる電動自転車をかっ飛ばしています。
+              88年静岡県生まれ。6歳と3歳の娘がいます。料理と散歩が趣味で、朝早くから活動しています。最近は10分走って20分歩いています。
             </Content>
             <Spacer size="small" />
             <Content>
               Twitter: <A href="https://twitter.com/_ideyuta">@_ideyuta</A>
-            </Content>
-            <Content>
-              Threads: <A href="https://instagram.com/_ideyuta">@_ideyuta</A>
             </Content>
             <Content>
               Store: <A href="https://ideyuta.stores.jp">ideyuta.store</A>

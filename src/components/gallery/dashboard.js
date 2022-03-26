@@ -35,7 +35,7 @@ const Dashboard = (props) => {
     >
       <spotLight
         ref={set}
-        intensity={1.4}
+        intensity={3.4}
         position={[-2, 3, 3]}
         angle={0.26}
         penumbra={1}
@@ -44,11 +44,11 @@ const Dashboard = (props) => {
       />
       {!isMobile && active && (
         <Html scale={0.1} position={[0, -0.87, 0]} transform occlude>
-          <p style={{ color: "#BAC7B9" }}>STORESダッシュボード - 2020</p>
+          <p style={{ color: "#00454E" }}>STORESダッシュボード - 2020</p>
         </Html>
       )}
       <planeGeometry args={[2, 1.485, 1]} />
-      <meshPhongMaterial map={img} transparent={true} />
+      <meshStandardMaterial metalness={.8} map={img} transparent={true} />
       {light && <primitive object={light.target} position={[0.5, 0, 0]} />}
     </animated.mesh>
   );

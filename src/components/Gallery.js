@@ -8,6 +8,7 @@ import Soi from "./gallery/soi";
 import VandleCard from "./gallery/vandlecard";
 
 const Wrapper = styled.div`
+  cursor: grab;
   background: #f2f2ee;
   height: 86vh;
   width: 100vw;
@@ -21,8 +22,8 @@ const Gallery = ({ height }) => {
     <Wrapper style={{ height: height ? height * 0.86 : "86vh" }}>
       <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 6], fov: 50 }}>
         <Suspense fallback={null}>
-          <MapControls panSpeed={1.6} zoomSpeed={0.6} enableRotate={false} />
-          <hemisphereLight intensity={0.8} />
+          <MapControls panSpeed={1.6} enableZoom={false} enableRotate={false} />
+          <hemisphereLight intensity={3.5} />
           <ContactShadows
             rotation-x={Math.PI / 2}
             position={[0, -1.8, 0]}

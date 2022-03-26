@@ -36,7 +36,7 @@ const Regi = (props) => {
     >
       <spotLight
         ref={set}
-        intensity={2.2}
+        intensity={3.2}
         position={[-4, -4, 5]}
         angle={0.12}
         penumbra={1}
@@ -45,11 +45,11 @@ const Regi = (props) => {
       />
       {!isMobile && active && (
         <Html scale={0.1} position={[0, -0.85, 0]} transform occlude>
-          <p style={{ color: "#BAC7B9" }}>STORESレジ - 2021</p>
+          <p style={{ color: "#00454E" }}>STORESレジ - 2021</p>
         </Html>
       )}
       <planeGeometry args={[2, 1.428, 1]} />
-      <meshPhongMaterial map={img} transparent={true} />
+      <meshStandardMaterial metalness={.8} map={img} transparent={true} />
       {light && <primitive object={light.target} position={[0.4, 0.2, 0]} />}
     </animated.mesh>
   );
