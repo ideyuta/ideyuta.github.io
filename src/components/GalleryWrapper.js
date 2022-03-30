@@ -28,8 +28,8 @@ const Logo = styled.a`
   color: ${colors.gray100} !important;
 `;
 const Wrapper = styled.div`
-  background: #f2f2ee;
-  height: 86vh;
+  background: ${colors.gray900};
+  height: 76vh;
   width: 100vw;
   p::selection {
     background-color: transparent;
@@ -49,7 +49,7 @@ class GalleryWrapper extends React.Component {
   render() {
     const { height } = this.state;
     return (
-      <Wrapper style={{ height: height ? height : "100vh" }}>
+      <Wrapper style={{ height: height ? height * 0.9 : "90vh" }}>
         <Gallery height={height} />
         <Header style={{ height: height ? height * 0.14 : "14vh" }}>
           <Logo href={withPrefix("/")}>
