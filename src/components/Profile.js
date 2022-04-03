@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Spacer from "./Spacer";
-import { colors } from "../assets";
 
 const A = styled.a`
   text-decoration: 1.5px underline;
