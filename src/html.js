@@ -18,6 +18,10 @@ export default function HTML(props) {
           rel="stylesheet"
         />
         <link
+          href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp.min.css"
+          rel="stylesheet"
+        />
+        <link
           href="https://fonts.googleapis.com/css?family=Inconsolata"
           rel="stylesheet"
           type="text/css"

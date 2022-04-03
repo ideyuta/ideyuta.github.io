@@ -1,4 +1,5 @@
 import React from "react";
+import { withPrefix } from "gatsby-link";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 import Anchor from "../components/Anchor";
@@ -7,18 +8,27 @@ import GalleryWrapper from "../components/GalleryWrapper";
 import Section from "../components/Section";
 import SectionHeader from "../components/SectionHeader";
 import Spacer from "../components/Spacer";
-import { colors } from "../assets";
 
-const Line = styled.div`
-  background: ${colors.gray100};
-  height: 1px;
-  width: 100%;
+const LogoMark = styled.img`
+  height: 40px;
+  width: 40px;
+  fill: #fff;
+`;
+const Logo = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 48px 0;
+`;
+const ProfileImg = styled.img`
+  display: block;
+  border-radius: 24% /35%;
 `;
 const LightText = styled.p`
-  color: ${colors.gray100};
+  color: #fff;
 `;
 const Strong = styled.span`
-  font-weight: bold;
+  font-weight: 600;
 `;
 const Wrapper = styled.div`
   overflow: hidden;
@@ -43,8 +53,11 @@ export default function Index() {
         title="ideyuta.com"
       />
       <GalleryWrapper />
-      <Section bgColor="#00454E">
-        <img alt="ideyuta" src="/images/ideyuta_2021.png" />
+      <Section bgColor="#0066FF">
+        <Logo href={withPrefix("/")}>
+          <LogoMark src="/images/logomark.png" />
+        </Logo>
+        <ProfileImg alt="ideyuta" src="/images/ideyuta_2022.jpg" />
         <Spacer size="small" />
 
         <LightText>
@@ -54,13 +67,13 @@ export default function Index() {
           <Strong>
             デザイナー
             <br />
-            hey, inc.
+            hey, inc. VP of Product Design
           </Strong>
         </LightText>
 
         <LightText>
           88年静岡県生まれ。多摩美術大学大学院
-          情報デザイン研究領域修了。6歳と3歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て、2013年にカンムへ入社。2016年にバンドルカードをリリースしました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。SMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、heyにてsoiという事業を立ち上げましたが2019年にクローズ。その後STORESレジのプロジェクトリーダー/リードデザイナーをつとめ、2021年6月にリリース。最近はSTORESプラットフォーム全体のデザインリードをやっていたりします。
+          情報デザイン研究領域修了。6歳と3歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て、2013年にカンムへ入社。バンドルカードのデザインと開発を担当。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。SMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、heyにてsoiという事業を立ち上げましたが2019年にクローズ。その後、STORES レジのプロダクトオーナーをつとめ、2021年6月にリリース。STORES プラットフォーム全体のデザインリードを経て、2022年4月にVP of Product Designに就任。
         </LightText>
         <Spacer size="medium" />
       </Section>
@@ -70,40 +83,42 @@ export default function Index() {
         <Anchor
           date="2021"
           label="ヘイ"
-          path="stores_regi"
-          title="STORESレジができるまで"
+          path="stores-regi"
+          title="STORES レジができるまで"
         />
-        <Line />
         <Anchor
           date="2020"
           label="ヘイ"
-          path="stores_dashboard_new_design"
-          title="STORESのダッシュボードをリニューアルしました"
+          path="stores-dashboard-new-design"
+          title="STORES のダッシュボードをリニューアルしました"
         />
-        <Line />
-        <Anchor date="2019" label="ヘイ" path="soi" title="soiの記録" />
-        <Line />
+        <Anchor date="2019" label="ヘイ" path="soi" title="soi の記録" />
         <Anchor
           date="2016"
           label="カンム"
           path="vandlecard"
           title="バンドルカードができるまで"
         />
-        <Line />
         <Anchor
           date="2008-2011"
           label="学生"
           path="mediaart"
-          title="学生時代に制作したメディアアートたち"
+          title="学生時代に制作したメディアアート"
         />
       </Section>
 
       <Section>
         <SectionHeader>SOFAR</SectionHeader>
         <Anchor
+          date="2022"
+          label="ヘイ"
+          path="vpopd-at-hey"
+          title="hey の VP of Product Design に就任しました"
+        />
+        <Anchor
           date="2020"
           label="ヒストリー"
-          path="one_fine_day"
+          path="one-fine-day"
           title="ある晴れた日のこと"
         />
       </Section>

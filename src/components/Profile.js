@@ -4,23 +4,26 @@ import Spacer from "./Spacer";
 import { colors } from "../assets";
 
 const A = styled.a`
+  text-decoration: 1.5px underline;
+  text-underline-offset: 3px;
   &:link {
-    border-bottom: 1px solid #08080e;
+    color: #333;
   }
   &:visited {
-    border-bottom: 1px solid #08080e;
+    color: #333;
   }
   &:hover {
-    border-bottom: 1px solid #5ab87e;
+    color: #0066ff;
+    text-decoration: 1.5px underline wavy;
   }
   &:active {
-    border-bottom: 1px solid #08080e;
+    color: #333;
   }
 `;
 const Content = styled.p`
   margin: 2px 0;
 `;
-const Name = styled.h4`
+const Name = styled.p`
   margin: 0;
 `;
 const Post = styled.p`
@@ -38,11 +41,6 @@ const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
   width: 100%;
-`;
-const SectionTitle = styled.p`
-  color: ${colors.gray500};
-  font-size: 0.75rem;
-  margin: 0;
 `;
 const Wrapper = styled.div`
   box-sizing: border-box;
@@ -63,9 +61,6 @@ export default class Profile extends React.Component {
     const { type } = this.state;
     return (
       <Wrapper>
-        <SectionTitle>プロフィール</SectionTitle>
-        <Spacer size="small" />
-
         <PhotoWrapper>
           <Photo
             onClick={() => this.setState({ type: "private" })}

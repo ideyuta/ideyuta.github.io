@@ -9,7 +9,7 @@ import VandleCard from "./gallery/vandlecard";
 
 const Wrapper = styled.div`
   cursor: grab;
-  background: #f2f2ee;
+  background: #f4f4f4;
   height: 76vh;
   width: 100vw;
   p::selection {
@@ -19,8 +19,8 @@ const Wrapper = styled.div`
 
 const Gallery = ({ height }) => {
   return (
-    <Wrapper style={{ height: height ? height * 0.76 : "76vh" }}>
-      <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 6], fov: 50 }}>
+    <Wrapper style={{ height }}>
+      <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 3.5], fov: 50 }}>
         <Suspense fallback={null}>
           <MapControls panSpeed={1.6} enableZoom={false} enableRotate={false} />
           <hemisphereLight intensity={3.5} />

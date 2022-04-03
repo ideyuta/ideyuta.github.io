@@ -1,7 +1,7 @@
 ---
 title: "STORESレジができるまで"
 createdAt: "2021-06-15"
-path: "/stores_regi"
+path: "/stores-regi"
 type: "work"
 ---
 

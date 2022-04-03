@@ -1,7 +1,7 @@
 ---
 title: "STORESのダッシュボードをリニューアルしました"
 createdAt: "2020-5-20"
-path: "/stores_dashboard_new_design"
+path: "/stores-dashboard-new-design"
 type: "work"
 ---
 

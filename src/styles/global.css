@@ -1,15 +1,11 @@
-body {
+html, body {
   background: #fff;
-  color: #02272C;
-  font-family: 'Source Code Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, "Droid Sans", Verdana, Arial,  "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: #333;
+  font-family: 'YakuHanJP', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, "Droid Sans", Verdana, Arial,  "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-feature-settings : "pkna" 1;
-  font-size: 16px;
-  letter-spacing: 0.07em;
+  font-size: 15px;
+  letter-spacing: 0.09em;
   -webkit-font-smoothing: antialiased;
-}
-
-*::selection {
-  background-color: #35BA7A;
 }
 
 @media (min-width: 420px) {
@@ -22,16 +18,16 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #02272c;
+  color: #0066ff;
 }
 a:visited {
-  color: #02272c;
+  color: #0066ff;
 }
 a:hover {
-  color: #35BA7A;
+  color: #0066ff;
 }
 a:active {
-  color: #02272c;
+  color: #0066ff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,7 +48,7 @@ h3 {
 
 h4 {
   font-size: 0.875rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 hr {
@@ -63,19 +59,19 @@ hr {
 }
 
 blockquote {
-  border-left: 4px solid #D7DCCD;
-  color: #80978C;
+  border-left: 4px solid #ddd;
+  color: #959595;
   margin: 0;
   padding: 0 0 0 16px;
 }
 
 blockquote a {
-  color: #80978C !important;
-  border-color: #80978C !important;
+  color: #959595 !important;
+  border-color: #959559 !important;
 }
 blockquote a:hover {
-  border-color: #35BA7A !important;
-  color: #35BA7A !important;
+  border-color: #0066ff !important;
+  color: #0066ff !important;
 }
 
 img {
@@ -113,24 +109,22 @@ p, ul, ol, li {
 }
 
 .post a {
-  text-decoration: none;
+  text-decoration: 1.5px underline;
+  text-underline-offset: 3px;
 }
 
 .post a:link {
-  color: #02272c;
-  border-bottom: 1px solid #02272c;
+  color: #333;
 }
 .post a:visited {
-  color: #02272c;
-  border-bottom: 1px solid #02272c;
+  color: #333;
 }
 .post a:hover {
-  color: #35BA7A;
-  border-bottom: 1px solid #35BA7A;
+  color: #0066ff;
+  text-decoration: 1.5px underline wavy;
 }
 .post a:active {
-  color: #02272c;
-  border-bottom: 1px solid #02272c;
+  color: #333;
 }
 
 pre {
@@ -150,28 +144,19 @@ pre {
 }
 
 .Caption {
-  color: #80978C;
+  color: #959595;
   text-align: center;
   margin-bottom: 40px;
   a {
-    color: #80978C;
+    color: #959595;
   }
 }
 .Caption a {
-  color: #80978C !important;
-  border-color: #80978C !important;
+  color: #959595 !important;
+  border-color: #959595 !important;
 }
 
 .Caption a:hover {
-  color: #35BA7A !important;
-  border-color: #35BA7A !important;
-}
-
-.Credit {
-  background: #f4f4f6;
-  border-radius: 16px;
-  padding: 16px;
-}
-.Credit li {
-  font-size: 0.875rem !important;
+  color: #0066ff !important;
+  border-color: #0066ff !important;
 }

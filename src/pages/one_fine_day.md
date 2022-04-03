@@ -1,7 +1,7 @@
 ---
 title: "ある晴れた日のこと"
 createdAt: "2020-01-05"
-path: "/one_fine_day"
+path: "/one-fine-day"
 type: "private"
 ---
 
