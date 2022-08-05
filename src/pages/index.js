@@ -22,7 +22,7 @@ const Logo = styled.a`
 `;
 const ProfileImg = styled.img`
   display: block;
-  border-radius: 24% /35%;
+  border-radius: 6% /8%;
 `;
 const LightText = styled.p`
   color: #fff;
@@ -57,7 +57,7 @@ export default function Index() {
         <Logo href={withPrefix("/")}>
           <LogoMark src="/images/logomark.png" />
         </Logo>
-        <ProfileImg alt="ideyuta" src="/images/ideyuta_2022.jpg" />
+        <ProfileImg alt="ideyuta" src="/images/ideyuta_202204.jpg" />
         <Spacer size="small" />
 
         <LightText>
