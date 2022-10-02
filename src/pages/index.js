@@ -67,13 +67,13 @@ export default function Index() {
           <Strong>
             デザイナー
             <br />
-            hey, inc. VP of Product Design
+            STORES, inc. VP of Product Design
           </Strong>
         </LightText>
 
         <LightText>
           88年静岡県生まれ。多摩美術大学大学院
-          情報デザイン研究領域修了。6歳と3歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て、2013年にカンムへ入社。バンドルカードのデザインと開発を担当しました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。SMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、heyにてsoiという事業を立ち上げましたが2019年にクローズ。その後、プロダクトオーナーとしてレジプロジェクトを立ち上げ、2021年6月にSTORES レジをリリースしました。STORES プラットフォーム全体のデザインリードを経て、2022年4月にVP of Product Designに就任していろいろやっています。
+          情報デザイン研究領域修了。7歳と3歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て、2013年にカンムへ入社。バンドルカードのデザインと開発を担当しました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。SMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、heyにてsoiという事業を立ち上げましたが2019年にクローズ。その後、プロダクトオーナーとしてレジプロジェクトを立ち上げ、2021年6月にSTORES レジをリリースしました。STORES プラットフォーム全体のデザインリードを経て、2022年4月にVP of Product Designに就任していろいろやっています。
         </LightText>
         <Spacer size="medium" />
       </Section>
@@ -109,12 +109,6 @@ export default function Index() {
 
       <Section>
         <SectionHeader>SOFAR</SectionHeader>
-        <Anchor
-          date="2022"
-          label="ヘイ"
-          path="vpopd-at-hey"
-          title="hey の VP of Product Design に就任しました"
-        />
         <Anchor
           date="2020"
           label="ヒストリー"

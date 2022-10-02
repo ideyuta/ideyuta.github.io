@@ -89,7 +89,7 @@ export default class Profile extends React.Component {
         {type === "private" ? (
           <>
             <Content>
-              88年静岡県生まれ。6歳と3歳の娘がいます。料理と散歩が趣味で、朝早くから活動しています。最近は10分走って20分歩いています。
+              88年静岡県生まれ。7歳と3歳の娘がいます。料理と散歩が趣味で、朝早くから活動しています。最近はルンバのための部屋を掃除してます。
             </Content>
             <Spacer size="small" />
             <Content>
@@ -102,7 +102,7 @@ export default class Profile extends React.Component {
         ) : (
           <>
             <Content>
-              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ヘイにてデザイナーとしてプロダクトの立ち上げに従事。最近はヘイでデザイナーをやったりしています。
+              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ストアーズ(旧ヘイ)にてデザイナーとしてプロダクトの立ち上げに従事。最近はストアーズでデザイナーをやったりしています。
             </Content>
             <Spacer size="small" />
             <Content>
@@ -115,7 +115,7 @@ export default class Profile extends React.Component {
               Email: <A href="mailto:ide.yuta@gmail.com">ide.yuta@gmail.com</A>
             </Content>
             <Content>
-              Work: <A href="https://hey.jp">hey,inc.</A>
+              Work: <A href="https://st.inc">STORES,inc.</A>
             </Content>
           </>
         )}
