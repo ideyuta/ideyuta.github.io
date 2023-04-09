@@ -6,26 +6,29 @@ const A = styled.a`
   text-decoration: 1.5px underline;
   text-underline-offset: 3px;
   &:link {
-    color: #333;
+    color: #fff;
   }
   &:visited {
-    color: #333;
+    color: #fff;
   }
   &:hover {
     color: #0066ff;
-    text-decoration: 1.5px underline wavy;
+    text-decoration: 1.5px underline;
   }
   &:active {
-    color: #333;
+    color: #fff;
   }
 `;
 const Content = styled.p`
+  font-weight: 300;
   margin: 2px 0;
 `;
 const Name = styled.p`
+  font-weight: 500;
   margin: 0;
 `;
 const Post = styled.p`
+  font-weight: 500;
   margin: 0;
 `;
 const Photo = styled.img`
@@ -42,6 +45,7 @@ const PhotoWrapper = styled.div`
   width: 100%;
 `;
 const Wrapper = styled.div`
+  color: #fff;
   box-sizing: border-box;
   max-width: 700px;
   margin: 0 auto;
@@ -65,7 +69,7 @@ export default class Profile extends React.Component {
             onClick={() => this.setState({ type: "private" })}
             src="../images/profile_p.png"
             style={{
-              opacity: type === "private" ? 1 : 0.08,
+              opacity: type === "private" ? 1 : 0.3,
               zIndex: type === "private" ? 100 : 1,
             }}
           />
@@ -76,7 +80,7 @@ export default class Profile extends React.Component {
               position: "absolute",
               left: "36px",
               top: "12px",
-              opacity: type === "work" ? 1 : 0.08,
+              opacity: type === "work" ? 1 : 0.3,
               zIndex: type === "work" ? 100 : 1,
             }}
           />
@@ -89,7 +93,7 @@ export default class Profile extends React.Component {
         {type === "private" ? (
           <>
             <Content>
-              88年静岡県生まれ。7歳と3歳の娘がいます。料理と散歩が趣味で、朝早くから活動しています。最近はルンバのための部屋を掃除してます。
+              88年静岡県生まれ。7歳と4歳の娘がいます。料理と散歩が趣味で、朝早くから活動しています。最近はルンバのための部屋を掃除してます。
             </Content>
             <Spacer size="small" />
             <Content>
@@ -102,7 +106,7 @@ export default class Profile extends React.Component {
         ) : (
           <>
             <Content>
-              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライト、ストアーズ(旧ヘイ)にてデザイナーとしてプロダクトの立ち上げに従事。最近はストアーズでデザイナーをやったりしています。
+              88年静岡県生まれ。多摩美術大学大学院修了。カンム、ニューライトにてデザイナーとしてプロダクトの立ち上げに従事。最近はストアーズでデザイナーをやったりしています。
             </Content>
             <Spacer size="small" />
             <Content>

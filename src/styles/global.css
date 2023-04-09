@@ -4,13 +4,14 @@ html, body {
   font-family: 'YakuHanJP', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, "Droid Sans", Verdana, Arial,  "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-feature-settings : "pkna" 1;
   font-size: 15px;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.03em;
   -webkit-font-smoothing: antialiased;
 }
 
 @media (min-width: 420px) {
   html {
     font-size: 18px;
+    letter-spacing: 0.08em;
   }
 }
 
@@ -35,15 +36,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 2.0rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  padding: 1.5em 0 0 0;
+  padding: 1.0em 0 0 0;
 }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 1.5em 0 0 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 1.0em 0 0 0;
 }
 
 h4 {
@@ -75,8 +76,12 @@ blockquote a:hover {
 }
 
 img {
+  display: block;
   max-width: 100%;
   border-radius: 3px;
+}
+.post img {
+  margin: 0 auto;
 }
 
 .img_w_border {
@@ -90,14 +95,14 @@ code {
 }
 
 a {
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.5em;
 }
 
 p, ul, ol, li {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.9em;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.7em;
 }
 
 .post li {
@@ -121,7 +126,7 @@ p, ul, ol, li {
 }
 .post a:hover {
   color: #0066ff;
-  text-decoration: 1.5px underline wavy;
+  text-decoration: 1.5px underline;
 }
 .post a:active {
   color: #333;
@@ -131,7 +136,7 @@ pre {
   background: #000;
   border: 0 !important;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: normal;
   letter-spacing: 0.02em;
   line-height: 1.2em;
@@ -159,4 +164,14 @@ pre {
 .Caption a:hover {
   color: #0066ff !important;
   border-color: #0066ff !important;
+}
+
+
+@keyframes fadein {
+  0% {
+     opacity: 0
+  }
+  100% {
+     opacity: 1
+  }
 }

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Head = styled.h2`
   color: #333;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
 `;
 const Wrapper = styled.div`

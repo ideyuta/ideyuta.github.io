@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "../assets";
 
 const Wrapper = styled.div`
-  background: ${colors.gray20};
+  background: #000;
   box-sizing: border-box;
+  color: #fff;
   padding: 32px 24px;
   width: 100vw;
 `;

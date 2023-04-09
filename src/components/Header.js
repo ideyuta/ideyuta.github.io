@@ -3,15 +3,13 @@ import { withPrefix } from "gatsby-link";
 import styled from "styled-components";
 
 const Anchor = styled.a`
+  color: #333 !important;
   display: inline-block;
   font-size: 1.2rem;
-  letter-spacing: 0.03;
+  font-weight: 500;
+  letter-spacing: .06em;
   padding: 4px 0;
   text-decoration: none;
-  &:hover {
-    text-underline-offset: 3px;
-    text-decoration: 1.5px underline wavy;
-  }
 `;
 
 const Wrapper = styled.div`

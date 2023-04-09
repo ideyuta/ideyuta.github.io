@@ -14,10 +14,6 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link
-          href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700&display=swap"
-          rel="stylesheet"
-        />
-        <link
           href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp.min.css"
           rel="stylesheet"
         />

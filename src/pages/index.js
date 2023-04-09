@@ -1,31 +1,48 @@
 import React from "react";
-import { withPrefix } from "gatsby-link";
 import Helmet from "react-helmet";
 import styled from "styled-components";
+import media from "styled-media-query";
 import Anchor from "../components/Anchor";
 import Footer from "../components/Footer";
-import GalleryWrapper from "../components/GalleryWrapper";
+import Header from "../components/Header";
 import Section from "../components/Section";
 import SectionHeader from "../components/SectionHeader";
 import Spacer from "../components/Spacer";
 
-const LogoMark = styled.img`
-  height: 40px;
-  width: 40px;
-  fill: #fff;
-`;
-const Logo = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 0 48px 0;
-`;
 const ProfileImg = styled.img`
+  animation: fadein 600ms ease-out forwards;
+  aspect-ratio: attr(width) / attr(height);
   display: block;
-  border-radius: 6% /8%;
+  border-radius: 1% / 2%;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  ${media.lessThan("800px")`
+    border-radius: 0;
+  `}
+`;
+const GallerySection = styled.div`
+  width: 100%;
+`;
+const GalleryImage = styled.img`
+  animation: fadein 600ms ease-out forwards;
+  aspect-ratio: attr(width) / attr(height);
+  background: #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 1% / 2%;
+  display: block;
+  max-width: 800px;
+  margin: 8px auto;
+  width: 100%;
+  height: auto;
+  ${media.lessThan("800px")`
+    border-radius: 0;
+  `}
 `;
 const LightText = styled.p`
-  color: #fff;
+  color: #333;
 `;
 const Strong = styled.span`
   font-weight: 600;
@@ -52,12 +69,9 @@ export default function Index() {
         ]}
         title="ideyuta.com"
       />
-      <GalleryWrapper />
-      <Section bgColor="#0066FF">
-        <Logo href={withPrefix("/")}>
-          <LogoMark src="/images/logomark.png" />
-        </Logo>
-        <ProfileImg alt="ideyuta" src="/images/ideyuta_202204.jpg" />
+      <Header />
+        <ProfileImg alt="ideyuta" src="/images/ideyuta_202304.png" width="800" height="500" />
+      <Section>
         <Spacer size="small" />
 
         <LightText>
@@ -67,32 +81,38 @@ export default function Index() {
           <Strong>
             デザイナー
             <br />
-            STORES, inc. VP of Product Design
+            STORES, inc. VP, Product Design
           </Strong>
         </LightText>
 
         <LightText>
-          88年静岡県生まれ。多摩美術大学大学院
-          情報デザイン研究領域修了。7歳と3歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て、2013年にカンムへ入社。バンドルカードのデザインと開発を担当しました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。SMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、heyにてsoiという事業を立ち上げましたが2019年にクローズ。その後、プロダクトオーナーとしてレジプロジェクトを立ち上げ、2021年6月にSTORES レジをリリースしました。STORES プラットフォーム全体のデザインリードを経て、2022年4月にVP of Product Designに就任していろいろやっています。
+          88年静岡県生まれ。多摩美術大学大学院 情報デザイン研究領域修了。7歳と4歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て2013年にカンムへ入社。バンドルカードのデザインと開発を担当しました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。SMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、hey(現STORES)にてsoiという事業を立ち上げましたが2019年にクローズ。その後、STORES レジのプロジェクトリード、STORES 全体のデザインリードを経て、2022年からはVP, Product Designとしていろいろやっています。
         </LightText>
         <Spacer size="medium" />
       </Section>
+
+      <GallerySection>
+        <GalleryImage src="/images/gallery/stores_regi.png" width="800" height="500" />
+        <GalleryImage src="/images/gallery/stores_dashboard.png" width="800" height="500" />
+        <GalleryImage src="/images/gallery/soi.png" width="800" height="500" />
+        <GalleryImage src="/images/gallery/vandlecard.png" width="800" height="500" />
+      </GallerySection>
 
       <Section>
         <SectionHeader>PROJECTS</SectionHeader>
         <Anchor
           date="2021"
-          label="ヘイ"
+          label="STORES"
           path="stores-regi"
           title="STORES レジができるまで"
         />
         <Anchor
           date="2020"
-          label="ヘイ"
+          label="STORES"
           path="stores-dashboard-new-design"
           title="STORES のダッシュボードをリニューアルしました"
         />
-        <Anchor date="2019" label="ヘイ" path="soi" title="soi の記録" />
+        <Anchor date="2019" label="STORES" path="soi" title="soi の記録" />
         <Anchor
           date="2016"
           label="カンム"
