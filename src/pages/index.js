@@ -81,21 +81,22 @@ export default function Index() {
           <Strong>
             デザイナー
             <br />
-            STORES, inc. VP, Product Design
+            STORES, inc. CPO
           </Strong>
         </LightText>
 
         <LightText>
-          88年静岡県生まれ。多摩美術大学大学院 情報デザイン研究領域修了。7歳と4歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て2013年にカンムへ入社。バンドルカードのデザインと開発を担当しました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。SMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、hey(現STORES)にてsoiという事業を立ち上げましたが2019年にクローズ。その後、STORES レジのプロジェクトリード、STORES 全体のデザインリードを経て、2022年からはVP, Product Designとしていろいろやっています。
+          88年静岡県生まれ。多摩美術大学大学院 情報デザイン研究領域修了。8歳と5歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。フリーのデザイナーを経て2013年にカンムへ入社。バンドルカードのデザインと開発を担当しました。2017年カンムを退職し、フリークアウト・ホールディングス子会社のニューライトへ。SMB向け業務改善事業のあれこれをやっていましたが撤退。2018年、hey(現STORES)にてsoiという事業を立ち上げましたが2019年にクローズ。その後、STORES レジのプロジェクトリード、STORES 全体のデザインリードを経て、2022年にVP, Product Designに就任。2023年からはChief Product Officerとしていろいろやっています。
         </LightText>
         <Spacer size="medium" />
       </Section>
 
       <GallerySection>
-        <GalleryImage src="/images/gallery/stores_regi.png" width="800" height="500" />
-        <GalleryImage src="/images/gallery/stores_dashboard.png" width="800" height="500" />
-        <GalleryImage src="/images/gallery/soi.png" width="800" height="500" />
-        <GalleryImage src="/images/gallery/vandlecard.png" width="800" height="500" />
+        <GalleryImage alt="STORESレジ v2.0" src="/images/gallery/stores_regi_for_service.png" width="800" height="500" />
+        <GalleryImage alt="STORESレジ" src="/images/gallery/stores_regi.png" width="800" height="500" />
+        <GalleryImage alt="STORESダッシュボード" src="/images/gallery/stores_dashboard.png" width="800" height="500" />
+        <GalleryImage alt="soi" src="/images/gallery/soi.png" width="800" height="500" />
+        <GalleryImage alt="バンドルカード" src="/images/gallery/vandlecard.png" width="800" height="500" />
       </GallerySection>
 
       <Section>
