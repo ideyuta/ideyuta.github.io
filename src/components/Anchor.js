@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   display: block;
   padding: 12px 0;
   text-decoration: none;
-  transition-property: all;
 `;
 const Data = styled.p`
   color: #bbb;
@@ -14,18 +13,19 @@ const Data = styled.p`
   font-weight: 400;
   padding: 0;
   margin: 0;
-  transition-duration: 0.4s;
 `;
 const A = styled(Link)`
   font-size: 0.875rem;
   font-weight: 600;
   padding: 0;
   margin: 0;
-  transition-duration: 0.4s;
+  &:link {
+    text-decoration: none;
+  }
   &:hover {
-    text-decoration: 1.5px underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1.5px;
     text-underline-offset: 3px;
-    transition-duration: 0.4s;
   }
 `;
 
