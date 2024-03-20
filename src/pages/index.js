@@ -131,6 +131,12 @@ export default function Index() {
       <Section>
         <SectionHeader>SOFAR</SectionHeader>
         <Anchor
+          date="2024"
+          label="ヒストリー"
+          path="inside-the-stores"
+          title="ストアーズでのこと"
+        />
+        <Anchor
           date="2020"
           label="ヒストリー"
           path="one-fine-day"
