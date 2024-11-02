@@ -20,12 +20,17 @@ const A = styled(Link)`
   padding: 0;
   margin: 0;
   &:link {
-    text-decoration: none;
-  }
-  &:hover {
+    color: #333;
     text-decoration-line: underline;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 3px;
+  }
+  &:visited {
+    color: #333;
+  }
+  &:hover {
+    color: #0066ff;
+    text-decoration: none;
   }
 `;
 

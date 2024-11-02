@@ -35,6 +35,7 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
         <script src={withPrefix("/bundle.js")} />
+        <script src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
         <script
           dangerouslySetInnerHTML={{
             __html:

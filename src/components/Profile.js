@@ -93,7 +93,7 @@ export default class Profile extends React.Component {
         {type === "private" ? (
           <>
             <Content>
-              88年静岡県生まれ。8歳と5歳の娘がいます。料理と散歩が趣味で、朝早くから活動しています。最近はルンバのために部屋を掃除してます。
+              88年静岡県生まれ。9歳と6歳の娘がいます。料理と散歩が趣味で、朝早くから活動しています。最近はルンバのために部屋を掃除してます。
             </Content>
             <Spacer size="small" />
             <Content>
