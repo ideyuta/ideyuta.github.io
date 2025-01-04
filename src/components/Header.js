@@ -16,6 +16,9 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   padding: 32px 24px;
   width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
 `;
 
 export default function Header() {

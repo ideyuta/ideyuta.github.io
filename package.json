@@ -4,10 +4,12 @@
   "version": "4.0.0",
   "author": "ideyuta <ide.yuta@gmail.com>",
   "dependencies": {
+    "@react-hook/window-size": "^3.1.1",
     "@react-spring/three": "^9.4.4",
     "@react-three/drei": "^9.6.2",
     "@react-three/fiber": "^8.0.12",
     "highlight.js": "^11.5.1",
+    "motion": "^11.15.0",
     "normalize.css": "^8.0.1",
     "react": "^18.1.0",
     "react-device-detect": "^2.2.2",
