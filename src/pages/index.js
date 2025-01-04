@@ -2,9 +2,9 @@ import React from "react";
 import Helmet from "react-helmet";
 import { AnimatePresence } from "motion/react"
 import * as motion from "motion/react-client"
-import { navigate } from "gatsby"
 import styled from "styled-components";
 import Header from "../components/Header";
+import WorkItem from "../components/WorkItem";
 
 const Image = styled.img`
   display: block;
@@ -25,7 +25,6 @@ const Container = styled(motion.div)`
  * Index
  */
 export default function Index() {
-  const [isDragging, setIsDragging] = React.useState(false);
   return (
     <div>
       <Helmet
@@ -41,26 +40,18 @@ export default function Index() {
       <Header />
       <AnimatePresence mode="wait">
         <Container layout layoutId="works-mobileorder">
-          <motion.button
-            drag
-            dragSnapToOrigin={true}
-            layout
+          <WorkItem
             layoutId="works-mobileorder-cover"
-            transition={{ duration: 1.1, type: "spring" }}
-            whileHover={{ scale: 1.03 }}
-            onClick={() => {
-              if(!isDragging) { navigate("/works/mobileorder") }
-            }}
-            onDragStart={() => setIsDragging(true) }
-            onDragEnd={() => setIsDragging(false) }
-          >
-            <Image src="/images/works/mobileorder/img01.png" />
-          </motion.button>
+            src="/images/works/mobileorder/img01.png"
+            to="/works/mobileorder"
+          />
         </Container>
-        <Container layout layoutId="works-regi2">
-            <motion.div layout layoutId="works-regi2-cover">
-          <Image src="/images/test01.png" />
-            </motion.div>
+        <Container layout layoutId="works-regi-for-service">
+          <WorkItem
+            layoutId="works-regi-for-service-cover"
+            src="/images/works/regi-for-service/img01.png"
+            to="/works/regi-for-service"
+          />
         </Container>
       </AnimatePresence>
     </div>

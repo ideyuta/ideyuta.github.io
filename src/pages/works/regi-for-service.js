@@ -8,8 +8,8 @@ import WorkGallery from "../../components/WorkGallery";
  */
 export default function Index() {
   return (
-      <AnimatePresence mode="wait">
-        <WorkGallery id="mobileorder" />
-      </AnimatePresence>
+    <AnimatePresence mode="wait">
+      <WorkGallery id="regi-for-service" />
+    </AnimatePresence>
   );
 }
