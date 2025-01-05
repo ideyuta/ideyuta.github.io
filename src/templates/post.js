@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import PostHeader from "../components/PostHeader";
 import PostFooter from "../components/PostFooter";
 import Spacer from "../components/Spacer";
 
@@ -43,7 +43,7 @@ export default function Template({ data }) {
           { name: "twitter:site", content: "@_ideyuta" },
         ]}
       />
-      <Header />
+      <PostHeader />
       <Content>
         <Title>{frontmatter.title}</Title>
         <Spacer size="regular" />

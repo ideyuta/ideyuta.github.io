@@ -1,24 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { AnimatePresence } from "motion/react"
-import * as motion from "motion/react-client"
-import styled from "styled-components";
 import Header from "../components/Header";
 import WorkItem from "../components/WorkItem";
-
-const Image = styled.img`
-  display: block;
-  width: auto;
-  height: 600px;
-  pointer-events: none;
-`;
-const Container = styled(motion.div)`
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-`;
+import { WORKS } from "../constants/works";
 
 
 /**
@@ -39,20 +24,7 @@ export default function Index() {
       />
       <Header />
       <AnimatePresence mode="wait">
-        <Container layout layoutId="works-mobileorder">
-          <WorkItem
-            layoutId="works-mobileorder-cover"
-            src="/images/works/mobileorder/img01.png"
-            to="/works/mobileorder"
-          />
-        </Container>
-        <Container layout layoutId="works-regi-for-service">
-          <WorkItem
-            layoutId="works-regi-for-service-cover"
-            src="/images/works/regi-for-service/img01.png"
-            to="/works/regi-for-service"
-          />
-        </Container>
+        {Object.keys(WORKS).map((key) => <WorkItem workId={key} />)}
       </AnimatePresence>
     </div>
   );

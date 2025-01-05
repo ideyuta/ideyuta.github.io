@@ -1,15 +1,12 @@
 import React from "react";
-import { AnimatePresence } from "motion/react"
 import styled from "styled-components";
-import WorkGallery from "../../components/WorkGallery";
+import WorksPageLayout from "../../components/WorksPageLayout";
 
 /**
  * Index
  */
 export default function Index() {
   return (
-      <AnimatePresence mode="wait">
-        <WorkGallery id="mobileorder" />
-      </AnimatePresence>
+    <WorksPageLayout workId="mobileorder" />
   );
 }
