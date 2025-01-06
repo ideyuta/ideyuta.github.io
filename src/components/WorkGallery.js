@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useRef, useLayoutEffect, useState } from "react";
 import { useWindowWidth } from '@react-hook/window-size'
-import { useMotionValue, useTransform } from "motion/react"
+import { useScroll, useMotionValue, useTransform } from "motion/react"
 import * as motion from "motion/react-client"
 import { navigate } from "gatsby"
 import styled from "styled-components";
@@ -18,26 +18,23 @@ const Image = styled.img`
 const ImgContainer = styled(motion.div)`
   flex-shrink: 0;
 `;
-const Container = styled(motion.div)`
+const Container = styled(motion.button)`
   align-items: flex-end;
   box-sizing: border-box;
   display: flex;
   gap: 80px;
   height: 100vh;
   max-height: 100%;
-  padding: 0 8vw 4vh 30vw;
-  width: auto;
-  ${media.lessThan("520px")`
-    padding: 0 24px 4vh 24px;
-  `}
+  width: max-content;
+  padding: 0 0 6vh 0;
 `;
 
 const Wrapper = styled(motion.div)`
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  width: auto;
+  width: fit-content;
+  padding: 0 10vw;
   z-index: 1;
 `;
 
@@ -46,12 +43,7 @@ const Wrapper = styled(motion.div)`
  */
 export default function WorkGallery({ workId }) {
 
-  const [containerWidth, setContainerWidth] = React.useState(0);
-  const container = React.useRef();
-  React.useEffect(() => {
-    setContainerWidth(container.current.scrollWidth - container.current.offsetWidth);
-  }, [])
-  console.log(containerWidth, workId);
+  const [isDragging, setIsDragging] = useState(false);
 
   // 初期アニメーションの位置計算に利用
   const width = useWindowWidth();
@@ -63,6 +55,36 @@ export default function WorkGallery({ workId }) {
     [-300, 0, 300],
     [1, 1, 0],
   );
+
+  const [elementWidth, setElementWidth] = useState(0);
+  const elementRef = useRef(null);
+
+  // 要素の幅を取得
+  useLayoutEffect(() => {
+    if (elementRef.current) {
+      const resizeObserver = new ResizeObserver((entries) => {
+      entries.forEach((entry) => {
+        // 要素の幅を取得
+        const rectWidth = entry.contentRect.width;
+        setElementWidth(Math.max(0, rectWidth - width + width*0.2)); // padding をたす
+      });
+    });
+    // elementRef が指す要素を監視
+    if (elementRef.current) {
+      resizeObserver.observe(elementRef.current);
+    }
+    // クリーンアップ：監視の停止
+    return () => {
+      if (elementRef.current) {
+        resizeObserver.unobserve(elementRef.current);
+      }
+    };
+    }
+  }, []);
+
+  // 横移動の範囲を動的に設定
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], [0, -elementWidth]);
 
   // 指定された id の画像一覧を作成
   const items = WORKS[workId].items.map((item, index) => {
@@ -90,18 +112,24 @@ export default function WorkGallery({ workId }) {
   });
 
   return (
-    <Wrapper ref={container}>
+    <Wrapper>
     <Container
+      ref={elementRef}
       drag
-      dragConstraints={{ right: 0, left: -containerWidth, top: 0, bottom: 0 }}
+      dragSnapToOrigin={true}
       whileTap={{ cursor: "grabbing" }}
+      onDragStart={() => setIsDragging(true) }
       onDragEnd={(event, info) => {
+        setIsDragging(false);
         if (info.velocity.y >= 10 && info.offset.y >= 100) {
           navigate(`/#${workId}`)
         }
       }}
+      onClick={() => {
+        if(!isDragging) { navigate(`/#${workId}`) }
+      }}
       layoutId={`works-${workId}`}
-      style={{ y }}
+      style={{ y, x }}
     >
       {items}
     </Container>
