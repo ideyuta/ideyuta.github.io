@@ -3,36 +3,23 @@ import styled from "styled-components";
 import { WORKS } from "../constants/works";
 
 const Title = styled.p`
-  color: #333 !important;
   display: block;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
   padding: 32px 0 0 0;
 `;
 const Client = styled.p`
-  color: #333 !important;
-  display: block;
-  font-size: 1rem;
-  font-weight: 300;
   padding: 0 0 1rem 0;
   margin: 0;
 `;
 const Member = styled.p`
-  color: #888 !important;
-  display: block;
-  font-size: 1rem;
-  font-weight: 300;
   margin: 0;
 `;
 const Doc = styled.a`
-  color: #888 !important;
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 300;
+  display: inline-block;
   padding: 1rem 0;
   margin: 0;
-  text-underline-offset: 3px;
 `;
 const Wrapper = styled.div`
   padding: 0 24px;

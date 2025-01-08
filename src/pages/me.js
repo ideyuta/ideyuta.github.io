@@ -1,13 +1,12 @@
 import React from "react";
 import * as motion from "motion/react-client"
 import { withPrefix } from "gatsby-link";
-import Helmet from "react-helmet";
 import styled from "styled-components";
 import Header from "../components/Header";
 
 const Wrapper = styled(motion.div)`
   box-sizing: border-box;
-  padding: 80px 24px;
+  padding: 200px 24px;
   max-width: 800px;
   margin: 0 auto;
 `;
@@ -44,7 +43,7 @@ export default function Me() {
     <>
       <Header />
       <Wrapper
-        initial={{ transform: "translateY(-100px)", opacity: 0 }}
+        initial={{ transform: "translateY(100px)", opacity: 0 }}
         animate={{ transform: "translateY(0px)", opacity: 1 }}
         transition={{ type: "spring" }}
       >

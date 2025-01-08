@@ -3,18 +3,17 @@ import { withPrefix } from "gatsby-link";
 import styled from "styled-components";
 
 const Anchor = styled.a`
-  color: #333 !important;
   display: inline;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
 `;
 
 const AnchorMe = styled.a`
-  color: #999 !important;
+  color: #999;
   display: inline;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
 `;
 

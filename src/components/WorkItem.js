@@ -14,7 +14,7 @@ const Container = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
+  padding: 20px 0;
   height: 50vw;
   position: relative;
   z-index: 0;

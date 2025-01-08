@@ -14,6 +14,9 @@ const Container = styled(motion.div)`
   padding: 40px 0;
   height: 50vw;
 `;
+const Wrapper = styled.div`
+  overflowY: hidden;
+`;
 
 /**
  * Index
@@ -36,8 +39,10 @@ export default function Index({ workId }) {
   });
   return (
     <AnimatePresence mode="wait">
-      <WorkData workId={workId} />
-      {items}
+      <Wrapper>
+        <WorkData workId={workId} />
+        {items}
+      </Wrapper>
     </AnimatePresence>
   );
 }
