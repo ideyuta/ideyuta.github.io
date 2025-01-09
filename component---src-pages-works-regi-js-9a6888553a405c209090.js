@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkideyuta_com=self.webpackChunkideyuta_com||[]).push([[161],{3373:function(e,t,u){u.r(t),u.d(t,{default:function(){return c}});var n=u(7294),r=u(909);function c(){return n.createElement(r.Z,{workId:"regi"})}}}]);

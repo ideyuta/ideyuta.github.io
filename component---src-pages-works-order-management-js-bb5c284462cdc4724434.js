@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkideyuta_com=self.webpackChunkideyuta_com||[]).push([[978],{9581:function(e,n,t){t.r(n),t.d(n,{default:function(){return a}});var u=t(7294),r=t(909);function a(){return u.createElement(r.Z,{workId:"order-management"})}}}]);
