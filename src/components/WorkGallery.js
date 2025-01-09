@@ -9,7 +9,7 @@ import { WORKS } from "../constants/works";
 const Image = styled.img`
   display: block;
   width: auto;
-  height: 100vw;
+  height: 110vw;
   max-height: 80vh;
   pointer-events: none;
   border-radius: 40px;

@@ -31,11 +31,7 @@ export default function Index() {
       />
       <Header />
       <AnimatePresence mode="wait">
-        <Wrapper
-          initial={{ transform: "translateY(100px)" }}
-          animate={{ transform: "translateY(0px)" }}
-          transition={{ type: "spring" }}
-        >
+        <Wrapper>
           {Object.keys(WORKS).map((key) => <WorkItem workId={key} />)}
         </Wrapper>
       </AnimatePresence>

@@ -1,13 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
+import * as motion from "motion/react-client"
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import PostHeader from "../components/PostHeader";
 import PostFooter from "../components/PostFooter";
 import Spacer from "../components/Spacer";
 
-const Content = styled.div`
+const Content = styled(motion.div)`
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 700px;
@@ -21,6 +22,7 @@ const Title = styled.h1`
 `;
 
 export default function Template({ data }) {
+  React.useEffect(() => window.scrollTo(0, 0), []);
   const { frontmatter, html } = data.post;
   return (
     <>
@@ -44,7 +46,11 @@ export default function Template({ data }) {
         ]}
       />
       <PostHeader />
-      <Content>
+      <Content
+        initial={{ transform: "translateY(100px)", opacity: 0 }}
+        animate={{ transform: "translateY(0px)", opacity: 1 }}
+        transition={{ type: "spring" }}
+      >
         <Title>{frontmatter.title}</Title>
         <Spacer size="regular" />
         <div className="post" dangerouslySetInnerHTML={{ __html: html }} />

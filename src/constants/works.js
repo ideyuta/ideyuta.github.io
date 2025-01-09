@@ -85,6 +85,12 @@ export const WORKS = {
       src: '/images/works/soi/img01.png',
     }, {
       alt: '',
+      src: '/images/works/soi/img02.png',
+    }, {
+      alt: '',
+      src: '/images/works/soi/img03.png',
+    }, {
+      alt: '',
       src: '/images/works/soi/movie.gif',
     }],
   },
@@ -100,6 +106,12 @@ export const WORKS = {
     items: [{
       alt: '',
       src: '/images/works/vandlecard/img01.png',
+    }, {
+      alt: '',
+      src: '/images/works/vandlecard/img02.png',
+    }, {
+      alt: '',
+      src: '/images/works/vandlecard/img03.png',
     }],
   },
 };
