@@ -10,7 +10,7 @@ const Image = styled.img`
   display: block;
   width: auto;
   height: 110vw;
-  max-height: 80vh;
+  max-height: 80svh;
   pointer-events: none;
   border-radius: 40px;
 `;
@@ -22,12 +22,12 @@ const Container = styled(motion.button)`
   box-sizing: border-box;
   display: flex;
   gap: 40px;
-  height: 100vh;
+  height: 100svh;
   max-height: 100%;
   overflow: scroll;
-  padding: 0 10vw 6vh 20vw;
+  padding: 0 10vw 6svh 20vw;
   position: relative;
-  min-width: 100vw;
+  min-width: 100svw;
 `;
 
 const Wrapper = styled(motion.div)`
@@ -52,7 +52,7 @@ export default function WorkGallery({ workId }) {
   const y = useMotionValue(0);
   const opacity = useTransform(
     y,
-    [-300, 0, 300],
+    [-200, 0, 200],
     [1, 1, 0],
   );
 
@@ -75,7 +75,7 @@ export default function WorkGallery({ workId }) {
           transition={{ duration: 0.9, type: "spring", delay: index * .1 }}
           style={{ opacity }}
         >
-          <Image src={item.src} />
+          <Image async src={item.src} />
         </ImgContainer>
       );
     }

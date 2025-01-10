@@ -31,16 +31,10 @@ export default function WorkItem({ workId }) {
       id={workId}
     >
       <motion.button
-        drag
-        dragSnapToOrigin={true}
         layoutId={`works-${workId}-cover`}
         transition={{ duration: 1.1, type: "spring" }}
         whileHover={{ scale: 1.03 }}
-        onClick={() => {
-          if(!isDragging) { navigate(`/works/${workId}`) }
-        }}
-        onDragStart={() => setIsDragging(true) }
-        onDragEnd={() => setIsDragging(false) }
+        onClick={() => navigate(`/works/${workId}`)}
       >
         <Image src={`/images/works/${workId}/img01.png`} />
       </motion.button>
