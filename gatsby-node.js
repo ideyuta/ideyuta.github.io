@@ -8,7 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___createdAt] }
+        sort: { frontmatter: { createdAt: DESC } }
         limit: 1000
       ) {
         edges {
@@ -29,7 +29,9 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: casePostTemplate,
-        context: {},
+        context: {
+          path: node.frontmatter.path,
+        },
       });
     });
   });

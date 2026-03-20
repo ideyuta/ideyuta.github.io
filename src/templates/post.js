@@ -23,6 +23,11 @@ const Title = styled.h1`
 
 export default function Template({ data }) {
   React.useEffect(() => window.scrollTo(0, 0), []);
+
+  if (!data.post) {
+    return <div>Post not found</div>;
+  }
+
   const { frontmatter, html } = data.post;
   return (
     <>
