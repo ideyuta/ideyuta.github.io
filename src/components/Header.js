@@ -1,5 +1,5 @@
 import React from "react";
-import { withPrefix } from "gatsby-link";
+import { withPrefix } from "gatsby";
 import styled from "styled-components";
 
 const Anchor = styled.a`
