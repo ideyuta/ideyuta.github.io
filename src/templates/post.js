@@ -37,10 +37,10 @@ export default function Template({ data }) {
         transition={{ type: "spring" }}
       >
         <Title>{frontmatter.title}</Title>
-        <Spacer size="regular" />
+        <Spacer $size="regular" />
         <div className="post" dangerouslySetInnerHTML={{ __html: html }} />
       </Content>
-      <Spacer size="large" />
+      <Spacer $size="large" />
       <PostFooter profileType={frontmatter.type} />
       <Footer />
     </>
@@ -70,8 +70,8 @@ export function Head({ data }) {
 }
 
 export const pageQuery = graphql`
-  query ($path: String!) {
-    post: markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query ($postPath: String!) {
+    post: markdownRemark(frontmatter: { path: { eq: $postPath } }) {
       html
       frontmatter {
         createdAt
