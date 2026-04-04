@@ -72,7 +72,7 @@ export default function Invites() {
           <br />
           Engineers
         </Title>
-        <Spacer size="small" />
+        <Spacer $size="small" />
         <SubTitle>
           新プロダクト「STORES レジ」を支えるエンジニアリング
           <br />
@@ -81,34 +81,34 @@ export default function Invites() {
           </span>{" "}
           2021/8/18 (水) 19:30 ~ 21:00
         </SubTitle>
-        <Spacer size="small" />
+        <Spacer $size="small" />
         <A href="https://hey.connpass.com/event/219835/">申し込みはこちら</A>
-        <Spacer size="small" />
+        <Spacer $size="small" />
         <Comment>
           ide -
           STORESではバックエンド、フロントエンド、モバイルエンジニアを募集しています。STORESはこれまで3つの独立したサービスを運営してきましたが、レジのリリースを皮切りにプラットフォームとしてサービスを連携させた新しい価値を提供していくブランドへと進みはじめました。ぜひこのエキサイティングなタイミングで一緒にプロダクトを作る仲間を増やしたいと思っています。レジの開発について、実際に開発に携わったエンジニアの話を聞く機会があるのでぜひ気になった方はご参加ください！
         </Comment>
       </Content>
 
-      <Spacer size="large" />
-      <Spacer size="large" />
+      <Spacer $size="large" />
+      <Spacer $size="large" />
 
       <Content>
         <SectionTitle>デザイナー募集</SectionTitle>
-        <Spacer size="small" />
+        <Spacer $size="small" />
         <Title>よいプロダクトをつくりたい人へ</Title>
-        <Spacer size="small" />
+        <Spacer $size="small" />
 
         <p>
           STORESでデザイナーをしている<A href="https://ideyuta.com">いで</A>
           です。ネットショップの作成管理、お店のキャッシュレス決済、ネット予約管理、ネットと店舗をつないだレジといったプロダクトを作っています。ユーザーの課題と事業に向き合い、難しいトレードオフを繰り返しながら、かんたんで使いやすいプロダクトをつくることに熱意のある方と一緒に働きたいと思っています。ご興味ある方はぜひ。
         </p>
-        <Spacer size="small" />
+        <Spacer $size="small" />
         <A href="https://herp.careers/v1/heyinc/nNwZN6QbsTmj">応募はこちら</A>
       </Content>
 
-      <Spacer size="large" />
-      <Spacer size="large" />
+      <Spacer $size="large" />
+      <Spacer $size="large" />
 
       <Content>
         <SectionTitle>過去のイベント</SectionTitle>
@@ -123,8 +123,8 @@ export default function Invites() {
         </p>
       </Content>
 
-      <Spacer size="large" />
-      <Spacer size="large" />
+      <Spacer $size="large" />
+      <Spacer $size="large" />
 
       <Footer />
     </Wrapper>

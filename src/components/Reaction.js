@@ -8,8 +8,8 @@ const reactions = ["god_han", "miso_dope", "miso_sama"];
 
 const Icon = styled.img`
   display: block;
-  height: ${(props) => (props.size || 32) + "px"};
-  width: ${(props) => (props.size || 32) + "px"};
+  height: ${(props) => (props.$size || 32) + "px"};
+  width: ${(props) => (props.$size || 32) + "px"};
 `;
 const Wrapper = styled.div`
   display: inline-block;
@@ -22,7 +22,7 @@ const Reaction = (props) => {
     : props.name;
   return (
     <Wrapper>
-      <Icon size={props.size} src={`../images/reactions/${path}.gif`} />
+      <Icon $size={props.size} src={`../images/reactions/${path}.gif`} />
     </Wrapper>
   );
 };

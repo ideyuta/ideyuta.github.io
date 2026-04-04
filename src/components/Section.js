@@ -9,14 +9,14 @@ const Inner = styled.div`
   word-break: break-all;
 `;
 const Wrapper = styled.div`
-  background: ${(props) => props.bgColor || "var(--color-bg)"};
+  background: ${(props) => props.$bgColor || "var(--color-bg)"};
   padding: 0;
   width: 100%;
 `;
 
 const Section = (props) => {
   return (
-    <Wrapper bgColor={props.bgColor}>
+    <Wrapper $bgColor={props.bgColor}>
       <Inner>{props.children}</Inner>
     </Wrapper>
   );
