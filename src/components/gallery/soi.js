@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Html, useTexture, PresentationControls } from "@react-three/drei";
 import { useSpring, animated, config } from "@react-spring/three";
-import { isMobile } from "react-device-detect";
+const isMobile = typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches;
 
 const Soi = (props) => {
   const ref = useRef();
