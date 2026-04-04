@@ -46,8 +46,8 @@
   "scripts": {
     "prebuild": "gatsby clean",
     "build": "gatsby build --prefix-paths",
-    "deploy": "gh-pages -d public -b master",
+    "publish-site": "gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "gatsby develop"
+    "dev": "gatsby develop"
   }
 }
