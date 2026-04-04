@@ -1,6 +1,6 @@
 import React from "react";
 import * as motion from "motion/react-client"
-import { navigate } from "gatsby"
+import { navigate, prefetchPathname } from "gatsby"
 import styled from "styled-components";
 
 const Image = styled.img`
@@ -23,12 +23,16 @@ const Container = styled(motion.div)`
 /**
  * WorkItem
  */
-export default function WorkItem({ workId }) {
+export default function WorkItem({ workId, index = 0, skipAnimation = false }) {
   const [isDragging, setIsDragging] = React.useState(false);
   return (
     <Container
       layoutId={`works-${workId}`}
       id={workId}
+      style={{ zIndex: skipAnimation ? 10 : 0 }}
+      initial={skipAnimation ? false : { opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: skipAnimation ? 0 : index * 0.08 }}
     >
       <motion.button
         layoutScroll
@@ -37,8 +41,12 @@ export default function WorkItem({ workId }) {
         layoutId={`works-${workId}-cover`}
         transition={{ duration: 1.1, type: "spring" }}
         whileHover={{ scale: 1.03 }}
-        onClick={() => {                                            
-          if(!isDragging) { navigate(`/works/${workId}`) }          
+        onHoverStart={() => prefetchPathname(`/works/${workId}`)}
+        onClick={() => {
+          if(!isDragging) {
+            sessionStorage.setItem('lastWorkId', workId);
+            navigate(`/works/${workId}`);
+          }
         }}                                                          
         onDragStart={() => setIsDragging(true) }                    
         onDragEnd={() => setIsDragging(false) }  

@@ -16,12 +16,20 @@ const Wrapper = styled(motion.div)`
  * Index
  */
 export default function Index() {
+  const [lastWorkId] = React.useState(() => {
+    if (typeof sessionStorage === 'undefined') return null;
+    const id = sessionStorage.getItem('lastWorkId');
+    if (id) sessionStorage.removeItem('lastWorkId');
+    return id;
+  });
   return (
     <div>
       <Header />
       <AnimatePresence mode="wait">
         <Wrapper>
-          {Object.keys(WORKS).map((key) => <WorkItem key={key} workId={key} />)}
+          {Object.keys(WORKS).map((key, i) => (
+            <WorkItem key={key} workId={key} index={i} skipAnimation={key === lastWorkId} />
+          ))}
         </Wrapper>
       </AnimatePresence>
     </div>
