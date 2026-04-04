@@ -87,14 +87,15 @@ export default function Profile({ type: initialType }) {
       {type === "private" ? (
         <>
           <Content>
-            88年静岡県生まれ。9歳と6歳の娘がいます。料理と散歩が趣味で、朝早くから活動しています。最近はルンバのために部屋を掃除してます。
+            88年静岡県生まれ。10歳と7歳の娘がいます。料理と散歩が趣味で、朝早くから活動しています。最近は水泳に行ったりパン屋でバイトをしています。
           </Content>
           <Spacer $size="small" />
           <Content>
-            X: <A href="https://x.com/_ideyuta">@_ideyuta</A>
+            Instagram:{" "}
+            <A href="https://www.instagram.com/_ideyuta/">@_ideyuta</A>
           </Content>
           <Content>
-            Store: <A href="https://ideyuta.stores.jp">ideyuta.store</A>
+            X: <A href="https://x.com/_ideyuta">@_ideyuta</A>
           </Content>
         </>
       ) : (
