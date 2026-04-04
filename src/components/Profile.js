@@ -6,17 +6,17 @@ const A = styled.a`
   text-decoration: 1.5px underline;
   text-underline-offset: 3px;
   &:link {
-    color: #fff;
+    color: var(--color-bg);
   }
   &:visited {
-    color: #fff;
+    color: var(--color-bg);
   }
   &:hover {
-    color: #0066ff;
+    color: var(--color-accent);
     text-decoration: 1.5px underline;
   }
   &:active {
-    color: #fff;
+    color: var(--color-bg);
   }
 `;
 const Content = styled.p`
@@ -45,7 +45,7 @@ const PhotoWrapper = styled.div`
   width: 100%;
 `;
 const Wrapper = styled.div`
-  color: #fff;
+  color: var(--color-bg);
   box-sizing: border-box;
   max-width: 700px;
   margin: 0 auto;

@@ -1,31 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import media from "styled-media-query";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Spacer from "../components/Spacer";
-import { colors } from "../assets";
-
 const A = styled.a`
   &:link {
-    color: #08080e;
-    border-bottom: 1px solid #08080e;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-text);
   }
   &:visited {
-    color: #08080e;
-    border-bottom: 1px solid #08080e;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-text);
   }
   &:hover {
-    color: #5ab87e;
-    border-bottom: 1px solid #5ab87e;
+    color: var(--color-theme);
+    border-bottom: 1px solid var(--color-theme);
   }
   &:active {
-    color: #08080e;
-    border-bottom: 1px solid #08080e;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-text);
   }
 `;
 const Comment = styled.p`
-  color: ${colors.gray500};
+  color: var(--color-gray-500);
 `;
 const Content = styled.div`
   box-sizing: border-box;
@@ -35,7 +32,7 @@ const Content = styled.div`
   word-break: break-all;
 `;
 const SectionTitle = styled.h4`
-  color: ${colors.gray900};
+  color: var(--color-gray-900);
   font-weight: 700;
   padding: 20px 0;
 `;
@@ -44,9 +41,9 @@ const SubTitle = styled.p`
 `;
 const Title = styled.h2`
   font-size: 5rem;
-  ${media.lessThan("small")`
+  @media (max-width: 450px) {
     font-size: 19vw;
-  `}
+  }
   font-weight: 700;
   line-height: 1.2;
   padding: 0;

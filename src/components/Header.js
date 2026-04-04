@@ -10,7 +10,7 @@ const Anchor = styled.a`
 `;
 
 const AnchorMe = styled.a`
-  color: #999;
+  color: var(--color-text-muted);
   display: inline;
   font-size: 2rem;
   font-weight: 600;

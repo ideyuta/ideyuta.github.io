@@ -16,7 +16,6 @@
     "react-dom": "^18.1.0",
     "react-spring": "^9.4.4",
     "styled-components": "^5.3.5",
-    "styled-media-query": "^2.1.2",
     "three": "^0.140.0"
   },
   "devDependencies": {
@@ -35,7 +34,17 @@
     "prismjs": "^1.28.0"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["sharp", "lmdb", "@parcel/watcher", "msgpackr-extract", "gatsby", "gatsby-cli", "core-js", "core-js-pure", "es5-ext"]
+    "onlyBuiltDependencies": [
+      "sharp",
+      "lmdb",
+      "@parcel/watcher",
+      "msgpackr-extract",
+      "gatsby",
+      "gatsby-cli",
+      "core-js",
+      "core-js-pure",
+      "es5-ext"
+    ]
   },
   "license": "MIT",
   "main": "n/a",

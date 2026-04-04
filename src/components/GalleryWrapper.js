@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Gallery from "./Gallery";
-import { colors } from "../assets";
-
 const Wrapper = styled.div`
-  background: ${colors.gray900};
+  background: var(--color-gray-900);
   height: 76vh;
   width: 100vw;
   p::selection {

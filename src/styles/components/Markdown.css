@@ -1,5 +1,5 @@
 .Markdown {
-  background: #fff;
+  background: var(--color-bg);
   margin: 0 auto;
   max-width: 560px;
   padding: 80px 20px;
@@ -7,16 +7,18 @@
     font-weight: 600;
   }
   & h1 {
-    @mixin Headline;
+    font-size: 1.8rem;
+    font-weight: 600;
   }
   & h2 {
-    @mixin Title;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-top: 3em;
   }
   & h3 {
-    @mixin Body;
+    font-size: 0.875rem;
     font-weight: 600;
+    line-height: 1.7em;
   }
   & img {
     display: block;
@@ -25,30 +27,39 @@
     max-width: 100%;
   }
   & p {
-    @mixin Body;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.7em;
     margin: 24px 0;
   }
   & ul, & ol {
-    @mixin Body;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.7em;
   }
 
   & .Caption {
-    @mixin Caption;
-    color: var(--gray500);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--color-gray-500);
     text-align: center;
   }
 
   & .Credit {
-    border: 1px solid var(--gray800);
+    border: 1px solid var(--color-gray-800);
     border-width: 2px 0;
     margin: 32px 0;
     padding: 0 8px;
     & h4 {
-      @mixin Caption;
+      font-size: 0.75rem;
       font-weight: 600;
+      line-height: 1.5em;
     }
     & ul {
-      @mixin Caption;
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 1.5em;
       list-style: none;
       padding: 0;
     }
@@ -66,4 +77,3 @@
     }
   }
 }
-

@@ -9,7 +9,7 @@ const Inner = styled.div`
   word-break: break-all;
 `;
 const Wrapper = styled.div`
-  background: ${(props) => props.bgColor || "#fff"};
+  background: ${(props) => props.bgColor || "var(--color-bg)"};
   padding: 0;
   width: 100%;
 `;

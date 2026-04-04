@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   text-decoration: none;
 `;
 const Data = styled.p`
-  color: #bbb;
+  color: var(--color-text-subtle);
   font-size: 0.875rem;
   font-weight: 400;
   padding: 0;
@@ -20,16 +20,16 @@ const A = styled(Link)`
   padding: 0;
   margin: 0;
   &:link {
-    color: #333;
+    color: var(--color-text);
     text-decoration-line: underline;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 3px;
   }
   &:visited {
-    color: #333;
+    color: var(--color-text);
   }
   &:hover {
-    color: #0066ff;
+    color: var(--color-accent);
     text-decoration: none;
   }
 `;

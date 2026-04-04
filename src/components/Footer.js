@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  background: #000;
+  background: var(--color-bg-dark);
   box-sizing: border-box;
-  color: #fff;
+  color: var(--color-bg);
   padding: 32px 24px;
   width: 100vw;
 `;

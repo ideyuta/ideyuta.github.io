@@ -1,6 +1,37 @@
+:root {
+  /* Colors */
+  --color-theme: #35BA7A;
+  --color-bg: #fff;
+  --color-bg-dark: #000;
+  --color-text: #333;
+  --color-text-muted: #999;
+  --color-text-subtle: #bbb;
+  --color-border: #e9e9e9;
+  --color-blockquote: #959595;
+  --color-link-hover: #CCB080;
+  --color-accent: #0066ff;
+  --color-gray-20: #F2F2EE;
+  --color-gray-100: #D7DCCD;
+  --color-gray-400: #BAC7B9;
+  --color-gray-500: #80978C;
+  --color-gray-800: #385F62;
+  --color-gray-900: #00454E;
+
+  /* Spacing */
+  --space-tiny: 8px;
+  --space-small: 16px;
+  --space-regular: 24px;
+  --space-medium: 32px;
+  --space-large: 48px;
+
+  /* Layout */
+  --max-content-width: 700px;
+  --content-padding: 24px;
+}
+
 html, body {
-  background: #fff;
-  color: #000;
+  background: var(--color-bg);
+  color: var(--color-bg-dark);
   font-family: 'YakuHanJP', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, "Droid Sans", Verdana, Arial,  "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-feature-settings : "pkna" 1;
   font-size: 16px;
@@ -46,26 +77,26 @@ h4 {
 }
 
 hr {
-  background: #e9e9e9;
+  background: var(--color-border);
   border: 0;
   height: 1px;
   margin: 32px 0;
 }
 
 blockquote {
-  border-left: 4px solid #ddd;
-  color: #959595;
+  border-left: 4px solid var(--color-border);
+  color: var(--color-blockquote);
   margin: 20px 0;
   padding: 0 0 0 16px;
 }
 
 blockquote a {
-  color: #959595 !important;
-  border-color: #959559 !important;
+  color: var(--color-blockquote) !important;
+  border-color: var(--color-blockquote) !important;
 }
 blockquote a:hover {
-  border-color: #0066ff !important;
-  color: #0066ff !important;
+  border-color: var(--color-accent) !important;
+  color: var(--color-accent) !important;
 }
 
 img {
@@ -96,16 +127,16 @@ a {
 }
 
 a:link {
-  color: #333;
+  color: var(--color-text);
 }
 a:visited {
-  color: #333;
+  color: var(--color-text);
 }
 a:hover {
-  color: #CCB080;
+  color: var(--color-link-hover);
 }
 a:active {
-  color: #333;
+  color: var(--color-text);
 }
 
 p, ul, ol, li {
@@ -123,9 +154,9 @@ p, ul, ol, li {
 }
 
 pre {
-  background: #000;
+  background: var(--color-bg-dark);
   border: 0 !important;
-  color: #fff;
+  color: var(--color-bg);
   font-size: 0.875rem;
   font-weight: normal;
   letter-spacing: 0.02em;
@@ -139,21 +170,21 @@ pre {
 }
 
 .Caption {
-  color: #959595;
+  color: var(--color-blockquote);
   text-align: center;
   margin-bottom: 20px;
   a {
-    color: #959595;
+    color: var(--color-blockquote);
   }
 }
 .Caption a {
-  color: #959595 !important;
-  border-color: #959595 !important;
+  color: var(--color-blockquote) !important;
+  border-color: var(--color-blockquote) !important;
 }
 
 .Caption a:hover {
-  color: #0066ff !important;
-  border-color: #0066ff !important;
+  color: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
 }
 
 

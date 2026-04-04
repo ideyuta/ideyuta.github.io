@@ -6,11 +6,13 @@
     margin: 0 auto;
   }
   &_body {
-    @mixin Body;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.7em;
     margin: 24px 0;
   }
   &_headline {
-    @mixin Title;
+    font-size: 1.3rem;
     font-weight: 600;
     padding-top: 80px;
   }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Profile from "./Profile";
 
 const Wrapper = styled.div`
-  background: #000;
+  background: var(--color-bg-dark);
   box-sizing: border-box;
   width: 100vw;
 `;

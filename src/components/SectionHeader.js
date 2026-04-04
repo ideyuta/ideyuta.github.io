@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Head = styled.h2`
-  color: #333;
+  color: var(--color-text);
   font-size: 1rem;
   font-weight: 500;
   margin: 0;
