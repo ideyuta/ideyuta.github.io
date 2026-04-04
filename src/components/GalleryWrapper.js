@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Gallery from "./Gallery";
 const Wrapper = styled.div`
@@ -10,30 +10,24 @@ const Wrapper = styled.div`
   }
 `;
 
-class GalleryWrapper extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { height: null };
-  }
+const GalleryWrapper = () => {
+  const [height, setHeight] = useState(null);
 
-  componentDidMount() {
-    let height = window.innerHeight;
-    if (height) {
-      height = Math.floor(height * 0.76);
+  useEffect(() => {
+    let h = window.innerHeight;
+    if (h) {
+      h = Math.floor(h * 0.76);
     } else {
-      height = "76vh";
+      h = "76vh";
     }
-    this.setState({ height });
-  }
+    setHeight(h);
+  }, []);
 
-  render() {
-    const { height } = this.state;
-    return (
-      <Wrapper style={{ height }}>
-        <Gallery height={height} />
-      </Wrapper>
-    );
-  }
-}
+  return (
+    <Wrapper style={{ height }}>
+      <Gallery height={height} />
+    </Wrapper>
+  );
+};
 
 export default GalleryWrapper;
