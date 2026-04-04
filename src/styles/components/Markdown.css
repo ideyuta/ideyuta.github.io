@@ -18,7 +18,7 @@
   & h3 {
     font-size: 0.875rem;
     font-weight: 600;
-    line-height: 1.7em;
+    line-height: 1.9em;
   }
   & img {
     display: block;
@@ -29,13 +29,13 @@
   & p {
     font-size: 0.875rem;
     font-weight: 400;
-    line-height: 1.7em;
+    line-height: 1.9em;
     margin: 24px 0;
   }
   & ul, & ol {
     font-size: 0.875rem;
     font-weight: 400;
-    line-height: 1.7em;
+    line-height: 1.9em;
   }
 
   & .Caption {
