@@ -38,23 +38,23 @@ export default function WorkItem({ workId, index = 0, skipAnimation = false }) {
       transition={{ duration: 0.5, delay: skipAnimation ? 0 : index * 0.08 }}
     >
       <motion.button
-        layoutScroll
-        drag={!isMobile}
-        dragSnapToOrigin={true}
         layoutId={`works-${workId}-cover`}
         transition={{ duration: 1.1, type: "spring" }}
-        whileHover={isMobile ? undefined : { scale: 1.03 }}
-        onHoverStart={
-          isMobile ? undefined : () => prefetchPathname(`/works/${workId}`)
-        }
         onClick={() => {
           if (!isDragging) {
             sessionStorage.setItem("lastWorkId", workId);
             navigate(`/works/${workId}`);
           }
         }}
-        onDragStart={isMobile ? undefined : () => setIsDragging(true)}
-        onDragEnd={isMobile ? undefined : () => setIsDragging(false)}
+        {...(!isMobile && {
+          layoutScroll: true,
+          drag: true,
+          dragSnapToOrigin: true,
+          whileHover: { scale: 1.03 },
+          onHoverStart: () => prefetchPathname(`/works/${workId}`),
+          onDragStart: () => setIsDragging(true),
+          onDragEnd: () => setIsDragging(false),
+        })}
       >
         <Image src={`/images/works/${workId}/img01.png`} />
       </motion.button>
