@@ -25,6 +25,7 @@ const Container = styled(motion.div)`
  */
 export default function WorkItem({ workId, index = 0, skipAnimation = false }) {
   const [isDragging, setIsDragging] = React.useState(false);
+  const isMobile = typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches;
   return (
     <Container
       layoutId={`works-${workId}`}
@@ -36,20 +37,20 @@ export default function WorkItem({ workId, index = 0, skipAnimation = false }) {
     >
       <motion.button
         layoutScroll
-        drag
+        drag={!isMobile}
         dragSnapToOrigin={true}
         layoutId={`works-${workId}-cover`}
         transition={{ duration: 1.1, type: "spring" }}
-        whileHover={{ scale: 1.03 }}
-        onHoverStart={() => prefetchPathname(`/works/${workId}`)}
+        whileHover={isMobile ? undefined : { scale: 1.03 }}
+        onHoverStart={isMobile ? undefined : () => prefetchPathname(`/works/${workId}`)}
         onClick={() => {
           if(!isDragging) {
             sessionStorage.setItem('lastWorkId', workId);
             navigate(`/works/${workId}`);
           }
-        }}                                                          
-        onDragStart={() => setIsDragging(true) }                    
-        onDragEnd={() => setIsDragging(false) }  
+        }}
+        onDragStart={isMobile ? undefined : () => setIsDragging(true)}
+        onDragEnd={isMobile ? undefined : () => setIsDragging(false)}
       >
         <Image src={`/images/works/${workId}/img01.png`} />
       </motion.button>
