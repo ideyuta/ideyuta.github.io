@@ -19,7 +19,12 @@ module.exports = {
         plugins: [
           {
             resolve: `@raae/gatsby-remark-oembed`,
-            options: { usePrefix: false },
+            options: {
+              usePrefix: false,
+              providers: {
+                exclude: ["Filestage"],
+              },
+            },
           },
           "gatsby-remark-responsive-iframe",
           {
