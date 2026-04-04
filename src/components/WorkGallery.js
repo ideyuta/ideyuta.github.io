@@ -61,6 +61,7 @@ export default function WorkGallery({ workId }) {
     if (index === 0) {
       return (
         <ImgContainer
+          key={item.src}
           layoutId={`works-${workId}-cover`}
           transition={{ duration: 0.8, type: "spring" }}
         >
@@ -70,6 +71,7 @@ export default function WorkGallery({ workId }) {
     } else {
       return (
         <ImgContainer
+          key={item.src}
           initial={{ transform: `translateX(${width/3}px)`, opacity: 0 }}
           animate={{ transform: "translateX(0px)", opacity: 1 }}
           transition={{ duration: 0.9, type: "spring", delay: index * .1 }}

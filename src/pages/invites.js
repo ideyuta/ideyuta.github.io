@@ -1,5 +1,4 @@
 import React from "react";
-import Helmet from "react-helmet";
 import styled from "styled-components";
 import media from "styled-media-query";
 import Footer from "../components/Footer";
@@ -65,25 +64,6 @@ const Wrapper = styled.div`
 export default function Invites() {
   return (
     <Wrapper>
-      <Helmet
-        meta={[
-          {
-            content: "こんにちは、いでです。いろんな募集をしています。",
-            name: "description",
-          },
-          { property: "og:title", content: "募集 - ideyuta.com" },
-          { property: "og:type", content: "blog" },
-          { property: "og:url", content: `https://ideyuta.com/invites` },
-          {
-            property: "og:image",
-            content: `https://ideyuta.com/images/invites/ogp.png`,
-          },
-          { property: "og:description", content: "" },
-          { name: "twitter:card", content: "summary_large_image" },
-          { name: "twitter:site", content: "@_ideyuta" },
-        ]}
-        title="募集 - ideyuta.com"
-      />
       <Header />
 
       <Content>
@@ -151,5 +131,20 @@ export default function Invites() {
 
       <Footer />
     </Wrapper>
+  );
+}
+
+export function Head() {
+  return (
+    <>
+      <title>募集 - ideyuta.com</title>
+      <meta name="description" content="こんにちは、いでです。いろんな募集をしています。" />
+      <meta property="og:title" content="募集 - ideyuta.com" />
+      <meta property="og:type" content="blog" />
+      <meta property="og:url" content="https://ideyuta.com/invites" />
+      <meta property="og:image" content="https://ideyuta.com/images/invites/ogp.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@_ideyuta" />
+    </>
   );
 }

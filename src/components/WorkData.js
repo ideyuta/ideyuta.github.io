@@ -35,8 +35,8 @@ export default function WorkData({ workId }) {
     <Wrapper>
       <Title>{data.title}</Title>
       <Client>{`${data.date} ${data.client}`}</Client>
-      {data.member.map(m => <Member>{m}</Member>)}
-      {data.docs && data.docs.map(d => <Doc href={d.href}>✏ JOURNAL</Doc>)}
+      {data.member.map(m => <Member key={m}>{m}</Member>)}
+      {data.docs && data.docs.map(d => <Doc key={d.href} href={d.href}>✏ JOURNAL</Doc>)}
     </Wrapper>
   );
 }

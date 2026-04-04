@@ -4,14 +4,13 @@ module.exports = {
     title: "ideyuta.com",
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-no-sourcemaps",
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "markdown-pages",
-        path: `${__dirname}/src/pages/`,
+        path: `${__dirname}/src/content/`,
       },
     },
     {

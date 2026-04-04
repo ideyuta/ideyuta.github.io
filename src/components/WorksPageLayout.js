@@ -15,7 +15,7 @@ const Container = styled(motion.div)`
   height: 50vw;
 `;
 const Wrapper = styled.div`
-  overflowY: hidden;
+  overflow-y: hidden;
 `;
 
 /**
@@ -25,14 +25,14 @@ export default function Index({ workId }) {
   const items = Object.keys(WORKS).map((key) => {
     if (key === workId) {
       return (
-        <>
+        <React.Fragment key={key}>
         <WorkGallery workId={key} />
         <Container />
-        </>
+        </React.Fragment>
       );
     }
     return (
-      <Container layoutId={`works-${key}`}>
+      <Container key={key} layoutId={`works-${key}`}>
         <motion.button layoutId={`works-${key}-cover`}/>
       </Container>
     );

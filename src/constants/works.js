@@ -1,4 +1,4 @@
-export const WORKS = {
+const WORKS = {
   mobileorder: {
     title: "モバイルオーダー",
     date: "2024",
@@ -115,3 +115,5 @@ export const WORKS = {
     }],
   },
 };
+
+module.exports = { WORKS };

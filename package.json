@@ -14,7 +14,6 @@
     "react": "^18.1.0",
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0",
     "react-spring": "^9.4.4",
     "styled-components": "^5.3.5",
     "styled-media-query": "^2.1.2",
@@ -26,7 +25,6 @@
     "gatsby": "^5.16.1",
     "gatsby-plugin-manifest": "^5.16.0",
     "gatsby-plugin-no-sourcemaps": "^5.16.0",
-    "gatsby-plugin-react-helmet": "^6.16.0",
     "gatsby-plugin-styled-components": "^6.16.0",
     "gatsby-remark-prismjs": "^7.16.0",
     "gatsby-remark-responsive-iframe": "^6.16.0",
@@ -35,6 +33,9 @@
     "gh-pages": "^3.2.3",
     "prettier": "2.6.2",
     "prismjs": "^1.28.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["sharp", "lmdb", "@parcel/watcher", "msgpackr-extract", "gatsby", "gatsby-cli", "core-js", "core-js-pure", "es5-ext"]
   },
   "license": "MIT",
   "main": "n/a",

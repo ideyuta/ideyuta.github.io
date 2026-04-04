@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
 import * as motion from "motion/react-client"
 import styled from "styled-components";
 import Footer from "../components/Footer";
@@ -31,25 +30,6 @@ export default function Template({ data }) {
   const { frontmatter, html } = data.post;
   return (
     <>
-      <Helmet
-        title={`${frontmatter.title} - ideyuta.com`}
-        meta={[
-          { name: "description", content: "" },
-          { property: "og:title", content: frontmatter.title },
-          { property: "og:type", content: "blog" },
-          {
-            property: "og:url",
-            content: `https://ideyuta.com${frontmatter.path}`,
-          },
-          {
-            property: "og:image",
-            content: `https://ideyuta.com/images${frontmatter.path}/ogp.png`,
-          },
-          { property: "og:description", content: "" },
-          { name: "twitter:card", content: "summary_large_image" },
-          { name: "twitter:site", content: "@_ideyuta" },
-        ]}
-      />
       <PostHeader />
       <Content
         initial={{ transform: "translateY(100px)", opacity: 0 }}
@@ -63,6 +43,22 @@ export default function Template({ data }) {
       <Spacer size="large" />
       <PostFooter profileType={frontmatter.type} />
       <Footer />
+    </>
+  );
+}
+
+export function Head({ data }) {
+  if (!data.post) return null;
+  const { frontmatter } = data.post;
+  return (
+    <>
+      <title>{`${frontmatter.title} - ideyuta.com`}</title>
+      <meta property="og:title" content={frontmatter.title} />
+      <meta property="og:type" content="blog" />
+      <meta property="og:url" content={`https://ideyuta.com${frontmatter.path}`} />
+      <meta property="og:image" content={`https://ideyuta.com/images${frontmatter.path}/ogp.png`} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@_ideyuta" />
     </>
   );
 }
