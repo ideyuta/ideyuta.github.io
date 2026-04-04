@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import * as motion from "motion/react-client"
+import * as motion from "motion/react-client";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import PostHeader from "../components/PostHeader";
@@ -55,8 +55,14 @@ export function Head({ data }) {
       <title>{`${frontmatter.title} - ideyuta.com`}</title>
       <meta property="og:title" content={frontmatter.title} />
       <meta property="og:type" content="blog" />
-      <meta property="og:url" content={`https://ideyuta.com${frontmatter.path}`} />
-      <meta property="og:image" content={`https://ideyuta.com/images${frontmatter.path}/ogp.png`} />
+      <meta
+        property="og:url"
+        content={`https://ideyuta.com${frontmatter.path}`}
+      />
+      <meta
+        property="og:image"
+        content={`https://ideyuta.com/images${frontmatter.path}/ogp.png`}
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@_ideyuta" />
     </>

@@ -138,11 +138,17 @@ export function Head() {
   return (
     <>
       <title>募集 - ideyuta.com</title>
-      <meta name="description" content="こんにちは、いでです。いろんな募集をしています。" />
+      <meta
+        name="description"
+        content="こんにちは、いでです。いろんな募集をしています。"
+      />
       <meta property="og:title" content="募集 - ideyuta.com" />
       <meta property="og:type" content="blog" />
       <meta property="og:url" content="https://ideyuta.com/invites" />
-      <meta property="og:image" content="https://ideyuta.com/images/invites/ogp.png" />
+      <meta
+        property="og:image"
+        content="https://ideyuta.com/images/invites/ogp.png"
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@_ideyuta" />
     </>

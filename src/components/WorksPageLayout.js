@@ -1,6 +1,6 @@
 import React from "react";
-import * as motion from "motion/react-client"
-import { AnimatePresence } from "motion/react"
+import * as motion from "motion/react-client";
+import { AnimatePresence } from "motion/react";
 import styled from "styled-components";
 import WorkGallery from "./WorkGallery";
 import WorkData from "./WorkData";
@@ -26,14 +26,14 @@ export default function Index({ workId }) {
     if (key === workId) {
       return (
         <React.Fragment key={key}>
-        <WorkGallery workId={key} />
-        <Container />
+          <WorkGallery workId={key} />
+          <Container />
         </React.Fragment>
       );
     }
     return (
       <Container key={key} layoutId={`works-${key}`}>
-        <motion.button layoutId={`works-${key}-cover`}/>
+        <motion.button layoutId={`works-${key}-cover`} />
       </Container>
     );
   });

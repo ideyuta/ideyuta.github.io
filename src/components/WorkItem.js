@@ -1,6 +1,6 @@
 import React from "react";
-import * as motion from "motion/react-client"
-import { navigate, prefetchPathname } from "gatsby"
+import * as motion from "motion/react-client";
+import { navigate, prefetchPathname } from "gatsby";
 import styled from "styled-components";
 
 const Image = styled.img`
@@ -25,7 +25,9 @@ const Container = styled(motion.div)`
  */
 export default function WorkItem({ workId, index = 0, skipAnimation = false }) {
   const [isDragging, setIsDragging] = React.useState(false);
-  const isMobile = typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches;
+  const isMobile =
+    typeof window !== "undefined" &&
+    window.matchMedia("(pointer: coarse)").matches;
   return (
     <Container
       layoutId={`works-${workId}`}
@@ -42,10 +44,12 @@ export default function WorkItem({ workId, index = 0, skipAnimation = false }) {
         layoutId={`works-${workId}-cover`}
         transition={{ duration: 1.1, type: "spring" }}
         whileHover={isMobile ? undefined : { scale: 1.03 }}
-        onHoverStart={isMobile ? undefined : () => prefetchPathname(`/works/${workId}`)}
+        onHoverStart={
+          isMobile ? undefined : () => prefetchPathname(`/works/${workId}`)
+        }
         onClick={() => {
-          if(!isDragging) {
-            sessionStorage.setItem('lastWorkId', workId);
+          if (!isDragging) {
+            sessionStorage.setItem("lastWorkId", workId);
             navigate(`/works/${workId}`);
           }
         }}

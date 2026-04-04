@@ -49,7 +49,7 @@ const Regi = (props) => {
         </Html>
       )}
       <planeGeometry args={[2, 1.428, 1]} />
-      <meshStandardMaterial metalness={.8} map={img} transparent={true} />
+      <meshStandardMaterial metalness={0.8} map={img} transparent={true} />
       {light && <primitive object={light.target} position={[0.4, 0.2, 0]} />}
     </animated.mesh>
   );

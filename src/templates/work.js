@@ -13,8 +13,14 @@ export function Head({ pageContext }) {
       <title>{`${data.title} - ideyuta.com`}</title>
       <meta property="og:title" content={data.title} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://ideyuta.com/works/${pageContext.workId}`} />
-      <meta property="og:image" content={`https://ideyuta.com/images/works/${pageContext.workId}/img01.png`} />
+      <meta
+        property="og:url"
+        content={`https://ideyuta.com/works/${pageContext.workId}`}
+      />
+      <meta
+        property="og:image"
+        content={`https://ideyuta.com/images/works/${pageContext.workId}/img01.png`}
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@_ideyuta" />
     </>

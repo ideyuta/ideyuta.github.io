@@ -49,7 +49,7 @@ const VandleCard = (props) => {
         </Html>
       )}
       <planeGeometry args={[1, 1.98, 1]} />
-      <meshStandardMaterial metalness={.8} map={img} transparent={true} />
+      <meshStandardMaterial metalness={0.8} map={img} transparent={true} />
       {light && <primitive object={light.target} position={[0.5, 0, 0]} />}
     </animated.mesh>
   );

@@ -6,7 +6,5 @@ import WorksPageLayout from "../../components/WorksPageLayout";
  * Index
  */
 export default function Index() {
-  return (
-    <WorksPageLayout workId="order-management" />
-  );
+  return <WorksPageLayout workId="order-management" />;
 }

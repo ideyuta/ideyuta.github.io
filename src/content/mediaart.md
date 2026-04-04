@@ -28,7 +28,7 @@ type: "work"
 
 ![](/images/mediaart/kasasasu/anime03.gif)
 
-> *Credits*
+> _Credits_
 >
 > Planning: 渡邊 由香里  
 > Development: 渡邊 由香里, 井出 優太  
@@ -52,7 +52,7 @@ type: "work"
 
 ![](/images/mediaart/ashiotorythem/anime02.gif)
 
-> *Credits*
+> _Credits_
 >
 > Planning: 渡邊 由香里  
 > Development: 渡邊 由香里, 井出 優太  
@@ -87,7 +87,7 @@ type: "work"
 
 ユーザーフレンドリーへと進化していく機械の本質を、プリミティブな形で浮かび上がらせることを試みた作品です。機械のもつ機能や可能性、限界といった、肌で感じ取ることの難しい機械の本質的なイメージを、628 個の光るドットとそれに伴って躍動する音の風景の中に込めています。
 
-> *Credits*
+> _Credits_
 >
 > Planning: 戸田 傑, 渡邊 由香里, 井出 優太  
 > Hardware Design and Development: 戸田 傑, 渡邊 由香里, 井出 優太  
@@ -117,7 +117,7 @@ type: "work"
 
 他者との直接的な関わりだけでなく、目に見えない間接的な関わりが重要な結果をもたらすこともあるという「関係性」を表現した作品です。
 
-> *Credits*
+> _Credits_
 >
 > Planning: 戸田 傑, 井出 優太  
 > Hardware Design: 戸田 傑, 井出 優太  
@@ -150,7 +150,7 @@ TIME MACHINE は、同一時間軸上に複数の視点を持つことはタイ�
 iPad は一周 1.6 秒という早さで順番に写真を撮影し、撮影した画像を画面に表示することで、円の中にひとつの時間軸が立ち上がるようにプログラムされている。
 人が iPad の画面に触れていないときは、過去をイメージした内側のタイムスケールが反時計回りに展開し、画面に触れると未来をイメージした外側のタイムスケールが時計回りに展開する。
 
-> *Credits*
+> _Credits_
 >
 > Planning: 戸田 傑, 井出 優太  
 > Hardware Design and Development: 戸田 傑, 井出 優太  

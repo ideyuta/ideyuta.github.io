@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useWindowWidth } from '@react-hook/window-size'
-import { useMotionValue, useTransform } from "motion/react"
-import * as motion from "motion/react-client"
-import { navigate } from "gatsby"
+import { useWindowWidth } from "@react-hook/window-size";
+import { useMotionValue, useTransform } from "motion/react";
+import * as motion from "motion/react-client";
+import { navigate } from "gatsby";
 import styled from "styled-components";
 import { WORKS } from "../constants/works";
 
@@ -42,7 +42,6 @@ const Wrapper = styled(motion.div)`
  * WorkGallery
  */
 export default function WorkGallery({ workId }) {
-
   const [isDragging, setIsDragging] = useState(false);
 
   // 初期アニメーションの位置計算に利用
@@ -50,11 +49,7 @@ export default function WorkGallery({ workId }) {
 
   // 下にドラッグした時に画像を透過する計算に利用
   const y = useMotionValue(0);
-  const opacity = useTransform(
-    y,
-    [-200, 0, 200],
-    [1, 1, 0],
-  );
+  const opacity = useTransform(y, [-200, 0, 200], [1, 1, 0]);
 
   // 指定された id の画像一覧を作成
   const items = WORKS[workId].items.map((item, index) => {
@@ -72,9 +67,9 @@ export default function WorkGallery({ workId }) {
       return (
         <ImgContainer
           key={item.src}
-          initial={{ transform: `translateX(${width/3}px)`, opacity: 0 }}
+          initial={{ transform: `translateX(${width / 3}px)`, opacity: 0 }}
           animate={{ transform: "translateX(0px)", opacity: 1 }}
-          transition={{ duration: 0.9, type: "spring", delay: index * .1 }}
+          transition={{ duration: 0.9, type: "spring", delay: index * 0.1 }}
           style={{ opacity }}
         >
           <Image async src={item.src} />
@@ -89,15 +84,17 @@ export default function WorkGallery({ workId }) {
         drag="y"
         dragSnapToOrigin={true}
         whileTap={{ cursor: "grabbing" }}
-        onDragStart={() => setIsDragging(true) }
+        onDragStart={() => setIsDragging(true)}
         onDragEnd={(event, info) => {
           setIsDragging(false);
           if (info.velocity.y >= 10 && info.offset.y >= 100) {
-            navigate(`/#${workId}`)
+            navigate(`/#${workId}`);
           }
         }}
         onClick={() => {
-          if(!isDragging) { navigate(`/#${workId}`) }
+          if (!isDragging) {
+            navigate(`/#${workId}`);
+          }
         }}
         layoutId={`works-${workId}`}
         style={{ y }}

@@ -1,7 +1,7 @@
 import React from "react";
-import { AnimatePresence } from "motion/react"
-import * as motion from "motion/react-client"
-import { Link } from "gatsby"
+import { AnimatePresence } from "motion/react";
+import * as motion from "motion/react-client";
+import { Link } from "gatsby";
 import styled from "styled-components";
 
 const Image = styled.img`
