@@ -10,23 +10,10 @@
   --color-blockquote: #959595;
   --color-link-hover: #CCB080;
   --color-accent: #0066ff;
-  --color-gray-20: #F2F2EE;
-  --color-gray-100: #D7DCCD;
   --color-gray-400: #BAC7B9;
   --color-gray-500: #80978C;
   --color-gray-800: #385F62;
   --color-gray-900: #00454E;
-
-  /* Spacing */
-  --space-tiny: 8px;
-  --space-small: 16px;
-  --space-regular: 24px;
-  --space-medium: 32px;
-  --space-large: 48px;
-
-  /* Layout */
-  --max-content-width: 700px;
-  --content-padding: 24px;
 }
 
 html, body {

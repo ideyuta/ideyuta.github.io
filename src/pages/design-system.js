@@ -77,8 +77,6 @@ const colors = [
   { name: "blockquote", var: "--color-blockquote", value: "#959595" },
   { name: "link-hover", var: "--color-link-hover", value: "#CCB080" },
   { name: "accent", var: "--color-accent", value: "#0066ff" },
-  { name: "gray-20", var: "--color-gray-20", value: "#F2F2EE" },
-  { name: "gray-100", var: "--color-gray-100", value: "#D7DCCD" },
   { name: "gray-400", var: "--color-gray-400", value: "#BAC7B9" },
   { name: "gray-500", var: "--color-gray-500", value: "#80978C" },
   { name: "gray-800", var: "--color-gray-800", value: "#385F62" },
@@ -86,11 +84,11 @@ const colors = [
 ];
 
 const spacings = [
-  { name: "tiny", var: "--space-tiny", value: "8px" },
-  { name: "small", var: "--space-small", value: "16px" },
-  { name: "regular", var: "--space-regular", value: "24px" },
-  { name: "medium", var: "--space-medium", value: "32px" },
-  { name: "large", var: "--space-large", value: "48px" },
+  { name: "tiny", value: "8px" },
+  { name: "small", value: "16px" },
+  { name: "regular", value: "24px" },
+  { name: "medium", value: "32px" },
+  { name: "large", value: "48px" },
 ];
 
 export default function DesignSystem() {
@@ -123,7 +121,7 @@ export default function DesignSystem() {
             <SpacingLabel>
               {s.name} ({s.value})
             </SpacingLabel>
-            <SpacingBar style={{ width: `var(${s.var})` }} />
+            <SpacingBar style={{ width: s.value }} />
           </SpacingRow>
         ))}
       </Section>
