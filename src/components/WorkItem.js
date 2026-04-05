@@ -25,9 +25,10 @@ const Container = styled(motion.div)`
  */
 export default function WorkItem({ workId, index = 0, skipAnimation = false }) {
   const [isDragging, setIsDragging] = React.useState(false);
-  const isMobile =
-    typeof window !== "undefined" &&
-    window.matchMedia("(pointer: coarse)").matches;
+  const [isMobile, setIsMobile] = React.useState(true);
+  React.useEffect(() => {
+    setIsMobile(window.matchMedia("(pointer: coarse)").matches);
+  }, []);
   return (
     <Container
       layoutId={`works-${workId}`}
