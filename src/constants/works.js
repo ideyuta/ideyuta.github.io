@@ -7,19 +7,19 @@ const WORKS = {
     items: [
       {
         alt: "",
-        src: "/images/works/mobileorder/img01.png",
+        src: "/images/works/mobileorder/img01.webp",
       },
       {
         alt: "",
-        src: "/images/works/mobileorder/img02.png",
+        src: "/images/works/mobileorder/img02.webp",
       },
       {
         alt: "",
-        src: "/images/works/mobileorder/img03.png",
+        src: "/images/works/mobileorder/img03.webp",
       },
       {
         alt: "",
-        src: "/images/works/mobileorder/img04.png",
+        src: "/images/works/mobileorder/img04.webp",
       },
     ],
   },
@@ -31,11 +31,11 @@ const WORKS = {
     items: [
       {
         alt: "",
-        src: "/images/works/order-management/img01.png",
+        src: "/images/works/order-management/img01.webp",
       },
       {
         alt: "",
-        src: "/images/works/order-management/img02.png",
+        src: "/images/works/order-management/img02.webp",
       },
     ],
   },
@@ -47,11 +47,11 @@ const WORKS = {
     items: [
       {
         alt: "",
-        src: "/images/works/regi-for-service/img01.png",
+        src: "/images/works/regi-for-service/img01.webp",
       },
       {
         alt: "",
-        src: "/images/works/regi-for-service/img02.png",
+        src: "/images/works/regi-for-service/img02.webp",
       },
     ],
   },
@@ -69,11 +69,11 @@ const WORKS = {
     items: [
       {
         alt: "",
-        src: "/images/works/regi/img01.png",
+        src: "/images/works/regi/img01.webp",
       },
       {
         alt: "",
-        src: "/images/works/regi/img02.png",
+        src: "/images/works/regi/img02.webp",
       },
     ],
   },
@@ -91,7 +91,7 @@ const WORKS = {
     items: [
       {
         alt: "",
-        src: "/images/works/dashboard/img01.png",
+        src: "/images/works/dashboard/img01.webp",
       },
     ],
   },
@@ -103,15 +103,15 @@ const WORKS = {
     items: [
       {
         alt: "",
-        src: "/images/works/soi/img01.png",
+        src: "/images/works/soi/img01.webp",
       },
       {
         alt: "",
-        src: "/images/works/soi/img02.png",
+        src: "/images/works/soi/img02.webp",
       },
       {
         alt: "",
-        src: "/images/works/soi/img03.png",
+        src: "/images/works/soi/img03.webp",
       },
       {
         alt: "",
@@ -133,15 +133,15 @@ const WORKS = {
     items: [
       {
         alt: "",
-        src: "/images/works/vandlecard/img01.png",
+        src: "/images/works/vandlecard/img01.webp",
       },
       {
         alt: "",
-        src: "/images/works/vandlecard/img02.png",
+        src: "/images/works/vandlecard/img02.webp",
       },
       {
         alt: "",
-        src: "/images/works/vandlecard/img03.png",
+        src: "/images/works/vandlecard/img03.webp",
       },
     ],
   },

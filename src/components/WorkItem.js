@@ -23,7 +23,7 @@ const Container = styled(motion.div)`
 /**
  * WorkItem
  */
-export default function WorkItem({ workId, index = 0, skipAnimation = false }) {
+export default function WorkItem({ workId, index = 0, skipAnimation = false, lazy = true }) {
   const [isDragging, setIsDragging] = React.useState(false);
   const [isMobile, setIsMobile] = React.useState(true);
   React.useEffect(() => {
@@ -57,7 +57,7 @@ export default function WorkItem({ workId, index = 0, skipAnimation = false }) {
           onDragEnd: () => setIsDragging(false),
         })}
       >
-        <Image src={`/images/works/${workId}/img01.png`} />
+        <Image src={`/images/works/${workId}/img01.webp`} loading={lazy ? "lazy" : "eager"} />
       </motion.button>
     </Container>
   );

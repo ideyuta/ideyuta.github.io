@@ -60,7 +60,7 @@ export default function WorkGallery({ workId }) {
           layoutId={`works-${workId}-cover`}
           transition={{ duration: 0.8, type: "spring" }}
         >
-          <Image src={item.src} />
+          <Image src={item.src} loading="eager" />
         </ImgContainer>
       );
     } else {
@@ -72,7 +72,7 @@ export default function WorkGallery({ workId }) {
           transition={{ duration: 0.9, type: "spring", delay: index * 0.1 }}
           style={{ opacity }}
         >
-          <Image async src={item.src} />
+          <Image src={item.src} loading="lazy" />
         </ImgContainer>
       );
     }

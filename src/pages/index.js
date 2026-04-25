@@ -32,6 +32,7 @@ export default function Index() {
               key={key}
               workId={key}
               index={i}
+              lazy={i > 0}
               skipAnimation={key === lastWorkId}
             />
           ))}

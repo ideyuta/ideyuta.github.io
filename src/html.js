@@ -12,14 +12,16 @@ export default function HTML(props) {
           name="viewport"
         />
         {props.headComponents}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp.min.css"
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css?family=Inconsolata"
+          href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
           rel="stylesheet"
-          type="text/css"
         />
       </head>
       <body {...props.bodyAttributes}>
