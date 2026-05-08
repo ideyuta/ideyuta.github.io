@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkideyuta_com=self.webpackChunkideyuta_com||[]).push([[516],{348:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var u=t(758),c=t(5374);function r(){return u.createElement(c.A,{workId:"vandlecard"})}}}]);
