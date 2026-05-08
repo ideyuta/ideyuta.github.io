@@ -49,7 +49,7 @@
   "scripts": {
     "prebuild": "gatsby clean",
     "build": "gatsby build --prefix-paths",
-    "publish-site": "gh-pages -d public -b master",
+    "publish-site": "pnpm build && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "dev": "gatsby develop"
   }
