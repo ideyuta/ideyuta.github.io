@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkideyuta_com=self.webpackChunkideyuta_com||[]).push([[872],{4394:function(e,t,u){u.r(t),u.d(t,{default:function(){return c}});var n=u(758),r=u(5374);function c(){return n.createElement(r.A,{workId:"mobileorder"})}}}]);
