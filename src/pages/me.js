@@ -54,8 +54,8 @@ export default function Me() {
         <Body>
           88年静岡県生まれ。多摩美術大学大学院修了。10歳と7歳の娘がいます。高校で電子工学、大学でメディアアート、大学院でインタラクションデザインをやっていました。カンム、フリークアウト・ホールディングスを経て、ストアーズに入社。2022年にVP,
           Product Designに就任。2023年からはChief Product
-          Officerとしていろいろやっています。2025年からキッチンわたりがらす主催のOrganic
-          Junkieにてパンを焼いたり小売業をしています。
+          Officerとしていろいろやっています。最近はOrganic
+          Junkieでパンを焼いたりもしています。
         </Body>
         <List>
           <ListItem>
