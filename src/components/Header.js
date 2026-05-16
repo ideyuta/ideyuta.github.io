@@ -35,6 +35,7 @@ export default function Header() {
     <Wrapper>
       <Anchor href={withPrefix("/")}>ideyuta.com</Anchor>
       <AnchorMe href={withPrefix("/me")}>me</AnchorMe>
+      <AnchorMe href={withPrefix("/write")}>write</AnchorMe>
     </Wrapper>
   );
 }
