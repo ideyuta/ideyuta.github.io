@@ -43,7 +43,7 @@ export default function Me() {
         animate={{ transform: "translateY(0px)", opacity: 1 }}
         transition={{ type: "spring" }}
       >
-        <Image src="/images/ideyuta_202304.png" width="800" height="500" />
+        <Image src="/images/ideyuta_202605.png" width="1200" height="1200" />
         <Label>
           井出 優太 / Yuta Ide
           <br />
