@@ -34,9 +34,9 @@ export default function Template({ data }) {
     <>
       <PostHeader />
       <Content
-        initial={{ transform: "translateY(100px)", opacity: 0 }}
+        initial={{ transform: "translateY(32px)", opacity: 0 }}
         animate={{ transform: "translateY(0px)", opacity: 1 }}
-        transition={{ type: "spring" }}
+        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
       >
         <Title>{frontmatter.title}</Title>
         <Spacer $size="regular" />

@@ -10,11 +10,6 @@ const Wrapper = styled(motion.div)`
   max-width: 800px;
   margin: 0 auto;
 `;
-const Title = styled.h1`
-  font-size: 2.6rem;
-  font-weight: 700;
-  margin: 0 0 24px 0;
-`;
 const List = styled.ul`
   padding: 0;
 `;
@@ -43,11 +38,10 @@ export default function Write() {
     <>
       <Header />
       <Wrapper
-        initial={{ transform: "translateY(100px)", opacity: 0 }}
+        initial={{ transform: "translateY(32px)", opacity: 0 }}
         animate={{ transform: "translateY(0px)", opacity: 1 }}
-        transition={{ type: "spring" }}
+        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
       >
-        <Title>Write</Title>
         <List>
           {POSTS.map((post) => (
             <ListItem key={post.path}>
