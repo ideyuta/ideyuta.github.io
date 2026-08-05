@@ -34,7 +34,9 @@ const ListItem = styled.li`
  * Me
  */
 export default function Me() {
-  useEffect(() => window.scrollTo(0, 0), []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
